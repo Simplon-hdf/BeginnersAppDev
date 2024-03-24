@@ -4,13 +4,15 @@
 ![GitHub issues](https://img.shields.io/github/issues/Simplon-hdf/structure-projet?style=for-the-badge)
 ![GitHub license](https://img.shields.io/github/license/Simplon-hdf/structure-projet?style=for-the-badge)
 
-<h1 align="center">Project name</h1>
+<h1 align="center">Beginners App Dev</h1>
 
 <div align="center">
 
 ## Project Description
 
-Ce dépôt est une structure permettant de démarrer un projet professionnel ou personnel. Ceci vous fera gagner un temps précieux et maximiser votre temps de travail.
+Cette plateforme a pour but de centraliser des infos de manière collaborative autour de langages et de technologies web, favorisant également la veille techno et l’ouverture d’esprit au travers de différents articles liés à ce domaine.
+
+Le but de cette appli n’est pas d’entrer dans le détail du code, mais de centraliser des infos diverses, permettant deux approches, ou deux lectures différentes, destinée à des néophytes ou développeurs juniors => explorer, apprendre, collaborer.
 
 </div>
 
