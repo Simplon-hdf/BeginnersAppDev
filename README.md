@@ -25,28 +25,28 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 <details>
 <summary><h2>Checklist</h2></summary>
 
-- [ ] **Choix de la méthodologie (Agile)**
-- [ ] **Créer un repo Github**
-- [ ] **Créer la structure du repo (Best practice)**
+- [x] **Choix de la méthodologie (Agile)**
+- [x] **Créer un repo Github**
+- [x] **Créer la structure du repo (Best practice)**
 
   - Dossier
-    - [ ] .config
-    - [ ] dep
-    - [ ] doc
-    - [ ] res
-    - [ ] samples
-    - [ ] tools
-    - [ ] build
+    - [x] .config
+    - [x] dep
+    - [x] doc
+    - [x] res
+    - [x] samples
+    - [x] tools
+    - [x] build
     - [ ] test
   - Fichier
-    - [ ] LICENCE.md
-    - [ ] README.md
-    - [ ] .gitattributes
-    - [ ] .gitignore
-    - [ ] .gitmodules
-    - [ ] .dockerignore
+    - [x] LICENCE.md
+    - [x] README.md
+    - [x] .gitattributes
+    - [x] .gitignore
+    - [x] .gitmodules
+    - [x] .dockerignore
 
-- [ ] **Mise en place du Readme**
+- [x] **Mise en place du Readme**
 - [ ] **Cadrage de la demande client**
   - [ ] Contexte / Enjeux / Problèmatique
   - [ ] Questions entretiens
