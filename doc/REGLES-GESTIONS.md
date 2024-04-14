@@ -28,9 +28,9 @@ Les niveaux de privilèges:
 
 # Articles 
 
-- Un article est composée d'un titre
-- Un article est composée d'une courte description
-- Un article est composée une zone de texte
+- Un article est composé d'un titre
+- Un article est composé d'une courte description
+- Un article est composé une zone de texte
 - Un article peut contenir des liens vers des sources externes
 - Un article est écrit par un utilisateur connecté 
 - Un article contient le pseudo de l'auteur de l'article
@@ -40,11 +40,11 @@ Les niveaux de privilèges:
 
 # Gestion des articles
 
-- Un article ne peut être ajoutée que par un compte ayant au minimum le niveau de privilège d'un utilisateur de l'application.
-- Un article ne peut être modérer que par un compte ayant au minimum le niveau de privilège d'un modérateur
-- Un article ne peut être visible qu'aprés avoir été modérer par un compte ayant le niveau de privilège nécessaire 
-- Un article peut être signaler
-- Un article peut être noter par d'autres utilisateurs 
+- Un article ne peut être ajouté que par un compte ayant au minimum le niveau de privilège d'un utilisateur de l'application.
+- Un article ne peut être modéré que par un compte ayant au minimum le niveau de privilège d'un modérateur
+- Un article ne peut être visible qu'après avoir été modéré par un compte ayant le niveau de privilège nécessaire 
+- Un article peut être signalé
+- Un article peut être noté par d'autres utilisateurs 
 - Un article peut être placer dans les favoris d'un utilisateur connecté
 
 # Les ressources éducatives 
@@ -60,7 +60,7 @@ Les niveaux de privilèges:
 # Gestion des ressources éducatives 
 
 - Une ressource peut être placer en favoris par un utilisateur connecté
-- Une ressource doit être ajouter par un compte ayant au minimum le niveau de privilège d'un modérateur
+- Une ressource doit être ajoutée par un compte ayant au minimum le niveau de privilège d'un modérateur
 - Une ressource peut être commenter par des utilisateurs connectés 
 
 # Les Commentaires 
@@ -73,8 +73,8 @@ Les niveaux de privilèges:
 - Un commentaire est relié à un contenu (ressource ou article) OU à un commentaire
 - Un commentaire est ajouté par un utilisateur connecté 
 - Un commentaire a une date d'ajout 
-- Un commentaire ne peut pas contenir d'adresse mail contenant @ 
-- Un commentaire ne peut pas engendrer l'exécution de code sur l'application 
+- Un commentaire ne peut pas contenir d'adresse mail  
+- Un commentaire ne peut pas permettre l'exécution de code sur l'application
 
 # Gestion des commentaires
 
@@ -85,7 +85,7 @@ Les niveaux de privilèges:
 
 # Favoris 
 
-- Un utilisateur doit être connecté pour ajouter un contenu en favoris (article et ressource)
+- Un utilisateur doit être connecté pour ajouter des contenus en favoris (articles et ressources)"
 
 # Modération de contenus
 
