@@ -110,7 +110,7 @@ Les niveaux de privilèges:
 - Le tableau de bord modérateur contient une partie ajout de ressources
 - le tableau de bord modérateur contient une partie tendances et besoins utilisateurs 
 
-# Planifier un discussion sur un thème 
+# Planifier une discussion sur un thème 
 
 - La Planification de la discussion est gérer par Calendly 
 - Un utilisateur doit être connecté pour proposer une session d'échange 
