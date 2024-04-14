@@ -48,7 +48,7 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 
 - [x] **Mise en place du Readme**
 - [ ] **Cadrage de la demande client**
-  - [ ] Contexte / Enjeux / Problèmatique
+  - [x] Contexte / Enjeux / Problèmatique
   - [ ] Questions entretiens
   - [ ] Persona
   - [ ] Présentation (PowerPoint)
