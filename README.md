@@ -27,37 +27,37 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
 <details>
 <summary><h2>Checklist</h2></summary>
 
-- [ ] **Choix de la méthodologie (Agile)**
-- [ ] **Créer un repo Github**
-- [ ] **Créer la structure du repo (Best practice)**
+- [x] **Choix de la méthodologie (Agile)**
+- [x] **Créer un repo Github**
+- [x] **Créer la structure du repo (Best practice)**
 
   - Dossier
-    - [ ] .config
-    - [ ] dep
-    - [ ] doc
-    - [ ] res
-    - [ ] samples
-    - [ ] tools
-    - [ ] build
+    - [x] .config
+    - [x] dep
+    - [x] doc
+    - [x] res
+    - [x] samples
+    - [x] tools
+    - [x] build
     - [ ] test
   - Fichier
-    - [ ] LICENCE.md
-    - [ ] README.md
-    - [ ] .gitattributes
-    - [ ] .gitignore
-    - [ ] .gitmodules
-    - [ ] .dockerignore
+    - [x] LICENCE.md
+    - [x] README.md
+    - [x] .gitattributes
+    - [x] .gitignore
+    - [x] .gitmodules
+    - [x] .dockerignore
 
-- [ ] **Mise en place du Readme**
+- [x] **Mise en place du Readme**
 - [ ] **Cadrage de la demande client**
-  - [ ] Contexte / Enjeux / Problèmatique
+  - [x] Contexte / Enjeux / Problèmatique
   - [ ] Questions entretiens
-  - [ ] Persona
+  - [x] Persona
   - [ ] Présentation (PowerPoint)
   - [ ] Mail de suivie / Proposition stratégique
 - [ ] **Benchmark (Analyse de la concurence)**
 - [ ] **Spécification fonctionnelle**
-  - [ ] Règle de gestion
+  - [x] Règle de gestion
   - [ ] UML
     - [ ] Diagramme d'activité
     - [ ] Use case
@@ -67,17 +67,17 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
     - [ ] MCD
     - [ ] MLD
     - [ ] MPD
-  - [ ] RBAC
+  - [x] RBAC
 - [ ] **Epic**
-  - [ ] User Story
-  - [ ] Product backlog (Tâches)
-- [ ] **Jira**
-- [ ] **Rituels agiles**
+  - [x] User Story
+  - [x] Product backlog (Tâches)
+- [x] **Jira**
+- [x] **Rituels agiles**
 
-  - [ ] Sprint planning meeting
-  - [ ] Stand up meeting
-  - [ ] Sprint retrospective
-  - [ ] Sprint Review
+  - [x] Sprint planning meeting
+  - [x] Stand up meeting
+  - [x] Sprint retrospective
+  - [x] Sprint Review
 
 - [ ] **Démarrer les sprints**
 
