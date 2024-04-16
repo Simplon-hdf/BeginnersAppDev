@@ -52,12 +52,12 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
 - [ ] **Cadrage de la demande client**
   - [x] Contexte / Enjeux / Problèmatique
   - [ ] Questions entretiens
-  - [ ] Persona
+  - [x] Persona
   - [ ] Présentation (PowerPoint)
   - [ ] Mail de suivie / Proposition stratégique
 - [ ] **Benchmark (Analyse de la concurence)**
 - [ ] **Spécification fonctionnelle**
-  - [ ] Règle de gestion
+  - [x] Règle de gestion
   - [ ] UML
     - [ ] Diagramme d'activité
     - [ ] Use case
@@ -67,17 +67,17 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
     - [ ] MCD
     - [ ] MLD
     - [ ] MPD
-  - [ ] RBAC
+  - [x] RBAC
 - [ ] **Epic**
-  - [ ] User Story
-  - [ ] Product backlog (Tâches)
-- [ ] **Jira**
-- [ ] **Rituels agiles**
+  - [x] User Story
+  - [x] Product backlog (Tâches)
+- [x] **Jira**
+- [x] **Rituels agiles**
 
-  - [ ] Sprint planning meeting
-  - [ ] Stand up meeting
-  - [ ] Sprint retrospective
-  - [ ] Sprint Review
+  - [x] Sprint planning meeting
+  - [x] Stand up meeting
+  - [x] Sprint retrospective
+  - [x] Sprint Review
 
 - [ ] **Démarrer les sprints**
 

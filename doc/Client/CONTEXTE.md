@@ -5,7 +5,7 @@ Une plateforme collaborative peut grandement faciliter l'accès à des informati
 
 #### Composition de l'équipe en charge du projet
 
-Notre équipe, constituée de trois personnes, travaille en méthode Agile (Scrum) et utilise l'outil Jira pour l'organisation et le suivi du projet.
+Notre équipe, constituée de trois personnes, travaille en méthode Agile (Scrum) et utilise l'outil Jira et Confluence pour l'organisation et le suivi du projet.
 
 | Nom             | Rôle(s)                     | Responsabilités Principales                                                                                                                                                                                                                                   |
 | --------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
