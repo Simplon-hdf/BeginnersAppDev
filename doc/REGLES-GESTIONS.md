@@ -1,136 +1,160 @@
+### **1.** Application
 
-# Règles de gestion
+- **Accessibilité**
+  - L'application doit être conforme aux normes d'accessibilité WCAG pour garantir l'accessibilité à tous les utilisateurs
 
+### **2. Gestion des Comptes Utilisateurs**
 
+- **Création de compte**
+  - Un compte utilisateur contient un pseudonyme
+  - Un compte utilisateur contient une adresse mail
+  - Un compte utilisateur contient un mot de passe sécurisé
+  - Un compte utilisateur contient un niveau de privilège "Utilisateur connecté" (niveau 2) lors de la création de celui-ci
+- **Sécurité des Mots de Passe**
+  - Un mot de passe doit être haché et salé avant stockage.
+- **Modification de Privilèges**
+  - Seul un utilisateur avec un niveau de privilège "Administrateur" (niveau 4) ou “Super-administrateur” (niveau 5) peut modifier les niveaux de privilège d'autres comptes.
+  - Les niveaux de privilèges :
+    - 1- Visiteur
+    - 2- Utilisateur connecté
+    - 3- Modérateur
+    - 4- Administrateur
+    - 5- Super-Administrateur
 
-# Un compte utilisateur 
+### **3. Tags et Articles**
 
-- Un compte utilisateur contient un pseudo 
-- Un compte utilisateur contient une adresse mail
-- Un compte utilisateur contient un mot de passe
-- Un compte utilisateur contient un niveau de privilège 2 lors de la création de celui-ci
+- **Gestion des Tags**
+  - Un tag est contient un intitulé unique (exemple : C#, PHP, IA)
+- **Création et Modération d'Articles**
+  - Un article est composé d'un titre
+  - Un article est composé d'un résumé
+  - Un article est composé d'une description
+  - Un article contient une date de publication
+  - Un article peut contenir des liens vers des sources externes
+  - Un article contient le pseudo de l'utilisateur ayant écrit l'article
+  - Un article contient le nombre de fois qu'il a été placé en favoris
+  - Un article ne peut pas avoir le même titre qu'un autre article
+  - Un article peut être relié à un ou plusieurs tags
+- **Gestion des articles**
+  - Un article ne peut être ajouté que par un compte ayant au minimum le niveau de privilège d'un "Utilisateur connecté" (niveau 2) de l'application.
+  - Un article ne peut être modéré que par un compte ayant au minimum le niveau de privilège d'un "Modérateur" (niveau 3)
+  - Un article ne peut être visible qu'après avoir été modéré par un compte ayant au minimum le niveau de privilège d'un "Modérateur" (niveau 3)
+  - Un article peut être signalé par tous les lecteurs y compris les visiteurs de l'application
+  - Un article peut être noté par d'autres "Utilisateurs connectés" (niveau 2)
+  - Un article peut être placé dans les favoris d'un "Utilisateur connecté" (niveau 2) par celui-ci
 
-# Les niveaux de privilèges 
+### **4. Les ressources éducatives**
 
-- Les niveaux de privilèges ne sont modifiables que par un compte ayant un niveau de privilège au minimum Administrateur 
+- **Création de Ressources**
+  - Une ressource peut être un Cheat Sheet, une bibliothèque de tutoriel sur les langages de programmation, ...
+  - Une ressource peut contenir des liens vers des sites externes (documentation officielle d'un langage de programmation par exemple)
+  - Une ressource contient un titre
+  - Une ressource contient une description
+  - Une ressource peut contenir du code
+  - Une ressource ne peut pas avoir le même titre qu'une autre ressource
+  - Une ressource peut être reliée à un ou plusieurs tags
+- **Gestion des ressources éducatives**
+  - Une ressource peut être placée en favoris par un "Utilisateur connecté" (niveau 2)
+  - Une ressource doit être ajoutée par un compte ayant au minimum le niveau de privilège d'un "Modérateur" (niveau 3)
+  - Une ressource peut être commentée par des "Utilisateurs connectés" (niveau 2)
+- **Les commentaires**
+  - Un utilisateur doit être connecté pour pouvoir commenter une ressource ou un article
+  - Les ressources et les articles de l'application disposent d'une section commentaire en bas de page
+- **Un commentaire**
+  - Un commentaire doit être relié à un contenu (ressource ou article) OU à un commentaire d'un contenu
+  - Un commentaire est ajouté par un "Utilisateur connecté" (niveau 2)
+  - Un commentaire doit être modéré
+  - Un commentaire a une date d'ajout
+  - Un commentaire ne peut pas contenir d'adresse mail
+  - Un commentaire ne peut pas permettre l'exécution de code sur l'application
+  - Un commentaire ne doit pas contenir d’adresse mail
+- **Gestion des commentaires**
+  - Un commentaire doit être relié à un "Utilisateur connecté" (niveau 2).
+    - Son pseudo doit être visible
+    - La date à laquelle il a ajouté le commentaire doit apparaître
+  - Un "Utilisateur connecté" ne peut pas supprimer ou modifier le commentaire d'un autre "Utilisateur connecté"
+  - Un commentaire peut être signalé y compris par un visiteur
+  - Un commentaire peut être relié à un autre commentaire en tant que réponse
 
-Les niveaux de privilèges:
+### **5. Modération et sécurité**
 
-1- Visiteur
-2- Utilisateur connecté 
-3- Modérateur
-4- Administrateur
-5- Super-Administrateur
+- **Notification d'Activités :**
+  - Un utilisateur recevra une notification si il y a une activité suspecte sur son compte
+- **Audit et Journalisation :**
+  - Une action critique, telle que la modification des privilèges et la suppression de comptes doit être audité
+  - Une action critique, telle que la modification des privilèges et la suppression de comptes doit être journalisé
 
-# Tags 
+### **6. Tableau de bord utilisateur**
 
-- Un tag contient un intitule (exemple : c#, PHP, IA)
+- **Accès**
+  - Le tableau de bord n'est accessible que par un "Utilisateur connecté" (niveau 2)
+- **Contenus**
+  - Le tableau de bord contient les titres des contenus (articles et ressources) placés en favoris par l'utilisateur (niveau 2)
+  - Le tableau de bord contient les tags des contenus les plus visités par l'utilisateur (niveau 2)
+- **Gestion du tableau de bord utilisateur**
+  - Un utilisateur (niveau 2) peut supprimer des contenus de son tableau de bord
+  - Un utilisateur (niveau 2) peut ajouter des contenus à son tableau de bord
 
-# Articles 
+### **7. Tableau de bord modérateur**
 
-- Un article est composé d'un titre
-- Un article est composé d'un résumé
-- Un article est composé d'une description
-- Un article peut contenir des liens vers des sources externes
-- Un article contient le pseudo de l'utilisateur ayant écrit l'article
-- Un article contient le nombre de fois qu'il a été placé en favoris 
-- Un article ne peut pas avoir le même titre qu'un autre article
-- Un article peut être relié à un ou plusieurs tags 
+- **Accès**
+  - Le tableau de bord modérateur n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de “modérateur” (niveau3)
+- **Contenus**
+  - Le tableau de bord modérateur contient une partie modération des commentaires
+  - Le tableau de bord modérateur contient une partie modération des articles
+- **Gestion du tableau de bord utilisateur**
+  - Un modérateur peut ajouter une ressource
+  - Un modérateur peut supprimer une ressource
+  - Un modérateur connait les tendances et besoins utilisateur
+  - Un modérateur peut désactiver un utilisateur connecté (avec notification automatique)
+  - Un modérateur peut envoyer une notification à un utilisateur connecté
 
-# Gestion des articles
+### 8. Tableau de bord **pour les statistiques d'engagement**
 
-- Un article ne peut être ajouté que par un compte ayant au minimum le niveau de privilège d'un utilisateur de l'application.
-- Un article ne peut être modéré que par un compte ayant au minimum le niveau de privilège d'un modérateur
-- Un article ne peut être visible qu'après avoir été modéré par un compte ayant le niveau de privilège nécessaire 
-- Un article peut être signalé par tous les lecteurs y compris les visiteurs de l'application
-- Un article peut être noté par d'autres utilisateurs connectés 
-- Un article peut être placé dans les favoris d'un utilisateur connecté par celui-ci
+- **Accès**
+  - Le tableau des statistiques n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de “administrateur” (niveau4)
+- **Tendances et besoins utilisateur**
+  - Le tableau contient les statistiques en fonction du type de contenu
+  - Les tendances contiennent un tableau des tags par nombre de contenus dans l'application, nombre de visiteurs total et nombre d'utilisateurs ayant placé en favoris un contenu de ce tag
+  - Les tendances contiennent un tableau des contenus, du nombre de commentaires reliés aux contenus, du nombre de visiteurs et du nombre de fois placés en favoris
+- **Fonctionnalités du tableau de bord**
+  - Un tableau affiche des statistiques détaillées classées selon le type de contenu
+    - un aperçu des tags les plus populaires mesuré par le nombre total de contenus associés
+    - le nombre de visiteurs
+    - le nombre de fois que les contenus ont été ajoutés aux favoris par les utilisateurs.
+  - Un tableau récapitule pour une vision claire de l'interaction des utilisateurs avec le contenu :
+    - le nombre de commentaires
+    - le nombre de visiteurs
+    - la fréquence à laquelle les contenus sont favorisés
 
-# Les ressources éducatives 
+### **9. Organisation de discussions thématiques**
 
-- Une ressource peut être un Cheat Sheet, une bibliothèque de tutoriel sur les langages de programmation, ...
-- Une ressource peut contenir des liens vers des sites externes (documentation officielle d'un langage de programmation)
-- Une ressource contient un titre 
-- Une ressource contient une description 
-- Une ressource peut contenir du code 
-- Une ressource ne peut pas avoir le même titre qu'une autre ressource 
-- Une ressource peut être reliée à un ou plusieurs tags 
+- **Outil de Planification**
+  - La planification d’une discussion est gérée par Calendly
+- **Conditions de Participation**
+  - Un utilisateur doit avoir un niveau de privilège "Utilisateur connecté" (niveau 2) ou supérieur pour proposer une session d'échange
+- **Association aux Tags**
+  - Une discussion est reliée à un ou plusieurs tags
 
-# Gestion des ressources éducatives 
+### **10. Fonctionnalités de Recherche et Navigation**
 
-- Une ressource peut être placée en favoris par un utilisateur connecté
-- Une ressource doit être ajoutée par un compte ayant au minimum le niveau de privilège d'un modérateur
-- Une ressource peut être commentée par des utilisateurs connectés 
+- **Accessibilité**
+  - Une recherche de contenus peut être effectuée par tous y compris les visiteurs
+- **Critères de Recherche**
+  - le titre du contenu, pour des requêtes directes
+  - les tags associés, afin de filtrer les contenus par sujets ou thématiques spécifiques
+- **Options de Tri des Résultats** :
+  - pertinence par rapport aux termes recherché
+  - date d'ajout, avec une option pour afficher les contenus les plus récents en premier
+  - popularité, mesurée par la fréquence des consultations ou des interactions des utilisateurs
 
-# Les commentaires 
+### **11. Gestion de la modération des utilisateurs**
 
-- Un utilisateur doit être connecté pour pouvoir commenter une ressource ou un article
-- Les ressources et les articles de l'application disposent d'une section commentaire en bas de page 
-
-# Un commentaire
-
-- Un commentaire doit être relié à un contenu (ressource ou article) OU à un commentaire d'un contenu
-- Un commentaire est ajouté par un utilisateur connecté 
-- Un commentaire a une date d'ajout 
-- Un commentaire ne peut pas contenir d'adresse mail  
-- Un commentaire ne peut pas permettre l'exécution de code sur l'application
-
-# Gestion des commentaires
-
-- Chaque commentaire doit être relié à un utilisateur. Son pseudo doit être visible ainsi que la date à laquelle il a ajouté le commentaire 
-- Un utilisateur ne peut pas supprimer ou modifier le commentaire d'un autre utilisateur 
-- Un commentaire peut être signalé y compris par un visiteur 
-- Un commentaire peut être relié à un autre commentaire en tant que réponse 
-
-# Favoris 
-
-- Un utilisateur doit être connecté pour ajouter des contenus en favoris (articles et ressources)
-
-# Modération de contenus
-
-- Cette section ne peut être accessible que par un compte ayant un niveau de privilège au minimum de modérateur
-
-# Tableau de bord utilisateur
-
-- Le tableau de bord n'est accessible que par un utilisateur connecté 
-- Le tableau de bord contient les titres des contenus placés en favoris par l'utilisateur 
-- Le tableau de bord contient les tags des contenus les plus visités par l'utilisateur 
-
-# Gestion du tableau de bord utilisateur
-
-- Un utilisateur peut enlever des contenus de son tableau de bord 
-- Un utilisateur peut ajouter des contenus à son tableau de bord
-
-# Tableau de bord modérateur 
-
-- Le tableau de bord modérateur n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de modérateur 
-- Le tableau de bord modérateur contient une partie modération des commentaires 
-- Le tableau de bord modérateur contient une partie modération des articles
-- Le tableau de bord modérateur contient une partie ajout de ressources
-- le tableau de bord modérateur contient une partie tendance et besoins utilisateur 
-
-# Planifier une discussion sur un thème 
-
-- La planification de la discussion est gérée par Calendly 
-- Un utilisateur doit être connecté pour proposer une session d'échange 
-- Une discussion est reliée à un ou plusieurs tags 
-
-# Recherche de contenus
-
-- Une recherche de contenus peut être effectuée par tous y compris les visiteurs 
-- Les ressources peuvent être recherchées selon le titre du contenu OU les tags auxquelles elles sont reliées
-- La recherche trie les résultats obtenus selon la correspondance de la recherche puis la date d'ajout (du plus récent au plus anciens) sur l'application
-
-# Tendances et besoins utilisateur 
-
-- Le tableau de bord modérateur n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de modérateur 
-- Cette partie contient les statistiques en fonction du type de contenu 
-- Les tendances contiennent un tableau des tags par nombre de contenus dans l'application, nombre de visiteurs total et nombre d'utilisateurs ayant placé en favoris un contenu de ce tag 
-- Les tendances contiennent un tableau des contenus, du nombre de commentaires reliés aux contenus, du nombre de visiteurs et du nombre de fois placés en favoris
-
-# Modération des utilisateurs 
-
-- Un utilisateur peut signaler le commentaire d'un autre utilisateur 
-- Le compte d'un utilisateur en cours de modération est désactivé. Il ne peut plus se connecter à l'application.  
-- Un compte utilisateur peut être désactivé par un compte ayant au moins le niveau de privilège d'un modérateur 
-- Un compte utilisateur peut être supprimé par un compte ayant au moins le niveau de privilège d'un modérateur 
+- **Signalement de Commentaires**
+  - Un utilisateur (niveau 2) peut signaler un commentaire inapproprié ou offensant posté par un autre utilisateur
+- **Suspension de Compte lors de la Modération**
+  - Lorsqu'un compte utilisateur fait l'objet d'une modération suite à un signalement, il est temporairement désactivé, empêchant toute connexion à l'application pendant la durée de l'examen
+- **Désactivation de Compte**
+  - Un compte utilisateur (niveau 2) peut être désactivé par un utilisateur ayant au moins le niveau de privilège “modérateur” en cas de non-respect des règles de la communauté
+- **Suppression de Compte**
+  - Un compte utilisateur (niveau 2) peut être définitivement supprimé par un utilisateur ayant au moins le niveau de privilège “modérateur”, assurant ainsi une gestion stricte et sécurisée des membres de la plateforme
