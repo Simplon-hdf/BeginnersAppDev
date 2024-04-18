@@ -1,9 +1,11 @@
-### **1.** Application
+# Règles de gestion
+
+### <span style="color: green;">**1.** Application</span>
 
 - **Accessibilité**
   - L'application doit être conforme aux normes d'accessibilité WCAG pour garantir l'accessibilité à tous les utilisateurs
 
-### **2. Gestion des Comptes Utilisateurs**
+### <span style="color: green;">**2. Gestion des Comptes Utilisateurs**</span>
 
 - **Création de compte**
   - Un compte utilisateur contient un pseudonyme
@@ -21,7 +23,7 @@
     - 4- Administrateur
     - 5- Super-Administrateur
 
-### **3. Tags et Articles**
+### <span style="color: green;">**3. Tags et Articles**</span>
 
 - **Gestion des Tags**
   - Un tag est contient un intitulé unique (exemple : C#, PHP, IA)
@@ -43,7 +45,7 @@
   - Un article peut être noté par d'autres "Utilisateurs connectés" (niveau 2)
   - Un article peut être placé dans les favoris d'un "Utilisateur connecté" (niveau 2) par celui-ci
 
-### **4. Les ressources éducatives**
+### <span style="color: green;">**4. Les ressources éducatives**</span>
 
 - **Création de Ressources**
   - Une ressource peut être un Cheat Sheet, une bibliothèque de tutoriel sur les langages de programmation, ...
@@ -76,7 +78,7 @@
   - Un commentaire peut être signalé y compris par un visiteur
   - Un commentaire peut être relié à un autre commentaire en tant que réponse
 
-### **5. Modération et sécurité**
+### <span style="color: green;">**5. Modération et sécurité**</span>
 
 - **Notification d'Activités :**
   - Un utilisateur recevra une notification si il y a une activité suspecte sur son compte
@@ -84,7 +86,7 @@
   - Une action critique, telle que la modification des privilèges et la suppression de comptes doit être audité
   - Une action critique, telle que la modification des privilèges et la suppression de comptes doit être journalisé
 
-### **6. Tableau de bord utilisateur**
+### <span style="color: green;">**6. Tableau de bord utilisateur**</span>
 
 - **Accès**
   - Le tableau de bord n'est accessible que par un "Utilisateur connecté" (niveau 2)
@@ -95,7 +97,7 @@
   - Un utilisateur (niveau 2) peut supprimer des contenus de son tableau de bord
   - Un utilisateur (niveau 2) peut ajouter des contenus à son tableau de bord
 
-### **7. Tableau de bord modérateur**
+### <span style="color: green;">**7. Tableau de bord modérateur**</span>
 
 - **Accès**
   - Le tableau de bord modérateur n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de “modérateur” (niveau3)
@@ -109,7 +111,7 @@
   - Un modérateur peut désactiver un utilisateur connecté (avec notification automatique)
   - Un modérateur peut envoyer une notification à un utilisateur connecté
 
-### 8. Tableau de bord **pour les statistiques d'engagement**
+### <span style="color: green;">8. Tableau de bord **pour les statistiques d'engagement**</span>
 
 - **Accès**
   - Le tableau des statistiques n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de “administrateur” (niveau4)
@@ -127,7 +129,7 @@
     - le nombre de visiteurs
     - la fréquence à laquelle les contenus sont favorisés
 
-### **9. Organisation de discussions thématiques**
+### <span style="color: green;">**9. Organisation de discussions thématiques**</span>
 
 - **Outil de Planification**
   - La planification d’une discussion est gérée par Calendly
@@ -136,7 +138,7 @@
 - **Association aux Tags**
   - Une discussion est reliée à un ou plusieurs tags
 
-### **10. Fonctionnalités de Recherche et Navigation**
+### <span style="color: green;">**10. Fonctionnalités de Recherche et Navigation**</span>
 
 - **Accessibilité**
   - Une recherche de contenus peut être effectuée par tous y compris les visiteurs
@@ -148,7 +150,7 @@
   - date d'ajout, avec une option pour afficher les contenus les plus récents en premier
   - popularité, mesurée par la fréquence des consultations ou des interactions des utilisateurs
 
-### **11. Gestion de la modération des utilisateurs**
+### <span style="color: green;">**11. Gestion de la modération des utilisateurs**</span>
 
 - **Signalement de Commentaires**
   - Un utilisateur (niveau 2) peut signaler un commentaire inapproprié ou offensant posté par un autre utilisateur

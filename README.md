@@ -68,7 +68,7 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
     - [ ] MLD
     - [ ] MPD
   - [x] RBAC
-- [ ] **Epic**
+- [x] **Epic**
   - [x] User Story
   - [x] Product backlog (Tâches)
 - [x] **Jira**
