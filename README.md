@@ -10,9 +10,7 @@
 
 ## Project Description
 
-Cette plateforme a pour but de centraliser des infos de manière collaborative autour de langages et de technologies web, favorisant également la veille techno et l’ouverture d’esprit au travers de différents articles liés à ce domaine.
-
-Le but de cette appli n’est pas d’entrer dans le détail du code, mais de centraliser des infos diverses, permettant deux approches, ou deux lectures différentes, destinée à des néophytes ou développeurs juniors => explorer, apprendre, collaborer.
+Ce projet est une plateforme collaborative de gestion de veille techno, orientée dev juniors.
 
 </div>
 
