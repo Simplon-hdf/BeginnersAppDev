@@ -2,14 +2,14 @@
 
 Pour la conception de notre application, nous avons choisi de travailler selon la méthode Agile Scrum pour plusieurs raisons stratégiques et opérationnelles. Ce choix repose sur notre engagement envers les quatre valeurs fondamentales et les douze principes du manifeste pour le développement Agile de logiciels.
 
-### **Les quatre valeurs du développement Agile**
+### <span style="color: green;">**Les quatre valeurs du développement Agile**</span>
 
 1. **Les individus et leurs interactions plus que les processus et les outils** : Nous privilégions la communication et la collaboration au sein de notre équipe, favorisant une approche plus flexible et réactive par rapport à l'adhésion rigide à des processus prédéfinis.
 2. **Des logiciels opérationnels plus qu’une documentation exhaustive** : Notre objectif est de produire des versions fonctionnelles de l'application de manière régulière, ce qui nous permet de recueillir des retours utilisateurs rapidement et d'ajuster notre approche sans être entravés par une documentation trop détaillée.
 3. **La collaboration avec les clients plus que la négociation contractuelle** : En travaillant en étroite collaboration avec nos clients, nous sommes en mesure de comprendre et d'adapter nos produits à leurs besoins réels et changeants plutôt que de nous limiter à des spécifications contractuelles fixes.
 4. **L’adaptation au changement plus que le suivi d’un plan** : Nous sommes prêts à repenser nos stratégies et nos priorités en réponse à l'évolution du marché et des exigences des utilisateurs, ce qui nous donne un avantage compétitif significatif.
 
-### **Les douze principes du développement Agile**
+### <span style="color: green;">**Les douze principes du développement Agile**</span>
 
 1. Satisfaire le client en livrant rapidement et régulièrement des fonctionnalités à grande valeur ajoutée.
 2. Accueillir positivement les changements de besoins, même tard dans le projet.
@@ -26,7 +26,7 @@ Pour la conception de notre application, nous avons choisi de travailler selon l
 
 En adoptant la méthode Agile Scrum, nous nous engageons à créer un environnement où l'innovation, l'adaptabilité et la collaboration sont non seulement encouragées mais aussi essentielles pour réussir dans un marché compétitif et en constante évolution.
 
-### **La Méthode Scrum**
+### <span style="color: green;">**La Méthode Scrum**</span>
 
 La méthode Scrum est une approche itérative et incrémentale de la gestion de projet, particulièrement prisée dans le domaine du développement logiciel. Elle est conçue pour offrir une flexibilité significative et une capacité de réponse rapide aux changements, tout en mettant un accent particulier sur des valeurs telles que la collaboration entre tous les membres de l’équipe, l'auto-organisation, et la transparence.
 
@@ -37,7 +37,7 @@ Chaque rôle a des responsabilités distinctes qui contribuent à l'efficacité 
 - **Scrum Master** : Facilite les processus Scrum, aide à résoudre les obstacles rencontrés par l'équipe, et travaille à assurer que les pratiques Scrum sont suivies.
 - **Équipe de développement** : Groupe de professionnels qui effectue le travail de création du produit, incluant la planification, la conception, le développement, et les tests.
 
-### **La méthode Scrum et ses rituels**
+### <span style="color: green;">**La méthode Scrum et ses rituels**</span>
 
 En intégrant ces rituels, souvent appelés cérémonies, à chaque cycle de Spring, nous structurons et facilitons la planification, l'exécution, l'évaluation et l'amélioration continue dans les cycles de travail successifs.
 
