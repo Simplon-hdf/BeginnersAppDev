@@ -1,3 +1,5 @@
+<img src="../Assets/Images/podium.png" alt="Podium" width="200">
+
 # Comparatif frameworks ORM
 
 Dans le processus de conception et de développement de notre application, le choix des technologies et des outils est une étape cruciale qui impactera directement la qualité, la performance et la maintenabilité de notre produit final.  
@@ -37,6 +39,5 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 |     | Bibliothèque           |         |        |           |
 |     | Magique                |         |        |           |
 |     | Mariage librairies     |         |        |           |
-|     | Prise politique        |         |        |           |
 |     | Payant                 |         |        |           |
 |     | TOTAL                  |         |        |           |

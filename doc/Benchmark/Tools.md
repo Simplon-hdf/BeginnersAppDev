@@ -55,3 +55,13 @@ Dans la conception d'une plateforme web, la sélection des outils de projet et d
 
 - **Jest**
   - Un framework de test populaires pour le JavaScript.
+
+## Outils de navigateur
+
+- **Chrome DevTools**:
+  - Pour le débogage, le profilage et le test des applications web dans le navigateur Chrome.
+
+## Bases de données
+
+- **PostgreSQL**:
+  - Un système de gestion de base de données (SGBD) relationnelles pour stocker et gérer les données.
