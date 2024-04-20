@@ -4,7 +4,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 <img src="../Assets/Images/persona1.png" alt="Persona 1" width="300">
 
-> <span style="color: green;">**Persona 1**</span> : Responsable(s) de la plateforme/administrateurs
+> <span style="color: #26B260;">**Persona 1**</span> : Responsable(s) de la plateforme/administrateurs
 >
 > - **Âge** : Moyenne 30 ans
 > - **Profession** :
@@ -22,7 +22,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 <img src="../Assets/Images/persona2.jpg" alt="Persona 2" width="300">
 
-> <span style="color: green;">**Persona 2**</span> : Alexandra, la Néophyte
+> <span style="color: #26B260;">**Persona 2**</span> : Alexandra, la Néophyte
 >
 > - **Âge** : 22 ans
 > - **Profession** :
@@ -40,7 +40,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 <img src="../Assets/Images/persona3.jpg" alt="Persona 3" width="300">
 
-> <span style="color: green;">**Persona 3**</span> : Sam, le Développeur Junior
+> <span style="color: #26B260;">**Persona 3**</span> : Sam, le Développeur Junior
 >
 > - **Âge** : 27 ans
 > - **Profession** :
@@ -58,7 +58,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 <img src="../Assets/Images/persona4.jpg" alt="Persona 4" width="300">
 
-> <span style="color: green;">**Persona 4**</span>
+> <span style="color: #26B260;">**Persona 4**</span>
 > : Olivier, le Modérateur
 >
 > - **Âge** : 38 ans
@@ -77,7 +77,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 <img src="../Assets/Images/persona5.jpg" alt="Persona 5" width="300">
 
-> <span style="color: green;">**Persona 5**</span> : Emily, la Super Administratrice
+> <span style="color: #26B260;">**Persona 5**</span> : Emily, la Super Administratrice
 >
 > - **Âge** : 45 ans
 > - **Profession** :
