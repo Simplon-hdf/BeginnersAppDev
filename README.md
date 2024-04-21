@@ -37,7 +37,7 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [x] samples
     - [x] tools
     - [x] build
-    - [ ] test
+    - [x] test
   - Fichier
     - [x] LICENCE.md
     - [x] README.md
