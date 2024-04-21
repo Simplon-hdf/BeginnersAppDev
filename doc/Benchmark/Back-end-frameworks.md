@@ -120,4 +120,8 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 </details>
 <br>
 
+**❓ Pourquoi choisir la médaille d'argent :**
+
+✅ Nest.js est un framework moderne, intégré avec TypeScript et optimisé pour les performances I/O dans un environnement JavaScript, NestJS est une option plus adaptée que Spring Boot pour votre projet.
+
 > **En conclusion** Nest.js est choisi pour notre projet non seulement pour ses avantages en termes de coût et de performance mais aussi pour sa flexibilité et son adéquation avec les technologies actuelles et les pratiques de développement modernes. Ces facteurs, combinés à sa capacité à évoluer efficacement selon les besoins du projet, en font une solution plus appropriée pour notre application par rapport à Spring Boot, notamment dans un contexte où la rapidité de développement et l'adaptabilité sont prioritaires.
