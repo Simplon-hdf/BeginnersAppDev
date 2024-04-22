@@ -1,3 +1,5 @@
+<img src="../doc/Assets/Images/Agile-Scrum-methodology.png" alt="Méthode Agile scrum" width="600">
+
 # Méthode de travail
 
 Pour la conception de notre application, nous avons choisi de travailler selon la méthode Agile Scrum pour plusieurs raisons stratégiques et opérationnelles. Ce choix repose sur notre engagement envers les quatre valeurs fondamentales et les douze principes du manifeste pour le développement Agile de logiciels.
