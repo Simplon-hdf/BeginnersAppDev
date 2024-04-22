@@ -1,11 +1,13 @@
+
 <img src="./Assets/Images/Role-Based-Access-Control.png" alt="RBAC">
+
 
 
 
 Ce tableau aligne les permissions et les actions possibles pour chaque rôle selon les exigences et les scénarios d'utilisation détaillés dans nos User Stories. Il est conçu pour faciliter la compréhension des responsabilités et des capacités de chaque rôle au sein de la plateforme, assurant ainsi que les objectifs de gestion des utilisateurs, de modération des contenus et d'engagement des utilisateurs sont atteints efficacement.
 
-
 ### Vue d'ensemble :
+
 
 
 | Autorisations / Rôle                                    | Visiteur | Utilisateur | Modérateur | Administrateur | Super Administrateur |
@@ -35,6 +37,7 @@ Ce tableau aligne les permissions et les actions possibles pour chaque rôle sel
 <details>
 <summary>Cliquez pour voir les autorisations détaillées de chaque rôle (Cliquez pour développer)</summary>
 
+
 | Autorisations / Rôle                                           | Visiteur                                              | Utilisateur                                                 | Modérateur                                           | Administrateur                                               | Super Administrateur                            |
 |----------------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|
 | Gestion de l'authentification et accès à contenu personnalisé  | Créer son propre compte                               | Créer, modifier, supprimer son propre compte                 | Modifier son propre compte          | Créer, modifier, supprimer des comptes utilisateurs et modérateurs             | Créer, modifier, supprimer des comptes administrateurs  |
@@ -60,7 +63,8 @@ Ce tableau aligne les permissions et les actions possibles pour chaque rôle sel
 | Attribuer/modifier des rôles                                  |                                                       |                                                           |                                                           | Attribuer/modifier des rôles                                    |                                                  |
 | Créer un administrateur                                       |                                                       |                                                           |                                                           | Créer des comptes administrateurs                               | Créer, modifier, supprimer des comptes administrateurs |
 | Modifier un administrateur                                    |                                                       |                                                           |                                                           | Modifier des comptes administrateurs                             | Créer, modifier, supprimer des comptes administrateurs |
-| Supprimer un administrateur                                   |                                                       |                                                           |                                                           | Supprimer des comptes administrateurs                            | Créer, modifier, supprimer des comptes administrateurs |
+| Supprimer un administrateur                                   |                                                       |                                                           |                                                           | Supprimer des comptes administrateurs                            | Créer, modifier, supprimer des comptes administrate0urs |
+
 
 </details>
 

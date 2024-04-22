@@ -1,4 +1,4 @@
-### Les personas
+# Les personas
 
 Ces personas vont nous guider lors de l'élaboration des user stories en mettant l'accent sur les besoins, objectifs et défis spécifiques de chaque type d'utilisateur.
 
