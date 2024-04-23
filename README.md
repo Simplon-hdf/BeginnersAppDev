@@ -36,6 +36,7 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [x] res
     - [x] samples
     - [x] tools
+    - [x] Assets
     - [x] build
     - [x] test
   - Fichier
@@ -54,7 +55,14 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
   - [ ] Présentation (PowerPoint)
   - [ ] Mail de suivie / Proposition stratégique
 - [ ] **Benchmark (Analyse de la concurence)**
-- [ ] **Spécification fonctionnelle**
+  - [ ] Concurrence
+- [ ] **Benchmark (Analyse des technologies)**
+  - [x] Back-end frameworks
+  - [x] Front-end frameworks
+  - [x] Questions globales
+  - [x] ORM
+  - [x] Outils
+- [ ] **Spécifications fonctionnelles**
   - [x] Règle de gestion
   - [ ] UML
     - [ ] Diagramme d'activité
@@ -65,7 +73,11 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [ ] MCD
     - [ ] MLD
     - [ ] MPD
+- [x] **Spécifications techniques** 
+  - [x] API
+  - [x] Methodology
   - [x] RBAC
+  - [x] Stratégie de sécurisation
 - [x] **Epic**
   - [x] User Story
   - [x] Product backlog (Tâches)
@@ -76,6 +88,9 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
   - [x] Stand up meeting
   - [x] Sprint retrospective
   - [x] Sprint Review
+
+- [ ] **Cahier des charges**
+- [ ] **Charte graphique**
 
 - [ ] **Démarrer les sprints**
 

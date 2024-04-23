@@ -156,4 +156,4 @@ Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD
 
 - **Politique de Confidentialité** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
 
-En adoptant une approche proactive en matière de sécurité et en mettant en œuvre des mesures appropriées, [Nom de l'Application de Partage de Veille Technologique] s'efforcera de fournir à ses utilisateurs un environnement sûr et fiable pour leur veille technologique.
+En adoptant une approche proactive en matière de sécurité et en mettant en œuvre des mesures appropriées, notre application s'efforcera de fournir à ses utilisateurs un environnement sûr et fiable pour leur veille technologique.
