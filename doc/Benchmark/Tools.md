@@ -49,9 +49,9 @@ Dans la conception d'une plateforme web, la sélection des outils de projet et d
 **Gestion des dépendances** :
 
 - **npm (Node Package Manager)**
-
   - Pour l'installation et la gestion des dépendances dans les projets Node.js.
-    **Tests et Déploiement** :
+
+**Tests et Déploiement** :
 
 - **Jest**
   - Un framework de test populaires pour le JavaScript.

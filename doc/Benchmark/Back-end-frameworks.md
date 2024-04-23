@@ -4,7 +4,7 @@
 
 Dans le processus de conception et de développement de notre application, le choix des technologies et des outils est une étape cruciale qui impactera directement la qualité, la performance et la maintenabilité de notre produit final.  
 Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles.  
-Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le frameworks le mieux adapté à nos besoins spécifiques.
+Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le framework le mieux adapté à nos besoins spécifiques.
 | Catégorie | 🥈 NestJS | 🥉 Express | 🥇 SpringBoot | Next.js |
 | --- | --- | --- | --- | --- |
 | Big ou small | 3 | 3 | 3 | 2 |
