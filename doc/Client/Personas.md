@@ -4,19 +4,19 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 <img src="../Assets/Images/persona1.png" alt="Persona 1" width="300">
 
-> <span style="color: #26B260;">**Persona 1**</span> : Responsable(s) de la plateforme/administrateurs
+> <span style="color: #26B260;">**Persona 1**</span> : Responsable(s) de la plateforme/administrateur(s)
 >
 > - **Âge** : Moyenne 30 ans
 > - **Profession** :
->   > Concepteurs développeurs d’applications
+>   > Concepteur développeur d’applications
 > - **Expérience technologique** :
->   > Possèdent une expérience dans le développement d'applications web et mobiles, avec une connaissance des langages de programmation modernes, des frameworks, et des outils de collaboration en ligne. Ils ont également une bonne maîtrise des pratiques de veille technologique et de gestion de projet agile.
+>   > Possède une expérience dans le développement d'applications web et mobiles, avec une connaissance des langages de programmation modernes, des frameworks, et des outils de collaboration en ligne. Il a également une bonne maîtrise des pratiques de veille technologique et de gestion de projet agile.
 > - **Objectifs** :
 >   > Créer une plateforme collaborative qui centralise les informations sur les technologies web et les langages de programmation de manière accessible et organisée. Orientée veille techno (active et passive)Favoriser un environnement d'apprentissage et de partage pour les développeurs de niveau débutant à développeurs juniors.
 > - **Besoins** :
 >   > Outils de gestion de contenu flexibles et efficaces pour organiser, filtrer et présenter les informations et les ressources de manière intuitive. Mécanismes de feedback et d’interaction communautaire pour encourager la participation des utilisateurs et le partage de connaissances.
 > - **Défis** :
->   > Assurer l'actualité et la pertinence des contenus partagés sur la plateforme tout en gardant le site accessible aux débutants. Encourager une communauté vivante et participative, même si les utilisateurs ont des compétences et des centres d'intérêt très différents. Trouver un équilibre entre le temps et les moyens à consacrer pour améliorer le site et le besoin de rester à jour avec les nouvelles technologies dans leur métier.
+>   > Assurer l'actualité et la pertinence des contenus partagés sur la plateforme tout en gardant le site accessible aux débutants. Encourager une communauté vivante et participative, même si les utilisateurs ont des compétences et des centres d'intérêt très différents. Trouver un équilibre entre le temps et les moyens à consacrer pour améliorer le site et le besoin de rester à jour avec les nouvelles technologies dans son métier.
 
 ---
 

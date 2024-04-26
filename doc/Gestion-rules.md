@@ -3,7 +3,7 @@
 ### <span style="color: #26B260;">**1.** Application</span>
 
 - **Accessibilité**
-  - L'application doit être conforme aux normes d'accessibilité WCAG pour garantir l'accessibilité à tous les utilisateurs
+  - L'application doit être conforme aux normes d'accessibilité WCAG pour garantir l'accessibilité à tous les utilisateurs.
 
 ### <span style="color: #26B260;">**2. Gestion des Comptes Utilisateurs**</span>
 

@@ -4,7 +4,7 @@
 
 Dans le processus de conception et de développement de notre application, le choix des technologies et des outils est une étape cruciale qui impactera directement la qualité, la performance et la maintenabilité de notre produit final.  
 Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles.  
-Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le frameworks le mieux adapté à nos besoins spécifiques.
+Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le framework le mieux adapté à nos besoins spécifiques.
 | Catégorie | 🥉 Sequelize | 🥇 Prisma | 🥈 TypeORM |
 |--------------------------|-----------|--------|---------|
 | Big ou small | 1 | 3 | 3 |
@@ -117,7 +117,7 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 
 **❓ Pourquoi choisir la médaille d'argent :**
 
-✅ TypeORM est un choix judicieux par rapport à Prisma, surtout si on valorise une intégration poussée avec TypeScript, une flexibilité accrue dans la gestion des requêtes SQL, et une compatibilité étendue avec divers systèmes de bases de données. Sa gestion avancée des relations et sa communauté bien établie en font une solution fiable pour les applications complexes. De plus, sa maturité et sa stabilité éprouvées assurent une base solide pour le développement d'applications d'entreprise critiques. Ces atouts rendent TypeORM particulièrement adapté pour des projets nécessitant un contrôle précis et une adaptabilité élevée.
+✅ TypeORM est un choix judicieux par rapport à Prisma, surtout si on valorise une intégration poussée avec TypeScript, une flexibilité accrue dans la gestion des requêtes SQL, et une compatibilité étendue avec divers systèmes de bases de données. Sa gestion avancée des relations et sa communauté bien établie en font une solution fiable pour les applications complexes. De plus, sa maturité et sa stabilité éprouvées assurent une base solide pour le développement d'applications d'entreprise critiques. Ces atouts rendent TypeORM particulièrement adapté pour notre projet nécessitant un contrôle précis et une adaptabilité élevée.
 
 > **En conclusion** TypeORM est le choix idéal d'ORM pour ses capacités supérieures à gérer des bases de données complexes et pour sa compatibilité native avec TypeScript, qui améliore significativement la qualité et la maintenabilité du code. Il allie haute performance, intégration technique approfondie, et un support robuste, rendant TypeORM particulièrement bien adapté pour le développement d'applications robustes et évolutives.
 >

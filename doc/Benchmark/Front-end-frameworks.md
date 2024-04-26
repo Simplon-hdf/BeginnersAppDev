@@ -4,7 +4,7 @@
 
 Dans le processus de conception et de développement de notre application, le choix des technologies et des outils est une étape cruciale qui impactera directement la qualité, la performance et la maintenabilité de notre produit final.  
 Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles.  
-Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le frameworks le mieux adapté à nos besoins spécifiques.
+Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le framework le mieux adapté à nos besoins spécifiques.
 | Catégorie | Vue.js | 🥉 Angular | 🥈 React | 🥇 Next.js |
 | --- | --- | --- | --- | --- |
 | Big ou small | 3 | 2 | 3 | 3 |
@@ -60,7 +60,7 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 
 - **Vue.js** : Très rapide pour les mises à jour du DOM, idéal pour les applications interactives et dynamiques. TypeScript n'affecte pas directement la performance à l'exécution mais améliore le développement.
 - **Angular** : Bonnes performances, surtout avec les améliorations apportées par les versions récentes, mais peut être plus lourd à charger initialement. TypeScript est utilisé nativement, contribuant à optimiser la gestion du code.
-- **React** : Excellentes performances, notamment avec les techniques de lazy loading et memoization. TypeScript ajoute une surcouche de sécurité type sans impacter les performances.
+- **React** : Excellentes performances, notamment avec les techniques de lazy loading et memoïsation. TypeScript ajoute une surcouche de sécurité type sans impacter les performances.
 - **Next.js** : Performances optimisées pour le chargement initial grâce au SSR et au Static Generation, particulièrement efficace pour améliorer l'expérience utilisateur sur des applications web complexes. TypeScript améliore la qualité du code.
 
 ### **Popularité**

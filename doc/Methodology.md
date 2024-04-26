@@ -1,4 +1,4 @@
-<img src="../doc/Assets/Images/Agile-Scrum-methodology.png" alt="Méthode Agile scrum" width="600">
+<img src="../doc/Assets/Images/Agile-Scrum-methodology.png" alt="Méthode Agile scrum" width="400">
 
 # Méthode de travail
 

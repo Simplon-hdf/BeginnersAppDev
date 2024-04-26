@@ -13,16 +13,14 @@ Notre application traitera des données sensibles telles que les profils d'utili
 Les principales menaces identifiées pour notre application incluent :
 
 - **Injection de Script Côté Client (XSS)** : Cette vulnérabilité peut permettre à des attaquants d'injecter du code malveillant dans les pages web, compromettant ainsi la sécurité des utilisateurs et la confidentialité de leurs données.
-  
 - **Attaque par Forgery de Requêtes Inter-Sites (CSRF)** : Les attaquants pourraient manipuler les actions des utilisateurs authentifiés sur la plateforme, compromettant ainsi l'intégrité des données et les transactions.
-  
 - **Injection SQL (SQLi)** : Les failles dans la gestion des bases de données pourraient permettre aux attaquants d'accéder, de modifier ou de supprimer des données sensibles, constituant ainsi une menace sérieuse pour la sécurité et l'intégrité des données des utilisateurs.
 
 ## Recommandations de l'ANSII (Agence Nationale de la Sécurité des Systèmes d'Information)
 
 Nous nous engageons à suivre les recommandations de l'ANSII pour garantir la sécurité de notre application. L'ANSII, en tant qu'autorité nationale en matière de cybersécurité, fournit des lignes directrices et des bonnes pratiques essentielles pour protéger les systèmes d'information contre les menaces et les attaques. En adhérant aux normes et aux principes recommandés par l'ANSII, nous renforçons la résilience de notre application et nous nous assurons de maintenir un niveau de sécurité élevé pour nos utilisateurs.
 
-Voici les recommendations que nous comptons suivre:
+Voici les recommandations que nous comptons suivre:
 
 <details>
 <summary>Recommandations Web (✅)</summary>
@@ -84,7 +82,6 @@ Voici les recommendations que nous comptons suivre:
 - R41 Utiliser un facteur inhérent uniquement associé à un facteur d’authentification fort
 - R42 Favoriser une rencontre en présence lors de l’enregistrement d’un facteur inhérent
 </details>
-
 
 ## Proposition de Stratégie de Sécurisation
 
@@ -157,3 +154,4 @@ Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD
 - **Politique de Confidentialité** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
 
 En adoptant une approche proactive en matière de sécurité et en mettant en œuvre des mesures appropriées, notre apllication s'efforcera de fournir à ses utilisateurs un environnement sûr et fiable pour leur veille technologique.
+
