@@ -127,6 +127,85 @@ Nous utiliserons SRI pour garantir l'intégrité des ressources chargées depuis
 
 Nous adopterons une politique de mots de passe stricte qui inclura des exigences de complexité, de longueur minimale et de vérification approfondie des critères. Les mots de passe seront stockés de manière sécurisée en utilisant le hashage SHA256 avec salage pour prévenir les attaques par force brute et assurer la confidentialité des informations des utilisateurs.
 
+•	**Catégories de Mots de Passe**  : 
+Les super administrateurs et les administrateurs bénéficient d’un accès complet, nécessitant le plus haut niveau de sécurité. 
+Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités standards de l’application, y compris la gestion des commentaires et auront un niveau de sécurité moindre.
+
+•      **Longueur des Mots de Passe :**
+
+La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
+
+	. Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
+
+	. Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
+
+	. La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
+
+•	**Règles de Complexité** : 
+Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.
+
+•	**Délai d’Expiration des Mots de Passe**
+
+La fréquence de renouvellement des mots de passe est adaptée au rôle :
+
+	. **30 jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
+
+	. Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation.
+
+•	**Mécanismes de Limitation d’Essais d’Authentification**
+
+Nous limiterons les tentatives de connexion infructueuses à trois, après quoi le compte est verrouillé temporairement pour 30 minutes. Cette mesure est accompagnée de systèmes de notification pour alerter les utilisateurs d’activités suspectes.
+
+•	**Méthode de Conservation des Mots de Passe**
+
+Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **Bcrypt** avec salage, assurant que chaque mot de passe est unique et protégé contre les attaques.
+
+•	**Méthode de Recouvrement d’Accès**
+
+En cas de perte ou de vol des mots de passe, nous fournissons un mot de passe temporaire par email avec un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
+
+-Gestion des sessions et l’authentification
+
+Dans notre approche de gestion des sessions et de l'authentification, nous implémentons des
+mesures strictes pour renforcer la sécurité des comptes utilisateur et la protection des
+données :
+
+• Tokens et JWT : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des
+identifiants uniques et des données codées, permettant une gestion stateless qui augmente la
+scalabilité et la performance.
+
+• Politique des Mots de Passe : Nous imposons une complexité et une longueur minimale
+pour les mots de passe, et utilisons le hachage SHA-256 avec salage pour renforcer la
+sécurité. Après trois tentatives de connexion infructueuses, un blocage temporaire est
+appliqué pour prévenir les attaques par force brute. De plus, nous mettons en place des
+systèmes de notification pour alerter les utilisateurs d'activités suspectes sur leur compte.
+
+• Durée de Validité des Sessions : Nous définissons une durée de validité de 2 semaines pour
+les sessions, afin de réduire le risque d'accès non autorisé, nécessitant une nouvelle
+authentification après une période d'inactivité déterminée.
+
+-Sécurisation des APIs
+
+Pour renforcer la sécurité de nos APIs, nous déployons des stratégies spécifiques qui
+complètent les protocoles de communication sécurisés et la gestion des sessions/
+authentification décrits précédemment :
+
+• OAuth 2.0 et JWT : Bien que mentionnés dans la gestion des sessions, leur application aux
+APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des
+autorisations, adaptée aux interactions entre services.
+
+• Validation et Sanitization : Spécifiquement pour nos APIs, chaque requête est scrutée pour
+en valider et assainir le contenu, ciblant efficacement les tentatives d'injections SQL et XSS
+propres aux interfaces de programmation.
+
+• Limitation du Taux de Requêtes : Cette mesure aide à prévenir les abus et les attaques par
+déni de service (DoS) en imposant un contrôle strict sur le nombre de requêtes acceptées.
+
+• Sécurité Renforcée des Données : Au-delà du cryptage général, des mesures de sécurité des
+données spécifiques aux APIs, telles que des politiques de gestion renforcées des tokens et
+des sessions, sont mises en œuvre pour contrer les risques d'intrusion et de fuite
+d'informations.
+
 ### Gestion des Identités Utilisateurs avec les UUID
 
 Nous utiliserons des UUID (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé.
@@ -134,6 +213,7 @@ Nous utiliserons des UUID (Universally Unique IDentifiers) pour renforcer la sé
 ### Stratégie de Sauvegarde
 
 Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les données de l'application contre les incidents tels que les pannes, les erreurs ou les attaques. Des sauvegardes régulières des données seront effectuées pour garantir la disponibilité et l'intégrité des informations des utilisateurs en cas de problème.
+
 
 ### RGPD (Règlement général sur la protection des données)
 
@@ -144,6 +224,15 @@ Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD
 - **Minimisation des Données** : Seules les informations indispensables seront collectées pour la réservation.
 
 - **Droits des Utilisateurs** : Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment.
+
+- **Gestion des rôles** : Mise en place d’un RBAC (Role Based Access Control)
+Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'ils occupent. Définir les rôles est fondamental pour respecter le principe du moindre privilège, qui
+vise à limiter les privilèges des utilisateurs uniquement à ce dont ils ont besoin pour accomplir leurs
+tâches. Ici nous avons défini rôles:
+        - Super-admin
+        - Admin
+        - Modérateur
+        - Utilisateur
 
 - **Sécurité** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.
 
