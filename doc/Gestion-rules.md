@@ -1,5 +1,3 @@
-# Règles de gestion
-
 ## Application
 
 ### Accessibilité
@@ -8,11 +6,11 @@
 ## Utilisateurs
 
 ### Visiteur
-- Un visiteur peut s’enregistrer pour devenir utilisateurs authentifié avec un pseudonyme, un email et un mot de passe et un état actif par défaut
+- Un visiteur peut s’enregistrer pour devenir membre avec un pseudonyme, un email et un mot de passe et un état actif par défaut
 - Un visiteur peut télécharger une ressource
 - Un visiteur peut lire les ressources présentes sur la plateforme
-- Un visiteur peut parcourir les différentes catégories de contenu
-- Un visiteur peut utiliser la fonction de recherche pour trouver des articles, posts, et tutoriels
+- Un  visiteur peut parcourir les différentes catégories de contenu
+- Un visiteur peut utiliser la fonction de recherche pour trouver des ressources
 
 ### Membres
 - Un membre peut soumettre à publication une ressource
@@ -38,6 +36,8 @@
 - Un membre peut suivre d’autres utilisateurs pour voir leurs activités et publications
 - Un membre peut proposer et participer à des discussions de groupe ou forums
 - Un membre peut configurer des alertes sur ses tags préférés
+- Un membre peut proposer une session d’échange
+- Un membre peut voir une session d’échange proposée par un autre membre
 
 ### Modérateur
 - Un modérateur a tous les droits d’un membre
@@ -86,10 +86,11 @@
 - Un utilisateur peut faire une demande de désactivation de son compte
 - Un utilisateur peut réinitialiser son mot de passe si il l’a oublié via un email ou une question de sécurité.
 
-## Tags 
+## Tags
+
 - Un tag contient un intitule unique (exemple : C#, PHP, IA)
 
-## Commun à toutes les Ressources
+## Commun à toutes les Ressources 
 - Un ressource est composé d'un titre unique
 - Un ressource est composé d'une description
 - Un ressource a une date de publication
@@ -120,10 +121,3 @@
 - Un commentaire a une date de modification
 - Un commentaire ne doit pas contenir d’adresse mail
 - Un commentaire a le pseudo de son auteur
-
-## Session d’échange
-- Une session d’échange a un titre unique
-- Une session d’échange a une description
-- Une session d’échange est organisée par un membre
-- Une session d’échange a une date et une heure
-- Une session d’échange est reliée à un ou plusieurs tags
