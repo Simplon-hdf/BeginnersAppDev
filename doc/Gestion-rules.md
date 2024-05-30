@@ -36,8 +36,8 @@
 - Un membre peut recevoir des notifications pour les nouveaux contenus correspondant à ses intérêts
 - Un membre peut signaler du contenu inapproprié aux modérateurs
 - Un membre peut suivre d’autres utilisateurs pour voir leurs activités et publications
-- Un membre peut proposer et participer à des discussions de groupe ou forums
-- Un membre peut configurer des alertes sur ses tags préférés
+- Un membre peut proposer une session d’échange via Calendly
+- Un membre peut voir une session d’échange proposée par un autre membre
 
 ### Modérateur
 - Un modérateur a tous les droits d’un membre
@@ -120,10 +120,3 @@
 - Un commentaire a une date de modification
 - Un commentaire ne doit pas contenir d’adresse mail
 - Un commentaire a le pseudo de son auteur
-
-## Session d’échange
-- Une session d’échange a un titre unique
-- Une session d’échange a une description
-- Une session d’échange est organisée par un membre
-- Une session d’échange a une date et une heure
-- Une session d’échange est reliée à un ou plusieurs tags
