@@ -1,9 +1,11 @@
-### Contexte du projet
+<img src="../Assets/Images/platform-image.png" alt="Image de la plateforme" width="600">
+
+# Contexte du projet
 
 Dans un contexte de transformation digitale rapide et continue, la veille technologique devient un pilier essentiel pour les professionnels IT, notamment les développeurs juniors.
 Une plateforme collaborative peut grandement faciliter l'accès à des informations actualisées, tout en offrant un espace pour le partage de connaissances et la collaboration. Cette plateforme enrichit également l'expérience utilisateur en intégrant des espaces dédiés à la communauté et à la collaboration, ainsi qu'à des contenus éducatifs et ressources, permettant ainsi aux utilisateurs non seulement de se tenir informés, mais aussi de participer activement à une communauté d'apprentissage et d'échanges.
 
-#### Composition de l'équipe en charge du projet
+## Composition de l'équipe en charge du projet
 
 Notre équipe, constituée de trois personnes, travaille en méthode Agile (Scrum) et utilise l'outil Jira et Confluence pour l'organisation et le suivi du projet.
 
@@ -13,12 +15,12 @@ Notre équipe, constituée de trois personnes, travaille en méthode Agile (Scru
 | Pascal Minatchy | Tech Lead, Développeur      | Pascal dirige l'aspect technique du projet, s'assure de l'adéquation des solutions technologiques avec les besoins du produit et guide l'équipe de développement dans la mise en œuvre des solutions. Il contribue aussi directement au développement (code). |
 | Thomas Legrand  | Scrum Master, Développeur   | Thomas facilite tous les processus Scrum, aide à résoudre les blocages, assure que les méthodologies Agile sont suivies et participe également au développement (code).                                                                                       |
 
-### Les enjeux
+## Les enjeux
 
-Les développeurs, souvent en début de carrière, se trouvent confrontés à un paysage technologique en constante évolution. Ils ont besoin d'un outil leur permettant non seulement de se tenir informés des dernières technologies, mais aussi de comprendre et d'interagir avec ces informations de manière efficace.
+Les développeurs, souvent en début de carrière, se trouvent confronté à un paysage technologique en constante évolution. Ils ont besoin d'un outil leur permettant non seulement de se tenir informés des dernières technologies, mais aussi de comprendre et d'interagir avec ces informations de manière efficace.
 Cette plateforme se doit d'être intuitive, informative et engageante, adaptée à leurs besoins spécifiques de formation continue. Elle doit également faciliter l'accès à des ressources pédagogiques variées telles que des tutoriels, des comparatifs de technologies, et des guides pratiques, tout en offrant des outils de collaboration comme des forums, des commentaires et des espaces de discussion, permettant ainsi de créer une véritable communauté autour du partage de connaissances et du soutien mutuel.
 
-### Les Problèmatiques
+## Les Problèmatiques
 
 Ce tableau permet d'organiser clairement les éléments à prendre en compte lors de la conception de la plateforme, en mettant en évidence les défis spécifiques et les solutions appropriées pour répondre efficacement aux besoins des utilisateurs, particulièrement les développeurs juniors.
 | Problématique | Problèmes | Solutions |

@@ -4,21 +4,19 @@
 ![GitHub issues](https://img.shields.io/github/issues/Simplon-hdf/structure-projet?style=for-the-badge)
 ![GitHub license](https://img.shields.io/github/license/Simplon-hdf/structure-projet?style=for-the-badge)
 
-<h1 align="center">Beginners App Dev</h1>
+<h1 align="center">Plateforme communautaire de veille technologique</h1>
 
 <div align="center">
 
-## Project Description
+## Description du Projet
 
-Cette plateforme a pour but de centraliser des infos de manière collaborative autour de langages et de technologies web, favorisant également la veille techno et l’ouverture d’esprit au travers de différents articles liés à ce domaine.
-
-Le but de cette appli n’est pas d’entrer dans le détail du code, mais de centraliser des infos diverses, permettant deux approches, ou deux lectures différentes, destinée à des néophytes ou développeurs juniors => explorer, apprendre, collaborer.
+Ce projet est une plateforme collaborative de gestion de veille techno, orientée dev juniors.
 
 </div>
 
-## About The Project
+## À Propos du Projet
 
-### Built With
+### Construit Avec
 
 - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 - ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
@@ -37,9 +35,10 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
     - [x] doc
     - [x] res
     - [x] samples
-    - [x] tools
+    - [x] outils
+    - [x] Assets
     - [x] build
-    - [ ] test
+    - [x] test
   - Fichier
     - [x] LICENCE.md
     - [x] README.md
@@ -55,8 +54,15 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
   - [x] Persona
   - [ ] Présentation (PowerPoint)
   - [ ] Mail de suivie / Proposition stratégique
-- [ ] **Benchmark (Analyse de la concurence)**
-- [ ] **Spécification fonctionnelle**
+- [ ] **Analyse de la concurence**
+  - [ ] Concurrence
+- [ ] **Analyse des technologies**
+  - [x] Back-end frameworks
+  - [x] Front-end frameworks
+  - [x] Questions globales
+  - [x] ORM
+  - [x] Outils
+- [ ] **Spécifications fonctionnelles**
   - [x] Règle de gestion
   - [ ] UML
     - [ ] Diagramme d'activité
@@ -67,26 +73,33 @@ Le but de cette appli n’est pas d’entrer dans le détail du code, mais de ce
     - [ ] MCD
     - [ ] MLD
     - [ ] MPD
+- [x] **Spécifications techniques** 
+  - [x] API
+  - [x] Méthodologie
   - [x] RBAC
-- [ ] **Epic**
+  - [x] Stratégie de sécurisation
+- [x] **Epic**
   - [x] User Story
   - [x] Product backlog (Tâches)
 - [x] **Jira**
 - [x] **Rituels agiles**
 
-  - [x] Sprint planning meeting
-  - [x] Stand up meeting
-  - [x] Sprint retrospective
-  - [x] Sprint Review
+  - [x] Réunion de planification de sprint
+  - [x] Réunion 'debout'
+  - [x] Réunion 'rétrospective'
+  - [x] Revue de sprint
+
+- [ ] **Cahier des charges**
+- [ ] **Charte graphique**
 
 - [ ] **Démarrer les sprints**
 
 </details>
 
-## Author
+## Auteure/Auteur
 
 ## License
 
-Distributed under the MIT License. `LICENSE` See for more information.
+Distribué sous licence MIT. `LICENCE` Voir pour plus d'informations.
 
 ## Ressource
