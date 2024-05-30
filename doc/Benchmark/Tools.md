@@ -40,7 +40,7 @@ Dans la conception d'une plateforme web, la sélection des outils de projet et d
   - **Tailwind**:
     - Un framework CSS pour la création de mises en page réactives et d'interfaces utilisateur attrayantes.
 - **Backend** :
-  - **Next.js**
+  - **Nest.js**
     - Une plateforme JavaScript côté serveur, permettant un développement rapide et basé sur des événements.
 - **ORM** :
   - **TypeORM**
@@ -49,9 +49,9 @@ Dans la conception d'une plateforme web, la sélection des outils de projet et d
 **Gestion des dépendances** :
 
 - **npm (Node Package Manager)**
-  - Pour l'installation et la gestion des dépendances dans les projets Node.js.
 
-**Tests et Déploiement** :
+  - Pour l'installation et la gestion des dépendances dans les projets Node.js.
+    **Tests et Déploiement** :
 
 - **Jest**
   - Un framework de test populaires pour le JavaScript.
