@@ -1,162 +1,142 @@
-# Règles de gestion
 
-### <span style="color: #26B260;">**1.** Application</span>
+## Utilisateurs
 
-- **Accessibilité**
-  - L'application doit être conforme aux normes d'accessibilité WCAG pour garantir l'accessibilité à tous les utilisateurs.
+### Visiteur
+- un visiteur peut s’enregistrer pour devenir utilisateurs authentifié avec un pseudonyme, un email et un mot de passe et un état actif ou non
+- un visiteur ne peut pas laisser de commentaire
+- un visiteur ne peut pas déposer des ressources
+- un visiteur peut télécharger un cheat sheet
+- un visiteur peut lire les ressources présentes sur la plateforme
+- un visiteur peut signaler du contenu inapproprié aux modérateurs
+- un  visiteur peut parcourir les différentes catégories de contenu
+- un visiteur peut utiliser la fonction de recherche pour trouver des articles, posts, et tutoriels
 
-### <span style="color: #26B260;">**2. Gestion des Comptes Utilisateurs**</span>
+### Utilisateurs authentifiés
 
-- **Création de compte**
-  - Un compte utilisateur contient un pseudonyme
-  - Un compte utilisateur contient une adresse mail
-  - Un compte utilisateur contient un mot de passe sécurisé
-  - Un compte utilisateur contient un niveau de privilège "Utilisateur connecté" (niveau 2) lors de la création de celui-ci
-- **Sécurité des Mots de Passe**
-  - Un mot de passe doit être haché et salé avant stockage.
-- **Modification de Privilèges**
-  - Seul un utilisateur avec un niveau de privilège "Administrateur" (niveau 4) ou “Super-administrateur” (niveau 5) peut modifier les niveaux de privilège d'autres comptes.
-  - Les niveaux de privilèges :
-    - 1- Visiteur
-    - 2- Utilisateur connecté
-    - 3- Modérateur
-    - 4- Administrateur
-    - 5- Super-Administrateur
+- un utilisateur authentifié peut soumettre à publication un article/post/tutoriel
+- un utilisateur authentifié peut soumettre à publication un lien d’un article/post/tutoriel
+- un utilisateur authentifié peut déposer un ou des commentaires à une publication
+- un utilisateur authentifié peut modifier son commentaire si aucun autre commentaire n’a été ajouté en réponse à celui-ci
+- un utilisateur authentifié peut répondre à un ou des commentaires
+- un utilisateur authentifié peut ajouter une note à une ressource (notation en étoile sur /5 )
+- un utilisateur authentifié peut modifier sa note à une ressource (notation en étoile sur /5 )
+- un utilisateur authentifié peut supprimer sa note à une ressource (notation en étoile sur /5 )
+- un utilisateur authentifié peut télécharger un document (type sheat sheet)
+- un utilisateur authentifié peut visualiser une vidéo (tutoriel, conférence…)
+- un utilisateur authentifié a un dashboard où il visualise son historique de navigation
+- un utilisateur authentifié a un dashboard où il visualise ses commentaires
+- un utilisateur authentifié a un dashboard où il visualise ses favoris (articles, tutoriels, tags…)
+- un utilisateur authentifié a un dashboard où il visualise les statistiques de ses publications (nombre de vues, commentaires, partages, etc.)
+- un utilisateur authentifié peut ajouter des contenus (articles et ressources) en favori à son dashboard
+- un utilisateur authentifié peut supprimer des contenus (articles et ressources) en favori à son dashboard
+- un utilisateur authentifié peut lister les tags des contenus les plus visités
+- un utilisateur authentifié peut filtrer les tags des contenus les plus visités
+- un utilisateur authentifié peut recevoir des notifications pour les nouveaux contenus correspondant à ses intérêts
+- un utilisateur authentifié peut signaler du contenu inapproprié aux modérateurs
+- un utilisateur authentifié peut suivre d’autres utilisateurs pour voir leurs activités et publications
+- un utilisateur authentifié peut créer et gérer des playlists de vidéos et tutoriels
+- un utilisateur authentifié peut proposer et participer à des discussions de groupe ou forums
+- un utilisateur authentifié peut configurer des alertes personnalisées pour les nouveaux articles ou posts dans des catégories spécifiques (tag)
 
-### <span style="color: #26B260;">**3. Tags et Articles**</span>
+### Modérateur
 
-- **Gestion des Tags**
-  - Un tag est contient un intitulé unique (exemple : C#, PHP, IA)
-- **Création et Modération d'Articles**
-  - Un article est composé d'un titre
-  - Un article est composé d'un résumé
-  - Un article est composé d'une description
-  - Un article contient une date de publication
-  - Un article peut contenir des liens vers des sources externes
-  - Un article contient le pseudo de l'utilisateur ayant écrit l'article
-  - Un article contient le nombre de fois qu'il a été placé en favoris
-  - Un article ne peut pas avoir le même titre qu'un autre article
-  - Un article peut être relié à un ou plusieurs tags
-- **Gestion des articles**
-  - Un article ne peut être ajouté que par un compte ayant au minimum le niveau de privilège d'un "Utilisateur connecté" (niveau 2) de l'application.
-  - Un article ne peut être modéré que par un compte ayant au minimum le niveau de privilège d'un "Modérateur" (niveau 3)
-  - Un article ne peut être visible qu'après avoir été modéré par un compte ayant au minimum le niveau de privilège d'un "Modérateur" (niveau 3)
-  - Un article peut être signalé par tous les lecteurs y compris les visiteurs de l'application
-  - Un article peut être noté par d'autres "Utilisateurs connectés" (niveau 2)
-  - Un article peut être placé dans les favoris d'un "Utilisateur connecté" (niveau 2) par celui-ci
+- un modérateur a tous les droits d’un utilisateur authentifié
+- un modérateur peut dater ses actions
+- un modérateur peut supprimer un commentaire en cas de contenu haineux, discriminant ou inapproprié
+- un modérateur doit envoyer une notification à l’expéditeur du commentaire en cas de contenu haineux, discriminant ou inapproprié.
+- un modérateur peut envoyer une notification à un utilisateur connecté
+- un modérateur peut désactiver un utilisateur connecté (avec notification automatique)
+- un modérateur vérifie les ressources avant publication
+- un modérateur peut ajouter une ressource
+- un modérateur peut supprimer une ressource
+- un modérateur a un dashboard où il visualise les dernières resources avant mise en ligne
+- un modérateur a un dashboard où il visualise ses dernières ressources archivées
+- un modérateur a un dashboard où il visualise les commentaires archivées
+- un modérateur peut restaurer une ressource ou un commentaire supprimé par erreur
+- un modérateur peut modérer les discussions en temps réel
+- un modérateur peut accéder à l’historique des modifications des commentaires et des ressources
+- un modérateur peut attribuer des avertissements aux utilisateurs pour comportements inappropriés
+- un modérateur peut consulter des rapports d’activité des utilisateurs
+- un modérateur peut configurer des filtres automatiques pour détecter du contenu inapproprié
+- un modérateur peut bloquer temporairement les utilisateurs récurrents dans les infractions
 
-### <span style="color: #26B260;">**4. Les ressources éducatives**</span>
+### Administrateur
+- un administrateur a les droits d’un modérateur
+- un administrateur peut créer, modifier et supprimer des comptes utilisateurs, y compris ceux des modérateurs
+- un administrateur peut configurer les permissions et rôles des utilisateurs
+- un administrateur peut accéder à toutes les sections et fonctionnalités des dashboards (utilisateurs authentifiés et modérateurs)
+- un administrateur peut voir et gérer toutes les notifications envoyées par la plateforme
+- un administrateur peut générer et consulter des rapports d’activité et des statistiques détaillées sur l’utilisation de la plateforme
+- un administrateur peut configurer les paramètres globaux de la plateforme (paramètres de sécurité, politique de confidentialité, etc.)
+- un administrateur peut gérer les catégories de contenu et les tags associés
+- un administrateur peut restaurer des contenus supprimés par erreur, y compris les commentaires et les ressources
+- un administrateur peut superviser et auditer les actions des modérateurs
+- un administrateur peut gérer les intégrations avec des services externes (API, plugins, etc.)
+- un administrateur peut configurer des filtres automatiques pour détecter et bloquer du contenu inapproprié
+- un administrateur peut gérer les sauvegardes et la récupération des données de la plateforme
+- un administrateur a un dashboard où il visualise les statistiques d’engagement
+- un administrateur peut voir les statistiques en fonction du type de contenu
+- un administrateur peut voir les tags les plus populaires
+- un administrateur peut voir le nombre de fois que les contenus ont été ajoutés aux favoris par les utilisateurs
+- un administrateur peut voir le nombre de commentaires
+- un administrateur peut voir  le nombre de visiteurs
 
-- **Création de Ressources**
-  - Une ressource peut être un Cheat Sheet, une bibliothèque de tutoriel sur les langages de programmation, ...
-  - Une ressource peut contenir des liens vers des sites externes (documentation officielle d'un langage de programmation par exemple)
-  - Une ressource contient un titre
-  - Une ressource contient une description
-  - Une ressource peut contenir du code
-  - Une ressource ne peut pas avoir le même titre qu'une autre ressource
-  - Une ressource peut être reliée à un ou plusieurs tags
-- **Gestion des ressources éducatives**
-  - Une ressource peut être placée en favoris par un "Utilisateur connecté" (niveau 2)
-  - Une ressource doit être ajoutée par un compte ayant au minimum le niveau de privilège d'un "Modérateur" (niveau 3)
-  - Une ressource peut être commentée par des "Utilisateurs connectés" (niveau 2)
-- **Les commentaires**
-  - Un utilisateur doit être connecté pour pouvoir commenter une ressource ou un article
-  - Les ressources et les articles de l'application disposent d'une section commentaire en bas de page
-- **Un commentaire**
-  - Un commentaire doit être relié à un contenu (ressource ou article) OU à un commentaire d'un contenu
-  - Un commentaire est ajouté par un "Utilisateur connecté" (niveau 2)
-  - Un commentaire doit être modéré
-  - Un commentaire a une date d'ajout
-  - Un commentaire ne peut pas contenir d'adresse mail
-  - Un commentaire ne peut pas permettre l'exécution de code sur l'application
-  - Un commentaire ne doit pas contenir d’adresse mail
-- **Gestion des commentaires**
-  - Un commentaire doit être relié à un "Utilisateur connecté" (niveau 2).
-    - Son pseudo doit être visible
-    - La date à laquelle il a ajouté le commentaire doit apparaître
-  - Un "Utilisateur connecté" ne peut pas supprimer ou modifier le commentaire d'un autre "Utilisateur connecté"
-  - Un commentaire peut être signalé y compris par un visiteur
-  - Un commentaire peut être relié à un autre commentaire en tant que réponse
+### Super-administrateur
+- un super administrateur a tous les droits d’un administrateur
+- un super administrateur peut créer, modifier et supprimer des comptes administrateurs
+- un super administrateur peut configurer les rôles et permissions des administrateurs
+- un super administrateur peut accéder à toutes les sections et fonctionnalités des dashboards (administrateurs, modérateurs et utilisateurs authentifiés)
+- un super administrateur peut superviser et auditer les actions des administrateurs
 
-### <span style="color: #26B260;">**5. Modération et sécurité**</span>
+## Droit commun à tous les utilisateurs
+- un utilisateur est informé de ses droits RGPD, incluant le droit à la consultation (accès à ses données), droit de rectification (correction de ses données), droit à l’oublie (suppression de ses données) et la possibilité de retirer son consentement à tout moment.
+- un utilisateur doit avoir le statut de utilisateur authentifié, modérateur, administrateur ou super-administrateur
+- un utilisateur peut se connecter avec son email et son mot de passe
+- un utilisateur peut réinitialiser son mot de passe si il l’a oublié via un email ou une question de sécurité.
 
-- **Notification d'Activités :**
-  - Un utilisateur recevra une notification si il y a une activité suspecte sur son compte
-- **Audit et Journalisation :**
-  - Une action critique, telle que la modification des privilèges et la suppression de comptes doit être audité
-  - Une action critique, telle que la modification des privilèges et la suppression de comptes doit être journalisé
+## Tag
+- Un tag contient un intitule unique (exemple : C#, PHP, IA)
 
-### <span style="color: #26B260;">**6. Tableau de bord utilisateur**</span>
+## Article
+- Un article est composé d'un titre unique
+- Un article est composé d'un résumé
+- Un article est composé d'une description  qui peut contenir des liens vers des sources externes
+- Un article contient une date de publication
+- Un article contient le pseudo de l'utilisateur ayant écrit l'article
+- Un article contient le nombre de fois qu'il a été placé en favoris
+- Un article peut être relié à un ou plusieurs tags
+- Un article peut être issu d’une source externe et être repartager sur ce site
+- Un article peut contenir des commentaires (d’utilisateurs connecté)
+- Un article archivé n’est pas visible
 
-- **Accès**
-  - Le tableau de bord n'est accessible que par un "Utilisateur connecté" (niveau 2)
-- **Contenus**
-  - Le tableau de bord contient les titres des contenus (articles et ressources) placés en favoris par l'utilisateur (niveau 2)
-  - Le tableau de bord contient les tags des contenus les plus visités par l'utilisateur (niveau 2)
-- **Gestion du tableau de bord utilisateur**
-  - Un utilisateur (niveau 2) peut supprimer des contenus de son tableau de bord
-  - Un utilisateur (niveau 2) peut ajouter des contenus à son tableau de bord
+## Les ressources éducatives
 
-### <span style="color: #26B260;">**7. Tableau de bord modérateur**</span>
+- Une ressource peut être un Cheat Sheet
+- Une ressource peut être un tutoriel ( vidéo visionnable ou un texte alternatif)
+- Une ressource contient un titre unique
+- Une ressource contient une description qui peut contenir des liens vers d’autres sources (documentation officielle d'un langage de programmation par exemple)
+- Une ressource peut être reliée à un ou plusieurs tags
 
-- **Accès**
-  - Le tableau de bord modérateur n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de “modérateur” (niveau3)
-- **Contenus**
-  - Le tableau de bord modérateur contient une partie modération des commentaires
-  - Le tableau de bord modérateur contient une partie modération des articles
-- **Gestion du tableau de bord utilisateur**
-  - Un modérateur peut ajouter une ressource
-  - Un modérateur peut supprimer une ressource
-  - Un modérateur connait les tendances et besoins utilisateur
-  - Un modérateur peut désactiver un utilisateur connecté (avec notification automatique)
-  - Un modérateur peut envoyer une notification à un utilisateur connecté
+### Un CheatSheet
+- Un CheatSheet doit contenir un titre unique
+- Un CheatSheet est un document PDF
+    
 
-### <span style="color: #26B260;">8. Tableau de bord **pour les statistiques d'engagement**</span>
+### Un Tutoriel
+- Un tutoriel doit contenir un titre unique
+- Un tutoriel peut contenir une vidéo
+- Un tutoriel  doit contenir un texte alternatif à la vidéo
 
-- **Accès**
-  - Le tableau des statistiques n'est accessible qu'avec un compte connecté ayant un niveau de privilège au minimum de “administrateur” (niveau4)
-- **Tendances et besoins utilisateur**
-  - Le tableau contient les statistiques en fonction du type de contenu
-  - Les tendances contiennent un tableau des tags par nombre de contenus dans l'application, nombre de visiteurs total et nombre d'utilisateurs ayant placé en favoris un contenu de ce tag
-  - Les tendances contiennent un tableau des contenus, du nombre de commentaires reliés aux contenus, du nombre de visiteurs et du nombre de fois placés en favoris
-- **Fonctionnalités du tableau de bord**
-  - Un tableau affiche des statistiques détaillées classées selon le type de contenu
-    - un aperçu des tags les plus populaires mesuré par le nombre total de contenus associés
-    - le nombre de visiteurs
-    - le nombre de fois que les contenus ont été ajoutés aux favoris par les utilisateurs.
-  - Un tableau récapitule pour une vision claire de l'interaction des utilisateurs avec le contenu :
-    - le nombre de commentaires
-    - le nombre de visiteurs
-    - la fréquence à laquelle les contenus sont favorisés
+### Un commentaire 
+- Un commentaire doit être relié à un seul contenu (ressource ou article) OU à un seul commentaire d'un contenu
+- Un commentaire est ajouté par un utilisateur connecté
+- Un commentaire a une date d'ajout
+- Un commentaire a une date de modification
+- Un commentaire ne doit pas contenir d’adresse mail
+- Un commentaire contient le pseudo de l’utilisateur qui l’a ajouté
+- Un commentaire peut être relié à un autre commentaire en tant que réponse mais il ne pourra plus être modifié par son auteur
+- Un commentaire peut être signalé par un visiteur
 
-### <span style="color: #26B260;">**9. Organisation de discussions thématiques**</span>
-
-- **Outil de Planification**
-  - La planification d’une discussion est gérée par Calendly
-- **Conditions de Participation**
-  - Un utilisateur doit avoir un niveau de privilège "Utilisateur connecté" (niveau 2) ou supérieur pour proposer une session d'échange
-- **Association aux Tags**
-  - Une discussion est reliée à un ou plusieurs tags
-
-### <span style="color: #26B260;">**10. Fonctionnalités de Recherche et Navigation**</span>
-
-- **Accessibilité**
-  - Une recherche de contenus peut être effectuée par tous y compris les visiteurs
-- **Critères de Recherche**
-  - le titre du contenu, pour des requêtes directes
-  - les tags associés, afin de filtrer les contenus par sujets ou thématiques spécifiques
-- **Options de Tri des Résultats** :
-  - pertinence par rapport aux termes recherché
-  - date d'ajout, avec une option pour afficher les contenus les plus récents en premier
-  - popularité, mesurée par la fréquence des consultations ou des interactions des utilisateurs
-
-### <span style="color: #26B260;">**11. Gestion de la modération des utilisateurs**</span>
-
-- **Signalement de Commentaires**
-  - Un utilisateur (niveau 2) peut signaler un commentaire inapproprié ou offensant posté par un autre utilisateur
-- **Suspension de Compte lors de la Modération**
-  - Lorsqu'un compte utilisateur fait l'objet d'une modération suite à un signalement, il est temporairement désactivé, empêchant toute connexion à l'application pendant la durée de l'examen
-- **Désactivation de Compte**
-  - Un compte utilisateur (niveau 2) peut être désactivé par un utilisateur ayant au moins le niveau de privilège “modérateur” en cas de non-respect des règles de la communauté
-- **Suppression de Compte**
-  - Un compte utilisateur (niveau 2) peut être définitivement supprimé par un utilisateur ayant au moins le niveau de privilège “modérateur”, assurant ainsi une gestion stricte et sécurisée des membres de la plateforme
+## Session d'échange
+- Une session d’échange contient un titre unique
+- Une session d'échange est reliée à un ou plusieurs tags
