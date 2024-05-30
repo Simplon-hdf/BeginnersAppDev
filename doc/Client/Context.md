@@ -17,7 +17,7 @@ Notre équipe, constituée de trois personnes, travaille en méthode Agile (Scru
 
 ## Les enjeux
 
-Les développeurs, souvent en début de carrière, se trouvent confrontés à un paysage technologique en constante évolution. Ils ont besoin d'un outil leur permettant non seulement de se tenir informés des dernières technologies, mais aussi de comprendre et d'interagir avec ces informations de manière efficace.
+Les développeurs, souvent en début de carrière, se trouvent confronté à un paysage technologique en constante évolution. Ils ont besoin d'un outil leur permettant non seulement de se tenir informés des dernières technologies, mais aussi de comprendre et d'interagir avec ces informations de manière efficace.
 Cette plateforme se doit d'être intuitive, informative et engageante, adaptée à leurs besoins spécifiques de formation continue. Elle doit également faciliter l'accès à des ressources pédagogiques variées telles que des tutoriels, des comparatifs de technologies, et des guides pratiques, tout en offrant des outils de collaboration comme des forums, des commentaires et des espaces de discussion, permettant ainsi de créer une véritable communauté autour du partage de connaissances et du soutien mutuel.
 
 ## Les Problèmatiques

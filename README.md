@@ -4,19 +4,19 @@
 ![GitHub issues](https://img.shields.io/github/issues/Simplon-hdf/structure-projet?style=for-the-badge)
 ![GitHub license](https://img.shields.io/github/license/Simplon-hdf/structure-projet?style=for-the-badge)
 
-<h1 align="center">Beginners App Dev</h1>
+<h1 align="center">Plateforme communautaire de veille technologique</h1>
 
 <div align="center">
 
-## Project Description
+## Description du Projet
 
 Ce projet est une plateforme collaborative de gestion de veille techno, orientée dev juniors.
 
 </div>
 
-## About The Project
+## À Propos du Projet
 
-### Built With
+### Construit Avec
 
 - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 - ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
@@ -35,7 +35,8 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [x] doc
     - [x] res
     - [x] samples
-    - [x] tools
+    - [x] outils
+    - [x] Assets
     - [x] build
     - [x] test
   - Fichier
@@ -53,8 +54,15 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
   - [x] Persona
   - [ ] Présentation (PowerPoint)
   - [ ] Mail de suivie / Proposition stratégique
-- [ ] **Benchmark (Analyse de la concurence)**
-- [ ] **Spécification fonctionnelle**
+- [ ] **Analyse de la concurence**
+  - [ ] Concurrence
+- [ ] **Analyse des technologies**
+  - [x] Back-end frameworks
+  - [x] Front-end frameworks
+  - [x] Questions globales
+  - [x] ORM
+  - [x] Outils
+- [ ] **Spécifications fonctionnelles**
   - [x] Règle de gestion
   - [ ] UML
     - [ ] Diagramme d'activité
@@ -65,26 +73,33 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [ ] MCD
     - [ ] MLD
     - [ ] MPD
+- [x] **Spécifications techniques** 
+  - [x] API
+  - [x] Méthodologie
   - [x] RBAC
+  - [x] Stratégie de sécurisation
 - [x] **Epic**
   - [x] User Story
   - [x] Product backlog (Tâches)
 - [x] **Jira**
 - [x] **Rituels agiles**
 
-  - [x] Sprint planning meeting
-  - [x] Stand up meeting
-  - [x] Sprint retrospective
-  - [x] Sprint Review
+  - [x] Réunion de planification de sprint
+  - [x] Réunion 'debout'
+  - [x] Réunion 'rétrospective'
+  - [x] Revue de sprint
+
+- [ ] **Cahier des charges**
+- [ ] **Charte graphique**
 
 - [ ] **Démarrer les sprints**
 
 </details>
 
-## Author
+## Auteure/Auteur
 
 ## License
 
-Distributed under the MIT License. `LICENSE` See for more information.
+Distribué sous licence MIT. `LICENCE` Voir pour plus d'informations.
 
 ## Ressource
