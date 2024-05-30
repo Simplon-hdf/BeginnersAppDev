@@ -135,11 +135,11 @@ Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités st
 
 La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
 
-	. Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
+. Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
 
-	. Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
+. Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
 
-	. La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
+. La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
 
 •	**Règles de Complexité** : 
 Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.
@@ -148,9 +148,9 @@ Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, 
 
 La fréquence de renouvellement des mots de passe est adaptée au rôle :
 
-	. **30 jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
+. **30 jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
 
-	. Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation.
+. Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation.
 
 •	**Mécanismes de Limitation d’Essais d’Authentification**
 
