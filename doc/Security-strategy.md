@@ -2,10 +2,6 @@
 
 # Stratégie de Sécurisation Complète pour notre application
 
-## Introduction
-
-We are committed to providing a secure community platform where technology enthusiasts can follow the latest trends, exchange information and collaborate with other members. To ensure data security and user privacy, we implement a comprehensive security strategy that integrates key security concepts, secure development practices, and advanced monitoring mechanisms.
-
 ## Enjeux de Sécurité et Menaces Principales
 
 Notre application traitera des données sensibles telles que les profils d'utilisateurs, les préférences de suivi technologique, les commentaires et les contributions partagées sur la plateforme. Afin de maintenir la confiance des utilisateurs et de respecter les réglementations en vigueur, telles que le RGPD, nous devons nous assurer de protéger ces informations contre tout accès non autorisé.
@@ -93,39 +89,102 @@ Nous allons limiter les points d'entrée potentiels pour les attaquants en rédu
 
 Nous accorderons uniquement les permissions nécessaires à chaque utilisateur ou composant du système selon le principe du privilège minimum. Cela limitera les risques en réduisant la portée des actions qu'un utilisateur ou un processus peut effectuer.
 
-### Tunnels de Sécurisation (HTTPS/TLS/HSTS)
+**1] couche front**
 
-Nous renforcerons la sécurité des données en transit en mettant en place des tunnels sécurisés. Le protocole HTTPS, associé aux standards de sécurité TLS (Transport Layer Security) et HSTS (HTTP Strict Transport Security), garantira que toutes les communications entre l'application et nos serveurs seront chiffrées. Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
+**### Chiffrement des communications (HTTPS/TLS/HSTS)**
 
-### Monitoring et Journalisation
+Nous renforcerons la sécurité des données en transit entre le client et le serveur en mettant en place des tunnels sécurisés. Le protocole **HTTPS**, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS. Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
 
-Nous allons mettre en place un système de surveillance continue pour détecter les activités suspectes et réagir rapidement en cas d'incident. Des journaux d'audit détaillés seront maintenus pour enregistrer toutes les actions effectuées sur la plateforme, facilitant ainsi la détection des comportements anormaux et la réponse aux menaces potentielles.
+**### Protection des Entêtes avec Helmet**
 
-### Nettoyage des Formulaires et Sanétisation
+Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.
 
-Nous appliquerons des méthodes de nettoyage et de sanitization sur les données saisies par les utilisateurs pour prévenir les injections SQL et XSS. Toutes les entrées utilisateur seront validées et échappées pour garantir l'intégrité des données et la sécurité de l'application.
+**### Nettoyage des Formulaires et Sanétization**
 
-### ORM contre les Injections SQL
+Nous appliquerons des méthodes de nettoyage et de sanitization sur les données saisies par les utilisateurs pour prévenir les injections **SQL** et **XSS**. Toutes les entrées utilisateur seront validées et échappées pour garantir l'intégrité des données et la sécurité de l'application.
 
-Nous utiliserons un ORM (Object-Relational Mapping) pour accéder à la base de données, ce qui réduira considérablement le risque d'injections SQL en séparant le code SQL de la logique métier et en fournissant une abstraction sécurisée pour interagir avec la base de données.
+(lien vers politique des mot de passe) (regex)
 
-### Protection des Entêtes avec Helmet
+**### Politique de Sécurité Same-Origin et CSP**
 
-Nous protégerons nos applications Express.js en utilisant Helmet, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques XSS, le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (CSP), entre autres.
-
-### Politique de Sécurité
+ Activez la politique Same-Origin et définissez une Content Security Policy (**CSP**) stricte pour contrôler les ressources chargées et exécutées sur le site.
 
 Nous mettrons en œuvre la politique de sécurité Same-Origin pour prévenir les attaques XSS en restreignant l'accès et l'interaction des scripts entre différentes origines.
 
-Nous utiliserons CORS pour sécuriser le partage de ressources entre différentes origines, en contrôlant l'accès aux ressources entre différents domaines et en prévenant les attaques CSRF.
+Nous utiliserons **CORS** (Cross-Origin Resource Sharing) ****pour sécuriser le partage de ressources entre différentes origines, en contrôlant l'accès aux ressources entre différents domaines et en prévenant les attaques **CSRF** (Cross-Site Request Forgery).
 
-Nous définirons une CSP pour limiter les sources de contenu autorisées et prévenir les attaques XSS en contrôlant les scripts exécutés sur notre application.
+Nous définirons une **CSP** pour limiter les sources de contenu autorisées et prévenir les attaques **XSS** en contrôlant les scripts exécutés sur notre application.
 
-Nous utiliserons SRI pour garantir l'intégrité des ressources chargées depuis des origines tierces, en vérifiant les empreintes cryptographiques des fichiers externes.
+Nous utiliserons **SRI** (Subresource Integrity) pour garantir l'intégrité des ressources chargées depuis des origines tierces, en vérifiant les empreintes cryptographiques des fichiers externes.
 
-### Politique des Mots de Passe
+**### Mécanismes de Limitation d’Essais d’Authentification**
 
-Nous adopterons une politique de mots de passe stricte qui inclura des exigences de complexité, de longueur minimale et de vérification approfondie des critères. Les mots de passe seront stockés de manière sécurisée en utilisant le hashage SHA256 avec salage pour prévenir les attaques par force brute et assurer la confidentialité des informations des utilisateurs.
+Limitez les tentatives de connexion infructueuses pour prévenir les attaques par force brute. Après plusieurs échecs, bloquez temporairement l’accès et alertez l’utilisateur.
+
+(lien vers politique des mot de passe) (cloudflare)
+
+**2] Couche API Back-end** 
+
+**### Authentification et Gestion des Sessions avec OAuth 2.0 et JWT**:
+
+ Sécurisez les APIs en utilisant **OAuth 2.0** pour l’authentification et les JSON Web Tokens (**JWT**) pour la gestion des sessions.
+
+ **OAuth 2.0 et JWT** : Bien que mentionnés dans la gestion des sessions, leur application aux APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des autorisations, adaptée aux interactions entre services.
+
+**Tokens et JWT** : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des identifiants uniques et des données codées, permettant une gestion stateless qui augmente la scalabilité et la performance.
+
+**### Validation et Sanitization des Requêtes API**: 
+
+Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**. 
+
+**###Chiffrement des communications**: 
+
+Nous renforcerons la sécurité des données en transit entre le serveur et le client en mettant en place des tunnels sécurisés. Le protocole HTTPS, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS. Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
+
+**###Limitation du Taux de Requêtes (Rate Limiting)**: 
+
+Mettez en place des contrôles stricts sur le nombre de requêtes acceptées pour prévenir les attaques par déni de service (DoS).
+
+**###Gestion des Identités Utilisateurs avec les UUID:**
+
+Nous utiliserons des **UUID** (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé.
+
+**###Transmission Sécurisée des Mots de Passe** :
+Assurez-vous que les mots de passe sont toujours transmis de manière sécurisée, en utilisant des connexions HTTPS pour éviter les interceptions 
+
+**###Journalisation des Requêtes API** :
+
+ Enregistrez chaque appel API, y compris les détails de la requête tels que l’adresse IP source, les paramètres de requête, les en-têtes, et les réponses. Cela permet de tracer les actions à travers l’API et de détecter des anomalies comme des tentatives d’injection ou des abus de l’API.
+
+**###Visualisation des end-points API via Swagger**:
+
+Ensemble de règles et d’outils pour décrire, produire, consommer et visualiser des services web RESTful.
+
+**###Monitoring et Journalisation**:
+Nous allons mettre en place un système de surveillance continue pour détecter les activités suspectes et réagir rapidement en cas d'incident. Des journaux d'audit détaillés seront maintenus pour enregistrer toutes les actions effectuées sur la plateforme, facilitant ainsi la détection des comportements anormaux et la réponse aux menaces potentielles.
+
+**###Sécuriser les routes via des ACL (Access Control List) :**
+
+Contrôle des permissions et des rôles utilisateurs à chaque demande d’accès aux ressources protégées (fichiers, fonctionnalités admin/modérateur)
+
+###**Gestion des Rôles avec RBAC (Role-Based Access Control)**
+
+Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'ils occupent. Définir les rôles est fondamental pour respecter le principe du moindre privilège, qui vise à limiter les privilèges des utilisateurs uniquement à ce dont ils ont besoin pour accomplir leurs tâches. Ici nous avons défini rôles:
+
+- Super-administrateur
+
+- Administrateur
+
+- Modérateur
+
+- Utilisateur
+
+- ***Sécurité**** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.
+- ***Politique de Confidentialité**** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
+
+**3] Couche bdd**
+
+**### Politique des Mots de Passe**
 
 •	**Catégories de Mots de Passe**  : 
 Les super administrateurs et les administrateurs bénéficient d’un accès complet, nécessitant le plus haut niveau de sécurité. 
@@ -135,11 +194,11 @@ Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités st
 
 La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
 
-. Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
+	. Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
 
-. Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
+	. Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
 
-. La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
+	. La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
 
 •	**Règles de Complexité** : 
 Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.
@@ -148,13 +207,13 @@ Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, 
 
 La fréquence de renouvellement des mots de passe est adaptée au rôle :
 
-. **30 jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
+	. 15 **jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
 
-. Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation.
+	. Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
 
 •	**Mécanismes de Limitation d’Essais d’Authentification**
 
-Nous limiterons les tentatives de connexion infructueuses à trois, après quoi le compte est verrouillé temporairement pour 30 minutes. Cette mesure est accompagnée de systèmes de notification pour alerter les utilisateurs d’activités suspectes.
+Nous limiterons les tentatives de connexion infructueuses à 5 essais, puis déclenchera l’envoi d’un mail pour réinitialiser le mot de passe.
 
 •	**Méthode de Conservation des Mots de Passe**
 
@@ -162,85 +221,30 @@ Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **
 
 •	**Méthode de Recouvrement d’Accès**
 
-En cas de perte ou de vol des mots de passe, nous fournissons un mot de passe temporaire par email avec un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
+En cas de perte ou de vol des mots de passe, nous fournissons un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
 
--Gestion des sessions et l’authentification
+**### ORM contre les Injections SQL**
 
-Dans notre approche de gestion des sessions et de l'authentification, nous implémentons des
-mesures strictes pour renforcer la sécurité des comptes utilisateur et la protection des
-données :
+Employez un ORM pour accéder à la base de données, ce qui aide à prévenir les injections SQL en fournissant une couche d’abstraction qui sépare le code SQL de la logique métier.
 
-• Tokens et JWT : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des
-identifiants uniques et des données codées, permettant une gestion stateless qui augmente la
-scalabilité et la performance.
+### **Stratégie de Sauvegarde**
 
-• Politique des Mots de Passe : Nous imposons une complexité et une longueur minimale
-pour les mots de passe, et utilisons le hachage SHA-256 avec salage pour renforcer la
-sécurité. Après trois tentatives de connexion infructueuses, un blocage temporaire est
-appliqué pour prévenir les attaques par force brute. De plus, nous mettons en place des
-systèmes de notification pour alerter les utilisateurs d'activités suspectes sur leur compte.
+Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les données de l'application contre les incidents tels que les pannes, les erreurs ou les attaques. Des sauvegardes régulières des données seront effectuées pour garantir la disponibilité et l'intégrité des informations des utilisateurs en cas de problème. Automatisation régulière des sauvegardes de la bdd grâce à pg_cron afin de lutter contre les ransomwares
 
-• Durée de Validité des Sessions : Nous définissons une durée de validité de 2 semaines pour
-les sessions, afin de réduire le risque d'accès non autorisé, nécessitant une nouvelle
-authentification après une période d'inactivité déterminée.
+**###RGPD (Règlement général sur la protection des données)**
 
--Sécurisation des APIs
+Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD, mais aussi la confiance des utilisateurs, leur garantissant un traitement respectueux et sécurisé de leurs données personnelles. :
 
-Pour renforcer la sécurité de nos APIs, nous déployons des stratégies spécifiques qui
-complètent les protocoles de communication sécurisés et la gestion des sessions/
-authentification décrits précédemment :
+- ***Consentement Explicite**** : L'application exigera un consentement clair de l'utilisateur pour le traitement des données personnelles lors de la création de profil.
+- ***Minimisation des Données**** : Seules les informations indispensables seront collectées pour la réservation.
+- ***Droits des Utilisateurs**** : Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment. Les utilisateurs peuvent contacter le référent RGPD par email pour faire valoir leur droits.
+- **En cas de violation de données :** Nous informerons sans délai les autorités compétentes (CNIL) et les utilisateurs impactés, respectant un délai de 72 heures.
 
-• OAuth 2.0 et JWT : Bien que mentionnés dans la gestion des sessions, leur application aux
-APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des
-autorisations, adaptée aux interactions entre services.
+Mise en place d’un formulaire de demande d’accès
 
-• Validation et Sanitization : Spécifiquement pour nos APIs, chaque requête est scrutée pour
-en valider et assainir le contenu, ciblant efficacement les tentatives d'injections SQL et XSS
-propres aux interfaces de programmation.
+**### Stockage Sécurisé des Mots de Passe** :
 
-• Limitation du Taux de Requêtes : Cette mesure aide à prévenir les abus et les attaques par
-déni de service (DoS) en imposant un contrôle strict sur le nombre de requêtes acceptées.
-
-• Sécurité Renforcée des Données : Au-delà du cryptage général, des mesures de sécurité des
-données spécifiques aux APIs, telles que des politiques de gestion renforcées des tokens et
-des sessions, sont mises en œuvre pour contrer les risques d'intrusion et de fuite
-d'informations.
-
-### Gestion des Identités Utilisateurs avec les UUID
-
-Nous utiliserons des UUID (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé.
-
-### Stratégie de Sauvegarde
-
-Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les données de l'application contre les incidents tels que les pannes, les erreurs ou les attaques. Des sauvegardes régulières des données seront effectuées pour garantir la disponibilité et l'intégrité des informations des utilisateurs en cas de problème.
-
-
-### RGPD (Règlement général sur la protection des données)
-
-Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD :
-
-- **Consentement Explicite** : L'application exigera un consentement clair de l'utilisateur pour le traitement des données personnelles lors de la création de profil.
-
-- **Minimisation des Données** : Seules les informations indispensables seront collectées pour la réservation.
-
-- **Droits des Utilisateurs** : Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment.
-
-- **Gestion des rôles** : Mise en place d’un RBAC (Role Based Access Control)
-Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'ils occupent. Définir les rôles est fondamental pour respecter le principe du moindre privilège, qui
-vise à limiter les privilèges des utilisateurs uniquement à ce dont ils ont besoin pour accomplir leurs
-tâches. Ici nous avons défini rôles:
-        - Super-admin
-        - Admin
-        - Modérateur
-        - Utilisateur
-
-- **Sécurité** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.
-
-- **Gestion des Sous-Traitants** : Le traitement des paiements par des tiers respectera également le RGPD.
-
-- **Notification en Cas de Violation** : En cas de fuite de données, nous informerons les autorités compétentes et les utilisateurs concernés dans un délai de 72 heures.
-
-- **Politique de Confidentialité** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
+Utilisez des méthodes de hachage robustes, comme Bcrypt, pour le stockage des mots de passe. Bcrypt intègre un salage automatique qui rend chaque hash unique et résistant aux attaques par tables de correspondance. (cf politique des mots de passes)
 
 En adoptant une approche proactive en matière de sécurité et en mettant en œuvre des mesures appropriées, notre apllication s'efforcera de fournir à ses utilisateurs un environnement sûr et fiable pour leur veille technologique.
 
