@@ -83,11 +83,12 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 > - **Profession** :
 >   > Directrice technique d'une entreprise de développement de logiciels
 > - **Expérience technologique** :
->   > Expertise approfondie dans le développement logiciel, la gestion de projet et l'architecture des systèmes d'information.
->   > Maîtrise une large gamme de langages de programmation et de technologies web.
+>   > Expertise approfondie en sécurité informatique, administration de systèmes et interfaces de ligne de commande. Excellente connaissance des protocoles d’authentification et de gestion des droits d’accès.
+>   > Familiarité avec les environnements Unix/Linux et les scripts shell pour l’automatisation et la gestion des systèmes.
 > - **Objectifs** :
->   > Superviser l'ensemble de la plateforme et s'assurer de son bon fonctionnement technique. Définir la stratégie globale de développement et d'évolution de la plateforme en alignement avec les objectifs de l'entreprise.
+>   > Maintenir la sécurité et l’intégrité des comptes administratifs. Assurer que les administrateurs disposent des droits adéquats pour leurs fonctions sans compromettre la sécurité du système.
 > - **Besoins** :
->   > Tableaux de bord et outils d'analyse avancés pour surveiller les performances de la plateforme et identifier les opportunités d'amélioration. Accès à des ressources spécialisées et à un réseau de contacts pour rester à jour sur les tendances technologiques et les meilleures pratiques en matière de développement web.
+>   > Outils de ligne de commande sécurisés et efficaces pour la gestion des comptes administrateurs, permettant de créer, modifier et désactiver des comptes facilement.
 > - **Défis** :
->   > Gérer les contraintes budgétaires et les ressources limitées tout en maintenant un niveau élevé de qualité et d'innovation sur la plateforme. Anticiper et répondre aux besoins changeants des utilisateurs et du marché dans un environnement technologique en constante évolution.
+>   > Garantir une gestion sécurisée et précise des comptes administrateurs. Cela requiert une attention méticuleuse et des contrôles d’accès rigoureux pour prévenir les intrusions.
+>   > Maîtriser pleinement l’utilisation des interfaces de ligne de commande, qui sont essentielles pour toutes ces opérations.
