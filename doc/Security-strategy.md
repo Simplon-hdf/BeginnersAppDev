@@ -89,85 +89,91 @@ Nous allons limiter les points d'entrée potentiels pour les attaquants en rédu
 
 Nous accorderons uniquement les permissions nécessaires à chaque utilisateur ou composant du système selon le principe du privilège minimum. Cela limitera les risques en réduisant la portée des actions qu'un utilisateur ou un processus peut effectuer.
 
-**1] couche front**
+## 1. Couche front
 
-**### Chiffrement des communications (HTTPS/TLS/HSTS)**
+### Chiffrement des communications (HTTPS/TLS/HSTS)
 
-Nous renforcerons la sécurité des données en transit entre le client et le serveur en mettant en place des tunnels sécurisés. Le protocole **HTTPS**, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS. Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
+Nous renforcerons la sécurité des données en transit entre le client et le serveur en mettant en place des tunnels sécurisés. Le protocole **HTTPS**, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS.  
+Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
 
-**### Protection des Entêtes avec Helmet**
+### Protection des Entêtes avec Helmet
 
-Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.
+Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.  
+Grâce à NestJS, la mise en œuvre de ces mesures de sécurité sera simplifiée, nous permettant de garantir une base solide pour la protection de l’environnement numérique de nos utilisateurs.
 
-**### Nettoyage des Formulaires et Sanétization**
+### Nettoyage des Formulaires et Sanétization
 
 Nous appliquerons des méthodes de nettoyage et de sanitization sur les données saisies par les utilisateurs pour prévenir les injections **SQL** et **XSS**. Toutes les entrées utilisateur seront validées et échappées pour garantir l'intégrité des données et la sécurité de l'application.
 
-(lien vers politique des mot de passe) (regex)
+([cf. Politique des mots de passes](#politique-des-mots-de-passe))
 
-**### Politique de Sécurité Same-Origin et CSP**
+### Politique de Sécurité Same-Origin et CSP
 
- Activez la politique Same-Origin et définissez une Content Security Policy (**CSP**) stricte pour contrôler les ressources chargées et exécutées sur le site.
+Ces mesures contrôleront les ressources chargées et exécutées sur le site.
 
-Nous mettrons en œuvre la politique de sécurité Same-Origin pour prévenir les attaques XSS en restreignant l'accès et l'interaction des scripts entre différentes origines.
+- **Same-Origin Policy** (SOP)  
+  Nous empêcherons les scripts de différentes origines d’interagir entre eux, contribuant ainsi à la prévention des attaques XSS. Par exemple, cela protégera les contributions des développeurs contre l’injection de scripts malveillants.
+- **Cross-Origin Resource Sharing** (CORS)  
+  Nous utiliserons **CORS** pour sécuriser le partage de ressources entre différentes origines. Cela permettra, par exemple, aux développeurs d’accéder de manière sécurisée aux API externes nécessaires sans compromettre la sécurité des données utilisateurs et des projets partagés sur la plateforme.
+- **Content Security Policy** (CSP)
+- En établissant une **CSP** stricte, nous limiterons les sources de contenu autorisées. Cela aidera à prévenir les attaques XSS en contrôlant les scripts exécutés sur notre application. Par exemple, seules les sources de confiance pourront être chargées, garantissant ainsi que les bibliothèques de code utilisées restent sécurisées.
+- **Intégrité des Sous-Ressources** (SRI)  
+  Nous utiliserons **SRI** (Subresource Integrity) pour garantir l’intégrité des ressources chargées depuis des origines tierces. En vérifiant les empreintes cryptographiques des fichiers externes, nous assurerons que les bibliothèques et les outils tiers n’ont pas été altérés, protégeant ainsi le code des projets collaboratifs contre toute modification malveillante.
 
-Nous utiliserons **CORS** (Cross-Origin Resource Sharing) ****pour sécuriser le partage de ressources entre différentes origines, en contrôlant l'accès aux ressources entre différents domaines et en prévenant les attaques **CSRF** (Cross-Site Request Forgery).
-
-Nous définirons une **CSP** pour limiter les sources de contenu autorisées et prévenir les attaques **XSS** en contrôlant les scripts exécutés sur notre application.
-
-Nous utiliserons **SRI** (Subresource Integrity) pour garantir l'intégrité des ressources chargées depuis des origines tierces, en vérifiant les empreintes cryptographiques des fichiers externes.
-
-**### Mécanismes de Limitation d’Essais d’Authentification**
+### Mécanismes de Limitation d’Essais d’Authentification
 
 Limitez les tentatives de connexion infructueuses pour prévenir les attaques par force brute. Après plusieurs échecs, bloquez temporairement l’accès et alertez l’utilisateur.
 
-(lien vers politique des mot de passe) (cloudflare)
+([cf. Politique des mots de passes](#politique-des-mots-de-passe))
 
-**2] Couche API Back-end** 
+## 2. Couche API Back-end
 
-**### Authentification et Gestion des Sessions avec OAuth 2.0 et JWT**:
+### Authentification et Gestion des Sessions avec OAuth 2.0 et JWT
 
- Sécurisez les APIs en utilisant **OAuth 2.0** pour l’authentification et les JSON Web Tokens (**JWT**) pour la gestion des sessions.
+Sécurisez les APIs en utilisant **OAuth 2.0** pour l’authentification et les JSON Web Tokens (**JWT**) pour la gestion des sessions.
 
- **OAuth 2.0 et JWT** : Bien que mentionnés dans la gestion des sessions, leur application aux APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des autorisations, adaptée aux interactions entre services.
+- **OAuth 2.0 et JWT** : Bien que mentionnés dans la gestion des sessions, leur application aux APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des autorisations, adaptée aux interactions entre services.
 
-**Tokens et JWT** : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des identifiants uniques et des données codées, permettant une gestion stateless qui augmente la scalabilité et la performance.
+- **Tokens et JWT** : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des identifiants uniques et des données codées, permettant une gestion stateless qui augmente la scalabilité et la performance.
 
-**### Validation et Sanitization des Requêtes API**: 
+### Validation et Sanitization des Requêtes API
 
-Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**. 
+Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**.
 
-**###Chiffrement des communications**: 
+### Chiffrement des communications
 
-Nous renforcerons la sécurité des données en transit entre le serveur et le client en mettant en place des tunnels sécurisés. Le protocole HTTPS, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS. Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
+Nous renforcerons la sécurité des données en transit entre le serveur et le client en mettant en place des tunnels sécurisés. Le protocole HTTPS, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS.  
+Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
 
-**###Limitation du Taux de Requêtes (Rate Limiting)**: 
+### Limitation du Taux de Requêtes (Rate Limiting)
 
 Mettez en place des contrôles stricts sur le nombre de requêtes acceptées pour prévenir les attaques par déni de service (DoS).
 
-**###Gestion des Identités Utilisateurs avec les UUID:**
+### Gestion des Identités Utilisateurs avec les UUID
 
 Nous utiliserons des **UUID** (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé.
 
-**###Transmission Sécurisée des Mots de Passe** :
-Assurez-vous que les mots de passe sont toujours transmis de manière sécurisée, en utilisant des connexions HTTPS pour éviter les interceptions 
+### Transmission Sécurisée des Mots de Passe
 
-**###Journalisation des Requêtes API** :
+Assurez-vous que les mots de passe sont toujours transmis de manière sécurisée, en utilisant des connexions HTTPS pour éviter les interceptions
 
- Enregistrez chaque appel API, y compris les détails de la requête tels que l’adresse IP source, les paramètres de requête, les en-têtes, et les réponses. Cela permet de tracer les actions à travers l’API et de détecter des anomalies comme des tentatives d’injection ou des abus de l’API.
+### Journalisation des Requêtes API
 
-**###Visualisation des end-points API via Swagger**:
+Enregistrez chaque appel API, y compris les détails de la requête tels que l’adresse IP source, les paramètres de requête, les en-têtes, et les réponses. Cela permet de tracer les actions à travers l’API et de détecter des anomalies comme des tentatives d’injection ou des abus de l’API.
+
+### Visualisation des end-points API via Swagger
 
 Ensemble de règles et d’outils pour décrire, produire, consommer et visualiser des services web RESTful.
 
-**###Monitoring et Journalisation**:
+### Monitoring et Journalisation
+
 Nous allons mettre en place un système de surveillance continue pour détecter les activités suspectes et réagir rapidement en cas d'incident. Des journaux d'audit détaillés seront maintenus pour enregistrer toutes les actions effectuées sur la plateforme, facilitant ainsi la détection des comportements anormaux et la réponse aux menaces potentielles.
 
-**###Sécuriser les routes via des ACL (Access Control List) :**
+### Sécuriser les routes via des ACL (Access Control List)
 
 Contrôle des permissions et des rôles utilisateurs à chaque demande d’accès aux ressources protégées (fichiers, fonctionnalités admin/modérateur)
 
-###**Gestion des Rôles avec RBAC (Role-Based Access Control)**
+### Gestion des Rôles avec RBAC (Role-Based Access Control)
 
 Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'ils occupent. Définir les rôles est fondamental pour respecter le principe du moindre privilège, qui vise à limiter les privilèges des utilisateurs uniquement à ce dont ils ont besoin pour accomplir leurs tâches. Ici nous avons défini rôles:
 
@@ -177,53 +183,47 @@ Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'
 
 - Modérateur
 
-- Utilisateur
+- Membre
 
-- ***Sécurité**** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.
-- ***Politique de Confidentialité**** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
+**Sécurité** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.  
+**Politique de Confidentialité** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
 
-**3] Couche bdd**
+## 3. Couche bdd
 
-**### Politique des Mots de Passe**
+### Politique des Mots de Passe
 
-•	**Catégories de Mots de Passe**  : 
-Les super administrateurs et les administrateurs bénéficient d’un accès complet, nécessitant le plus haut niveau de sécurité. 
-Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités standards de l’application, y compris la gestion des commentaires et auront un niveau de sécurité moindre.
+- **Catégories de Mots de Passe** :  
+  Les super administrateurs et les administrateurs bénéficient d’un accès complet, nécessitant le plus haut niveau de sécurité.
+  Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités standards de l’application, y compris la gestion des commentaires et auront un niveau de sécurité moindre.
 
-•      **Longueur des Mots de Passe :**
+- **Longueur des Mots de Passe** :  
+  La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
 
-La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
+  - Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
 
-	. Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
+  - Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
 
-	. Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
+  - La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
 
-	. La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
+- **Règles de Complexité** :  
+  Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.  
+   Nous metterons également en place des Regex pour renforcer la sécurité
 
-•	**Règles de Complexité** : 
-Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.
+- **Délai d’Expiration des Mots de Passe** :  
+  La fréquence de renouvellement des mots de passe est adaptée au rôle :
 
-•	**Délai d’Expiration des Mots de Passe**
+  - Un renouvellement **annuel** équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
 
-La fréquence de renouvellement des mots de passe est adaptée au rôle :
+- **Mécanismes de Limitation d’Essais d’Authentification** :  
+  Nous limiterons les tentatives de connexion infructueuses à 5 essais, qui déclenchera l’envoi d’un mail pour réinitialiser le mot de passe.
 
-	. 15 **jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
+- **Méthode de Conservation des Mots de Passe** :  
+  Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **Bcrypt** avec salage, assurant que chaque mot de passe est unique et protégé contre les attaques.
 
-	. Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
+- **Méthode de Recouvrement d’Accès** :  
+  En cas de perte ou de vol des mots de passe, nous fournissons un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
 
-•	**Mécanismes de Limitation d’Essais d’Authentification**
-
-Nous limiterons les tentatives de connexion infructueuses à 5 essais, puis déclenchera l’envoi d’un mail pour réinitialiser le mot de passe.
-
-•	**Méthode de Conservation des Mots de Passe**
-
-Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **Bcrypt** avec salage, assurant que chaque mot de passe est unique et protégé contre les attaques.
-
-•	**Méthode de Recouvrement d’Accès**
-
-En cas de perte ou de vol des mots de passe, nous fournissons un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
-
-**### ORM contre les Injections SQL**
+### ORM contre les Injections SQL
 
 Employez un ORM pour accéder à la base de données, ce qui aide à prévenir les injections SQL en fournissant une couche d’abstraction qui sépare le code SQL de la logique métier.
 
@@ -231,20 +231,23 @@ Employez un ORM pour accéder à la base de données, ce qui aide à prévenir l
 
 Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les données de l'application contre les incidents tels que les pannes, les erreurs ou les attaques. Des sauvegardes régulières des données seront effectuées pour garantir la disponibilité et l'intégrité des informations des utilisateurs en cas de problème. Automatisation régulière des sauvegardes de la bdd grâce à pg_cron afin de lutter contre les ransomwares
 
-**###RGPD (Règlement général sur la protection des données)**
+### RGPD (Règlement général sur la protection des données)
 
 Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD, mais aussi la confiance des utilisateurs, leur garantissant un traitement respectueux et sécurisé de leurs données personnelles. :
 
-- ***Consentement Explicite**** : L'application exigera un consentement clair de l'utilisateur pour le traitement des données personnelles lors de la création de profil.
-- ***Minimisation des Données**** : Seules les informations indispensables seront collectées pour la réservation.
-- ***Droits des Utilisateurs**** : Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment. Les utilisateurs peuvent contacter le référent RGPD par email pour faire valoir leur droits.
-- **En cas de violation de données :** Nous informerons sans délai les autorités compétentes (CNIL) et les utilisateurs impactés, respectant un délai de 72 heures.
+- **Consentement Explicite** :  
+  L'application exigera un consentement clair de l'utilisateur pour le traitement des données personnelles lors de la création de profil.
+- **Minimisation des Données** :  
+  Seules les informations indispensables seront collectées pour la réservation.
+- **Droits des Utilisateurs** :  
+  Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment. Les utilisateurs peuvent contacter le référent RGPD par email pour faire valoir leur droits.
+- **En cas de violation de données** :  
+  Nous informerons sans délai les autorités compétentes (CNIL) et les utilisateurs impactés, respectant un délai de 72 heures.
+- Mise en place d’un formulaire de demande d’accès
 
-Mise en place d’un formulaire de demande d’accès
+### Stockage Sécurisé des Mots de Passe
 
-**### Stockage Sécurisé des Mots de Passe** :
-
-Utilisez des méthodes de hachage robustes, comme Bcrypt, pour le stockage des mots de passe. Bcrypt intègre un salage automatique qui rend chaque hash unique et résistant aux attaques par tables de correspondance. (cf politique des mots de passes)
+Utilisez des méthodes de hachage robustes, comme Bcrypt, pour le stockage des mots de passe. Bcrypt intègre un salage automatique qui rend chaque hash unique et résistant aux attaques par tables de correspondance.  
+([cf. Politique des mots de passes](#politique-des-mots-de-passe))
 
 En adoptant une approche proactive en matière de sécurité et en mettant en œuvre des mesures appropriées, notre apllication s'efforcera de fournir à ses utilisateurs un environnement sûr et fiable pour leur veille technologique.
-
