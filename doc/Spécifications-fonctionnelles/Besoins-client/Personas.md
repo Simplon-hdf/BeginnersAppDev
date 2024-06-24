@@ -2,7 +2,7 @@
 
 Ces personas vont nous guider lors de l'élaboration des user stories en mettant l'accent sur les besoins, objectifs et défis spécifiques de chaque type d'utilisateur.
 
-<img src="../Assets/Images/persona1.png" alt="Persona 1" width="300">
+<img src="../../Assets/Images/persona1.png" alt="Persona 1" width="300">
 
 > <span style="color: #26B260;">**Persona 1**</span> : Responsable(s) de la plateforme/administrateur(s)
 >
@@ -20,7 +20,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 ---
 
-<img src="../Assets/Images/persona2.jpg" alt="Persona 2" width="300">
+<img src="../../Assets/Images/persona2.jpg" alt="Persona 2" width="300">
 
 > <span style="color: #26B260;">**Persona 2**</span> : Alexandra, la Néophyte
 >
@@ -38,7 +38,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 ---
 
-<img src="../Assets/Images/persona3.jpg" alt="Persona 3" width="300">
+<img src="../../Assets/Images/persona3.jpg" alt="Persona 3" width="300">
 
 > <span style="color: #26B260;">**Persona 3**</span> : Sam, le Développeur Junior
 >
@@ -56,7 +56,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 ---
 
-<img src="../Assets/Images/persona4.jpg" alt="Persona 4" width="300">
+<img src="../../Assets/Images/persona4.jpg" alt="Persona 4" width="300">
 
 > <span style="color: #26B260;">**Persona 4**</span>
 > : Olivier, le Modérateur
@@ -75,7 +75,7 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 
 ---
 
-<img src="../Assets/Images/persona5.jpg" alt="Persona 5" width="300">
+<img src="../../Assets/Images/persona5.jpg" alt="Persona 5" width="300">
 
 > <span style="color: #26B260;">**Persona 5**</span> : Emily, la Super Administratrice
 >

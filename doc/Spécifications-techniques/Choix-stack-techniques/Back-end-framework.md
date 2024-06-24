@@ -1,4 +1,4 @@
-<img src="../Assets/Images/podium.png" alt="Podium" width="200">
+<img src="../../Assets/Images/podium.png" alt="Podium" width="200">
 
 # Comparatif frameworks Back-end
 

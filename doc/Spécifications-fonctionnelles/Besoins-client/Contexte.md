@@ -1,4 +1,4 @@
-<img src="../Assets/Images/platform-image.png" alt="Image de la plateforme" width="600">
+<img src="../../Assets/Images/platform-image.png" alt="Image de la plateforme" width="600">
 
 # Contexte du projet
 
