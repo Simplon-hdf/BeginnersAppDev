@@ -6,23 +6,23 @@ Ce tableau aligne les permissions et les actions possibles pour chaque rôle sel
 
 | Autorisations / Rôle                                          | Visiteur | Utilisateur | Modérateur | Administrateur | Super Administrateur |
 | ------------------------------------------------------------- | -------- | ----------- | ---------- | -------------- | -------------------- |
-| Gestion de l'authentification et accès à contenu personnalisé | ✅       | ✅          | ✅         | ✅             |                      |
-| Recevoir des notifications en cas de suppression de contenu   |          | ✅          | ✅         | ✅             |                      |
-| Publication d'articles et de commentaires                     |          | ✅          | ✅         | ✅             |                      |
-| Accès à une interface de modération                           |          |             | ✅         | ✅             |                      |
-| Suppression de contenus non conformes                         |          |             | ✅         | ✅             |                      |
-| Accorder ou retirer des permissions de publication            |          |             | ✅         | ✅             |                      |
-| Accès à un rapport d'activité de modération                   |          |             | ✅         | ✅             |                      |
-| Créer des comptes modérateurs                                 |          |             |            | ✅             |                      |
-| Modifier des comptes modérateurs                              |          |             |            | ✅             |                      |
-| Supprimer des comptes modérateurs                             |          |             |            | ✅             |                      |
-| Créer des comptes utilisateurs                                |          |             |            | ✅             |                      |
-| Modifier des comptes utilisateurs                             |          |             |            | ✅             |                      |
-| Supprimer des comptes utilisateurs                            |          |             |            | ✅             |                      |
-| Attribuer/modifier des rôles                                  |          |             |            | ✅             |                      |
-| Créer des administrateurs                                     |          |             |            |                | ✅                   |
-| Modifier des administrateurs                                  |          |             |            |                | ✅                   |
-| Supprimer des administrateurs                                 |          |             |            |                | ✅                   |
+| Gestion de l'authentification et accès à contenu personnalisé | ✅       | ✅          | ✅         | ✅             |        ❌              |
+| Recevoir des notifications en cas de suppression de contenu   | ❌       | ✅          | ✅         | ✅             |        ❌              |
+| Publication d'articles et de commentaires                     |   ❌       | ✅          | ✅         | ✅             |      ❌                |
+| Accès à une interface de modération                           |   ❌       |    ❌         | ✅         | ✅             |    ❌                  |
+| Suppression de contenus non conformes                         |   ❌       |    ❌         | ✅         | ✅             |    ❌                  |
+| Accorder ou retirer des permissions de publication            |   ❌       |    ❌         | ✅         | ✅             |    ❌                  |
+| Accès à un rapport d'activité de modération                   |   ❌       |    ❌         | ✅         | ✅             |    ❌                  |
+| Créer des comptes modérateurs                                 |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Modifier des comptes modérateurs                              |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Supprimer des comptes modérateurs                             |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Créer des comptes utilisateurs                                |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Modifier des comptes utilisateurs                             |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Supprimer des comptes utilisateurs                            |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Attribuer/modifier des rôles                                  |   ❌       |    ❌         |     ❌       | ✅             |  ❌                    |
+| Créer des administrateurs                                     |   ❌       |    ❌         |     ❌       |       ❌         | ✅                   |
+| Modifier des administrateurs                                  |   ❌       |    ❌         |     ❌       |       ❌         | ✅                   |
+| Supprimer des administrateurs                                 |   ❌       |    ❌         |     ❌       |       ❌         | ✅                   |
 
 ### Vue détaillée :
 
