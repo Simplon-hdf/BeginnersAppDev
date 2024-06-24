@@ -3,55 +3,37 @@
 # Comparatif frameworks Back-end
 
 Dans le processus de conception et de développement de notre application, le choix des technologies et des outils est une étape cruciale qui impactera directement la qualité, la performance et la maintenabilité de notre produit final.  
-Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles.  
-Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le framework le mieux adapté à nos besoins spécifiques.
-| Catégorie | 🥈 NestJS | 🥉 Express | 🥇 SpringBoot | Next.js |
-| --- | --- | --- | --- | --- |
-| Big ou small | 3 | 3 | 3 | 2 |
-| _ Custo | 3 | 3 | 2 | 2 |
-| _ Rapidité | 3 | 3 | 2 | 2 |
-| Popularité | 3 | 3 | 3 | 2 |
-| Maturité | 2 | 3 | 3 | 2 |
-| Releases | 3 | 3 | 3 | 2 |
-| Best Practices | 3 | 2 | 3 | 2 |
-| Equipe Core | 3 | 2 | 3 | 2 |
-| GitHub Stars | 2 | 3 | 2 | 2 |
-| Licence Open Source | MIT | MIT | Apache 2.0 | MIT |
-| _ Distribution | Facile | Facile | Complexe | Facile |
-| _ Commercial | Forte | Forte | Forte | Modérée |
-| _ Modification | Facile | Facile | Modérée | Facile |
-| _ Restriction | Aucune | Aucune | Aucune | Aucune |
-| Commu GitHub | 3 | 3 | 2 | 2 |
-| _ Contributeurs | Nombreux | Très nombreux | Nombreux | Modérés |
-| _ Used | Fréquemment | Très fréquemment | Fréquemment | Occasionnellement |
-| _ Issu | Modérés | Nombreux | Modérés | Modérés |
-| _ Pull Request | Actives | Très actives | Actives | Modérées |
-| _ Process contribution | Clair | Clair | Clair | Clair |
-| Dernier commit | 3 | 3 | 3 | 2 |
-| Sponso | Variable | Variable | Forte | Variable |
-| Stackoverflow | 2 | 3 | 3 | 1 |
-| _ Tag | Populaire | Très populaire | Populaire | Moins populaire |
-| _ Nombre de question | Nombreux | Très nombreux | Nombreux | Moins nombreux |
-| _ Dernière question | Récemment | Récemment | Récemment | Moins récemment |
-| \_ Réponse valider | Haute | Très haute | Haute | Modérée |
-| Documentation | 3 | 2 | 3 | 2 |
-| Bibliothèque | 3 | 2 | 3 | 2 |
-| Magique | 2 | 1 | 3 | 1 |
-| Mariage librairies | 3 | 2 | 2 | 2 |
-| Payant | Gratuit | Gratuit | Payant | Gratuit |
-| TOTAL | 58 | 57 | 59 | 40 |
+Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles. 
+
+
+
+Cette notation permettra notamment de comparer les stacks et donner une meilleure approche sur laquelle il faut choisir. 
+
+| |Catégorie | 🥈 NestJS |  Express | 🥇 SpringBoot |🥉 Next.js |
+|  --- | --- | --- | --- | --- | --- |
+| 1 | Scalabilité | ⭐️⭐️⭐️ | ⭐️ | ⭐️⭐️⭐️⭐️⭐️  | ⭐️⭐️⭐️ |
+| 2 | Payant | Gratuit | Gratuit | Payant | Gratuit |
+| 3 | Rapidité | ⭐️⭐️ | ⭐️⭐️⭐️⭐️ | ⭐️ | ⭐️⭐️ |
+| 4 |Popularité | ⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️ |
+| 5 |Maturité | ⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️  |
+| 6 |Licence Open Source | MIT | MIT | Apache 2.0 | MIT |
+| 7 |Communauté GitHub | ⭐️⭐️ | ⭐️ | ⭐️⭐️  | ⭐️⭐️⭐️ |
+| 8 | Contributeurs | Peu | Très peu | Nombreux | Très nombreux |
+| 9 | Documentation | ⭐️⭐️⭐️ | ⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️ |
+| 10 | Dépendances/librairies | ⭐️⭐️⭐️ | ⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️ |
+| <strong>TOTAL</strong> | |<strong>17</strong> | <strong>16</strong> | <strong>20</strong> | <strong>17</strong> |
 
 <details>
-<summary>Comparatif détaillé Backend Nest Vs Express Vs SpringBoot Vs Next</summary>
+<summary>Comparatif détaillé Backend <strong>Nest</strong> Vs <strong>Express</strong> Vs <strong>SpringBoot</strong> Vs <strong>Next</strong></summary>
 
-### **Big ou Small (Scalabilité)**
+### **Scalabilité**
 
-- **Nest.js** : Conçu pour s'adapter tant aux petites applications qu'aux grandes entreprises, Nest.js utilise une architecture modulaire et supporte les microservices, le rendant versatile pour divers types de projets.
+- **Nest.js** : Conçu pour s'adapter tant aux petites applications qu'aux grandes entreprises, Nest.js utilise une architecture modulaire le rendant versatile pour divers types de projets.
 - **Express** : Sa flexibilité le rend approprié pour tout, des petits projets aux grandes applications d'entreprise, bien que sa structure moins prescriptive nécessite une gestion rigoureuse pour les grands projets.
-- **Spring Boot** : Très adapté aux grandes applications d'entreprise, il offre des outils intégrés pour gérer efficacement les architectures complexes.
+- **Spring Boot** : Très adapté aux grandes applications d'entreprise, il offre des outils intégrés pour gérer efficacement les architectures complexes. L'utilisation de JVM permet de gérer des ressources très importante. 
 - **Next.js**: Bien que principalement orienté vers le développement frontend avec des capacités de Server-Side Rendering (SSR), Next.js peut aussi être utilisé pour certains aspects du développement backend. Il est capable de gérer des applications de petite à moyenne taille, mais peut ne pas être l'option la plus idéale pour les très grandes applications backend, en raison de son focus sur les rendus côté serveur et l'optimisation des performances frontend. Toutefois, pour des applications intégrant fortement front et back-end, Next.js offre une bonne scalabilité au sein de son cadre spécifique, surtout lorsqu'il est utilisé en combinaison avec des services backend dédiés.
 
-### **Coût (Custo)**
+### **Coût**
 
 - **Nest.js** et **Express** : Open-source et gratuits, ces frameworks peuvent varier en coût de développement selon la disponibilité et l'expertise des développeurs.
 - **Spring Boot** : Gratuit et open-source, mais peut impliquer des coûts opérationnels plus élevés en raison des ressources serveur et potentiellement des licences pour des outils complémentaires.
@@ -75,7 +57,7 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 
 - **Express** : Établi avec une large communauté et un écosystème riche.
 - **Nest.js** : Plus récent mais stable et basé sur des principes éprouvés.
-- **Spring Boot** : Très mature et stable, soutenu par une grande entreprise.
+- **Spring Boot** : Très mature et stable, soutenu par une grande entreprise (VMware).
 - **Next.js** : Bien établi et soutenu par Vercel, offrant une stabilité et des mises à jour régulières, malgré son orientation plus récente comparée à des technologies comme Spring Boot ou Express.
 
 ### **Documentation et Support**
@@ -89,12 +71,12 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 
 - **Tous les quatre** sont sous des licences open source permissives, facilitant leur adoption et utilisation.
 
-### **GitHub Stars**
+### **GitHub Stars** (chiffres au 25 Juin 2024)
 
-- **NestJS** : Environ 56k étoiles.
-- **Express** : Environ 59k étoiles.
-- **Spring Boot** : Environ 65k étoiles.
-- **Next.js** : Environ 90k étoiles, reflétant une adoption très large et un intérêt croissant.
+- **NestJS** : Environ 65k étoiles.
+- **Express** : Environ 64k étoiles.
+- **Spring Boot** : Environ 74k étoiles.
+- **Next.js** : Environ 122k étoiles, reflétant une adoption très large et un intérêt croissant.
 
 ### **Dernier commit**
 
@@ -111,7 +93,7 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 - **Spring Boot** : Niveau élevé de "magie" avec beaucoup d'auto-configurations pour simplifier le démarrage et la maintenance des applications.
 - **Next.js** : Modérément "magique" en automatisant certaines configurations pour le rendu côté serveur et la génération de pages statiques, facilitant ainsi le développement rapide.
 
-### **Mariage librairies**
+### **Librairies/Dépendances**
 
 - **NestJS** : Excellente intégration avec d'autres bibliothèques JavaScript/TypeScript.
 - **Express** : Très flexible, permet une intégration facile avec une multitude de bibliothèques.
@@ -122,6 +104,6 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 
 **❓ Pourquoi choisir la médaille d'argent :**
 
-✅ Nest.js est un framework moderne, intégré avec TypeScript et optimisé pour les performances I/O dans un environnement JavaScript, NestJS est une option plus adaptée que Spring Boot pour notre projet.
+✅ Nest.js est un framework moderne, open-source, gratuit et intégré avec TypeScript. Il est optimisé pour les performances entrées/sorties dans un environnement JavaScript, NestJS est une option plus adaptée que Spring Boot pour notre projet.
 
 > **En conclusion** Nest.js est choisi pour notre projet non seulement pour ses avantages en termes de coût et de performance mais aussi pour sa flexibilité et son adéquation avec les technologies actuelles et les pratiques de développement modernes. Ces facteurs, combinés à sa capacité à évoluer efficacement selon les besoins du projet, en font une solution plus appropriée pour notre application par rapport à Spring Boot, notamment dans un contexte où la rapidité de développement et l'adaptabilité sont prioritaires.
