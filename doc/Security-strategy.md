@@ -98,7 +98,8 @@ Cela protégera les données des utilisateurs contre les interceptions malveilla
 
 ### Protection des Entêtes avec Helmet
 
-Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.
+Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.  
+Grâce à NestJS, la mise en œuvre de ces mesures de sécurité sera simplifiée, nous permettant de garantir une base solide pour la protection de l’environnement numérique de nos utilisateurs.
 
 ### Nettoyage des Formulaires et Sanétization
 
@@ -108,16 +109,16 @@ Nous appliquerons des méthodes de nettoyage et de sanitization sur les données
 
 ### Politique de Sécurité Same-Origin et CSP
 
-Activez la politique Same-Origin et définissez une Content Security Policy (**CSP**) stricte pour contrôler les ressources chargées et exécutées sur le site.
+Ces mesures contrôleront les ressources chargées et exécutées sur le site.
 
-Nous mettrons en œuvre la politique de sécurité Same-Origin pour prévenir les attaques XSS en restreignant l'accès et l'interaction des scripts entre différentes origines.
-
-Nous utiliserons **CORS** (Cross-Origin Resource Sharing) pour sécuriser le partage de ressources entre différentes origines, en contrôlant l'accès aux ressources entre différents domaines et en prévenant les attaques **CSRF**
-(Cross-Site Request Forgery).
-
-Nous définirons une **CSP** pour limiter les sources de contenu autorisées et prévenir les attaques **XSS** en contrôlant les scripts exécutés sur notre application.
-
-Nous utiliserons **SRI** (Subresource Integrity) pour garantir l'intégrité des ressources chargées depuis des origines tierces, en vérifiant les empreintes cryptographiques des fichiers externes.
+- **Same-Origin Policy** (SOP)  
+  Nous empêcherons les scripts de différentes origines d’interagir entre eux, contribuant ainsi à la prévention des attaques XSS. Par exemple, cela protégera les contributions des développeurs contre l’injection de scripts malveillants.
+- **Cross-Origin Resource Sharing** (CORS)  
+  Nous utiliserons **CORS** pour sécuriser le partage de ressources entre différentes origines. Cela permettra, par exemple, aux développeurs d’accéder de manière sécurisée aux API externes nécessaires sans compromettre la sécurité des données utilisateurs et des projets partagés sur la plateforme.
+- **Content Security Policy** (CSP)
+- En établissant une **CSP** stricte, nous limiterons les sources de contenu autorisées. Cela aidera à prévenir les attaques XSS en contrôlant les scripts exécutés sur notre application. Par exemple, seules les sources de confiance pourront être chargées, garantissant ainsi que les bibliothèques de code utilisées restent sécurisées.
+- **Intégrité des Sous-Ressources** (SRI)  
+  Nous utiliserons **SRI** (Subresource Integrity) pour garantir l’intégrité des ressources chargées depuis des origines tierces. En vérifiant les empreintes cryptographiques des fichiers externes, nous assurerons que les bibliothèques et les outils tiers n’ont pas été altérés, protégeant ainsi le code des projets collaboratifs contre toute modification malveillante.
 
 ### Mécanismes de Limitation d’Essais d’Authentification
 
@@ -211,9 +212,7 @@ Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'
 - **Délai d’Expiration des Mots de Passe** :  
   La fréquence de renouvellement des mots de passe est adaptée au rôle :
 
-  - 15 **jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
-
-  - Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
+  - Un renouvellement **annuel** équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
 
 - **Mécanismes de Limitation d’Essais d’Authentification** :  
   Nous limiterons les tentatives de connexion infructueuses à 5 essais, qui déclenchera l’envoi d’un mail pour réinitialiser le mot de passe.
