@@ -113,14 +113,6 @@ Nous appliquerons des méthodes de nettoyage et de sanitization sur les données
 
 Ces mesures contrôleront les ressources chargées et exécutées sur le site.
 
-Nous mettrons en œuvre la politique de sécurité Same-Origin pour prévenir les attaques XSS en restreignant l'accès et l'interaction des scripts entre différentes origines.
-
-Nous utiliserons **CORS** (Cross-Origin Resource Sharing) \***\*pour sécuriser le partage de ressources entre différentes origines, en contrôlant l'accès aux ressources entre différents domaines et en prévenant les attaques **CSRF\*\* (Cross-Site Request Forgery).
-
-Nous définirons une **CSP** pour limiter les sources de contenu autorisées et prévenir les attaques **XSS** en contrôlant les scripts exécutés sur notre application.
-
-Nous utiliserons **SRI** (Subresource Integrity) pour garantir l'intégrité des ressources chargées depuis des origines tierces, en vérifiant les empreintes cryptographiques des fichiers externes.
-
 - **Same-Origin Policy** (SOP)  
   Nous empêcherons les scripts de différentes origines d’interagir entre eux, contribuant ainsi à la prévention des attaques XSS. Par exemple, cela protégera les contributions des développeurs contre l’injection de scripts malveillants.
 - **Cross-Origin Resource Sharing** (CORS)  
@@ -130,7 +122,7 @@ Nous utiliserons **SRI** (Subresource Integrity) pour garantir l'intégrité des
 - **Intégrité des Sous-Ressources** (SRI)  
   Nous utiliserons **SRI** (Subresource Integrity) pour garantir l’intégrité des ressources chargées depuis des origines tierces. En vérifiant les empreintes cryptographiques des fichiers externes, nous assurerons que les bibliothèques et les outils tiers n’ont pas été altérés, protégeant ainsi le code des projets collaboratifs contre toute modification malveillante.
 
-**### Mécanismes de Limitation d’Essais d’Authentification**
+### Mécanismes de Limitation d’Essais d’Authentification
 
 Limitez les tentatives de connexion infructueuses pour prévenir les attaques par force brute. Après plusieurs échecs, bloquez temporairement l’accès et alertez l’utilisateur.
 
@@ -165,12 +157,12 @@ Mettez en place des contrôles stricts sur le nombre de requêtes acceptées pou
 
 Nous utiliserons des **UUID** (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé.
 
-**###Transmission Sécurisée des Mots de Passe** :
+### Transmission Sécurisée des Mots de Passe
+
 Assurez-vous que les mots de passe sont toujours transmis de manière sécurisée, en utilisant des connexions HTTPS pour éviter les interceptions
 
 ### Journalisation des Requêtes API
 
-Enregistrez chaque appel API, y compris les détails de la requête tels que l’adresse IP source, les paramètres de requête, les en-têtes, et les réponses. Cela permet de tracer les actions à travers l’API et de détecter des anomalies comme des tentatives d’injection ou des abus de l’API.
 Enregistrez chaque appel API, y compris les détails de la requête tels que l’adresse IP source, les paramètres de requête, les en-têtes, et les réponses. Cela permet de tracer les actions à travers l’API et de détecter des anomalies comme des tentatives d’injection ou des abus de l’API.
 
 ### Visualisation des end-points API via Swagger
@@ -197,37 +189,32 @@ Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'
 
 - Membre
 
-- **\*Sécurité\*\*** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.
-- **\*Politique de Confidentialité\*\*** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
+**Sécurité** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.  
+**Politique de Confidentialité** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
 
 ## 3. Couche bdd
 
 ### Politique des Mots de Passe
 
-• **Catégories de Mots de Passe** :
-Les super administrateurs et les administrateurs bénéficient d’un accès complet, nécessitant le plus haut niveau de sécurité.
-Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités standards de l’application, y compris la gestion des commentaires et auront un niveau de sécurité moindre.
+- **Catégories de Mots de Passe** :  
+  Les super administrateurs et les administrateurs bénéficient d’un accès complet, nécessitant le plus haut niveau de sécurité.
+  Les modérateurs et les utilisateurs standard ont accès aux fonctionnalités standards de l’application, y compris la gestion des commentaires et auront un niveau de sécurité moindre.
 
-• **Longueur des Mots de Passe :**
+- **Longueur des Mots de Passe** :  
+  La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
 
-La longueur des mots de passe est déterminée non seulement pour la sécurité, mais aussi pour maintenir la performance optimale du système :
+  - Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
 
-    . Pour les Super administrateurs et Administrateurs, nous exigeons des mots de passe d’au moins **15 caractères**.
+  - Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
 
-    . Les Modérateurs et utilisateurs doivent utiliser des mots de passe d’au moins **12 caractères**.
+  - La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
 
-    . La longueur maximale autorisée de 100 caractères est un compromis entre flexibilité et efficacité systémique.
+- **Règles de Complexité** :  
+  Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.  
+   Nous metterons également en place des Regex pour renforcer la sécurité
 
-• **Règles de Complexité** :
-Tous les mots de passe doivent intégrer une combinaison de lettres majuscules, minuscules, chiffres, et symboles spéciaux. Nous proscrivons également l’utilisation de suites logiques ou répétitives.
-
-• **Délai d’Expiration des Mots de Passe**
-
-La fréquence de renouvellement des mots de passe est adaptée au rôle :
-
-    . 15 **jours** pour les super-administrateurs et administrateurs, pour une sécurité maximale.
-
-    . Un renouvellement **annuel** pour les modérateurs et utilisateurs, équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
+- **Délai d’Expiration des Mots de Passe** :  
+  La fréquence de renouvellement des mots de passe est adaptée au rôle :
 
 - Un renouvellement **annuel** équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
 
@@ -255,12 +242,15 @@ Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les d
 
 Nous mettrons en place les mesures suivantes pour assurer la conformité au RGPD, mais aussi la confiance des utilisateurs, leur garantissant un traitement respectueux et sécurisé de leurs données personnelles. :
 
-- **\*Consentement Explicite\*\*** : L'application exigera un consentement clair de l'utilisateur pour le traitement des données personnelles lors de la création de profil.
-- **\*Minimisation des Données\*\*** : Seules les informations indispensables seront collectées pour la réservation.
-- **\*Droits des Utilisateurs\*\*** : Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment. Les utilisateurs peuvent contacter le référent RGPD par email pour faire valoir leur droits.
-- **En cas de violation de données :** Nous informerons sans délai les autorités compétentes (CNIL) et les utilisateurs impactés, respectant un délai de 72 heures.
-
-Mise en place d’un formulaire de demande d’accès
+- **Consentement Explicite** :  
+  L'application exigera un consentement clair de l'utilisateur pour le traitement des données personnelles lors de la création de profil.
+- **Minimisation des Données** :  
+  Seules les informations indispensables seront collectées pour la réservation.
+- **Droits des Utilisateurs** :  
+  Les utilisateurs seront informés de leurs droits RGPD, incluant le droit à la consultation (accès à leurs données), droit de rectification (correction de leurs données), droit à l’oublie (suppression de leurs données) et la possibilité de retirer leur consentement à tout moment. Les utilisateurs peuvent contacter le référent RGPD par email pour faire valoir leur droits.
+- **En cas de violation de données** :  
+  Nous informerons sans délai les autorités compétentes (CNIL) et les utilisateurs impactés, respectant un délai de 72 heures.
+- Mise en place d’un formulaire de demande d’accès
 
 ### Stockage Sécurisé des Mots de Passe
 
