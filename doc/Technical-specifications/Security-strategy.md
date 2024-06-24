@@ -99,6 +99,8 @@ Cela protégera les données des utilisateurs contre les interceptions malveilla
 ### Protection des Entêtes avec Helmet
 
 Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.  
+Grâce à **NestJS**, la mise en œuvre de ces mesures de sécurité sera simplifiée, nous permettant de garantir une base solide pour la protection de l’environnement numérique de nos utilisateurs.
+Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.  
 Grâce à NestJS, la mise en œuvre de ces mesures de sécurité sera simplifiée, nous permettant de garantir une base solide pour la protection de l’environnement numérique de nos utilisateurs.
 
 ### Nettoyage des Formulaires et Sanétization
@@ -126,26 +128,28 @@ Limitez les tentatives de connexion infructueuses pour prévenir les attaques pa
 
 ([cf. Politique des mots de passes](#politique-des-mots-de-passe))
 
-## 2. Couche API Back-end
+**2] Couche API Back-end**
 
 ### Authentification et Gestion des Sessions avec OAuth 2.0 et JWT
 
 Sécurisez les APIs en utilisant **OAuth 2.0** pour l’authentification et les JSON Web Tokens (**JWT**) pour la gestion des sessions.
+Sécurisez les APIs en utilisant **OAuth 2.0** pour l’authentification et les JSON Web Tokens (**JWT**) pour la gestion des sessions.
 
-- **OAuth 2.0 et JWT** : Bien que mentionnés dans la gestion des sessions, leur application aux APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des autorisations, adaptée aux interactions entre services.
+**OAuth 2.0 et JWT** : Bien que mentionnés dans la gestion des sessions, leur application aux APIs assure une couche supplémentaire de sécurité pour l'authentification et la gestion des autorisations, adaptée aux interactions entre services.
 
 - **Tokens et JWT** : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des identifiants uniques et des données codées, permettant une gestion stateless qui augmente la scalabilité et la performance.
 
-### Validation et Sanitization des Requêtes API
+**### Validation et Sanitization des Requêtes API**:
 
 Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**.
+Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**.
 
-### Chiffrement des communications
+**###Chiffrement des communications**:
 
 Nous renforcerons la sécurité des données en transit entre le serveur et le client en mettant en place des tunnels sécurisés. Le protocole HTTPS, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS.  
 Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
 
-### Limitation du Taux de Requêtes (Rate Limiting)
+**###Limitation du Taux de Requêtes (Rate Limiting)**:
 
 Mettez en place des contrôles stricts sur le nombre de requêtes acceptées pour prévenir les attaques par déni de service (DoS).
 
@@ -212,16 +216,19 @@ Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'
 - **Délai d’Expiration des Mots de Passe** :  
   La fréquence de renouvellement des mots de passe est adaptée au rôle :
 
-  - Un renouvellement **annuel** équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
+- Un renouvellement **annuel** équilibrant sécurité et facilité d’utilisation. Ce délai a été choisie en fonction du besoin de sécurité de l’application mais aussi afin de ne pas contraindre l’utilisateur à rentrer son mot de passe trop régulièrement
 
-- **Mécanismes de Limitation d’Essais d’Authentification** :  
-  Nous limiterons les tentatives de connexion infructueuses à 5 essais, qui déclenchera l’envoi d’un mail pour réinitialiser le mot de passe.
+• **Mécanismes de Limitation d’Essais d’Authentification**
 
-- **Méthode de Conservation des Mots de Passe** :  
-  Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **Bcrypt** avec salage, assurant que chaque mot de passe est unique et protégé contre les attaques.
+Nous limiterons les tentatives de connexion infructueuses à 5 essais, puis déclenchera l’envoi d’un mail pour réinitialiser le mot de passe.
 
-- **Méthode de Recouvrement d’Accès** :  
-  En cas de perte ou de vol des mots de passe, nous fournissons un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
+• **Méthode de Conservation des Mots de Passe**
+
+Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **Bcrypt** avec salage, assurant que chaque mot de passe est unique et protégé contre les attaques.
+
+• **Méthode de Recouvrement d’Accès**
+
+En cas de perte ou de vol des mots de passe, nous fournissons un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
 
 ### ORM contre les Injections SQL
 
