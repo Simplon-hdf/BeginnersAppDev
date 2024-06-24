@@ -1,4 +1,4 @@
-<img src="../doc/Assets/Images/secutiy_strategy.jpg" alt="security strategy">
+<img src="../../doc/Assets/Images/secutiy_strategy.jpg" alt="security strategy">
 
 # Stratégie de Sécurisation Complète pour notre application
 

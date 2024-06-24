@@ -1,4 +1,4 @@
-<img src="../Assets/Images/project-management.png" alt="Outils" width="600">
+<img src="../../Assets/Images/project-management.png" alt="Outils" width="600">
 
 # Les outils de gestion de projet et du développement
 
