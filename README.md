@@ -28,7 +28,7 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 
 ### 1. Spécifications fonctionnelles
 
-- #### [1. Besoins du client](./doc/Spécifications-fonctionnelles/Besoins-client/)
+- #### [1.1 Besoins du client](./doc/Spécifications-fonctionnelles/Besoins-client/)
 
   - #### [1.1.1 Contexte et cadrage client](./doc/Spécifications-fonctionnelles/Besoins-client/Contexte.md)
 
