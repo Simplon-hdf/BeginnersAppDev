@@ -1,4 +1,4 @@
-<img src="../Assets/Images/questions-answers.png" alt="Questions-Réponses" width="400">
+<img src="../../Assets/Images/questions-answers.png" alt="Questions-Réponses" width="400">
 
 # Questions / Réponses
 
