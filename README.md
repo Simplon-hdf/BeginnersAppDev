@@ -28,7 +28,7 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 
 ### 1. Spécifications fonctionnelles
 
-- #### [1. Besoins du client](./doc/Spécifications-fonctionnelles/Besoins-client/)
+- #### [1.1 Besoins du client](./doc/Spécifications-fonctionnelles/Besoins-client/)
 
   - #### [1.1.1 Contexte et cadrage client](./doc/Spécifications-fonctionnelles/Besoins-client/Contexte.md)
 
@@ -47,25 +47,28 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 - #### [2.5 Choix frontend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Front-end-frameworks.md)
 - #### [2.6 Choix de l'ORM](./doc/Spécifications-techniques/Choix-stack-techniques/ORM.md)
 
+  ### Sécurisation et dictionnaire de données
+
+- #### [2.7 Dictionnaire de données](./doc/Spécifications-techniques/Dictionnaire-de-données.md)
+- #### [2.8 Stratégie de sécurisation](./doc/Spécifications-techniques/Stratégie-sécurisation.md)
+
   ### Modélisation Merise
 
-- #### [2.7 MCD (Modèle Conceptuel des Données)](./doc/Spécifications-techniques/Merise/MCD.md)
+- #### [2.9 MCD (Modèle Conceptuel des Données)](./doc/Spécifications-techniques/Merise/MCD.md)
 
-- #### [2.8 MLD (Modèle Logique des Données)](./doc/Spécifications-techniques/Merise/MLD.md)
+- #### [2.10 MLD (Modèle Logique des Données)](./doc/Spécifications-techniques/Merise/MLD.md)
 
-- #### [2.9 MPD - Script SQL](./doc/Spécifications-techniques/Merise/Script-BDD.md)
+- #### [2.11 MPD - Script SQL](./doc/Spécifications-techniques/Merise/Script-BDD.md)
 
   ### Modélisation UML
 
-- #### [2.10 Diagramme cas d'utilisation (Use Case)](./doc/Spécifications-techniques/UML/Diagramme-cas-utilisation/)
+- #### [2.12 Diagramme cas d'utilisation (Use Case)](./doc/Spécifications-techniques/UML/Diagramme-cas-utilisation/Diagramme-cas-utilisation.md)
 
-- #### [2.11 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/)
+- #### [2.13 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/Diagramme-activité1.md)
 
-- #### [2.12 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/)
+- #### [2.14 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/Diagramme-séquence.md)
 
-- #### [2.13 Diagramme de classe](./doc/Spécifications-techniques/UML/Diagramme-classe/)
-- #### [2.14 Dictionnaire de données](./doc/Spécifications-techniques/Dictionnaire-de-données.md)
-- #### [2.15 Stratégie de sécurisation](./doc/Spécifications-techniques/Stratégie-sécurisation.md)
+- #### [2.15 Diagramme de classe](./doc/Spécifications-techniques/UML/Diagramme-classe/Diagramme-classe.md)
 
 ### 3. Conclusion
 
