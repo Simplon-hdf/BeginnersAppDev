@@ -6,6 +6,7 @@ Dans le processus de conception et de développement de notre application, le ch
 Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles.  
 
 
+
 | |Catégorie |🥉 Vue.js |  Angular | 🥈React |🥇 Next.js |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Scalabilité | ⭐️⭐️⭐️ | ⭐️⭐️ | ⭐️⭐️  | ⭐️⭐️⭐️⭐️ |
@@ -25,12 +26,14 @@ Pour prendre des décisions éclairées et rationaliser nos choix technologiques
 
 ### **Scalabilité**
 
+
 - **Vue.js** : Adaptable à la fois pour les petits et les grands projets grâce à sa simplicité et modularité. L'utilisation de TypeScript ajoute une couche de robustesse en termes de maintenance et évolutivité du code.
 - **Angular** : Conçu pour des applications d'entreprise de grande envergure avec une architecture robuste, Angular utilise TypeScript nativement, ce qui renforce sa capacité à gérer des applications complexes.
 - **React** : Extrêmement flexible, convient pour des projets variés, des applications simples aux systèmes complexes. L'intégration de TypeScript améliore la gestion de gros projets en apportant une vérification de type statique.
 - **Next.js** : Idéal pour les projets de toutes tailles, avec une excellente prise en charge du SSR et du SSG. L'intégration de TypeScript rend le code plus prévisible et sûr, renforçant la scalabilité.
 
 ### **Coût**
+
 
 - **Vue.js**, **Angular**, **React** : Tous open-source et gratuits. Les coûts de développement peuvent varier en fonction de la disponibilité des développeurs et de leur expertise avec chaque framework, y compris leur maîtrise de TypeScript.
 - **Next.js** : Également open-source et gratuit. Les coûts principaux sont liés au développement et à l'infrastructure, notamment pour le SSR, mais ces coûts peuvent être optimisés grâce à une bonne planification et l'utilisation de plateformes d'hébergement adaptées. L'utilisation de TypeScript peut augmenter les coûts initiaux mais réduit les erreurs potentielles.
@@ -98,6 +101,7 @@ Pour prendre des décisions éclairées et rationaliser nos choix technologiques
 - **Angular** : Bien intégré dans son propre écosystème, mais peut présenter des défis lors de l'utilisation avec des bibliothèques qui ne sont pas spécifiquement conçues pour Angular.
 - **React** : Extrêmement adaptable avec d'autres bibliothèques, grâce à sa nature composant-basée et son écosystème ouvert.
 - **Next.js** : Excellente intégration avec l'écosystème React et les autres bibliothèques JavaScript, optimisant ainsi le développement de solutions complètes. Il inclut des fonctionnalités supplémentaires comme la création simplifiée de routes API et un rendu SSR
+
 </details>
 <br>
 
