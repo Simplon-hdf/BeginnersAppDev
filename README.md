@@ -22,8 +22,60 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 - ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 - ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+# Structure du dépôt
+
+## [Table des matières](#table-des-matieres)
+
+### 1. Spécifications fonctionnelles
+
+- #### [1.1 Besoins du client](./doc/Spécifications-fonctionnelles/Besoins-client/)
+
+  - #### [1.1.1 Contexte et cadrage client](./doc/Spécifications-fonctionnelles/Besoins-client/Contexte.md)
+
+  - #### [1.1.2 Personas](./doc/Spécifications-fonctionnelles/Besoins-client/Personas.md)
+
+- #### [1.2 Méthodologie du projet](./doc/Spécifications-fonctionnelles/Méthodologie-projet.md)
+- #### [1.3 Règles de gestion](./doc/Spécifications-fonctionnelles/Règles-de-gestion.md)
+- #### [1.4 RBAC](./doc/Spécifications-fonctionnelles/RBAC.md)
+
+### 2. Spécifications techniques
+
+- #### [2.1 Questions globales](./doc/Spécifications-techniques/Choix-stack-techniques/Questions-globales.md)
+- #### [2.2 Les outils du projet](./doc/Spécifications-techniques/Choix-stack-techniques/Outils-.md)
+- #### [2.3 API](./doc/Spécifications-techniques/Choix-stack-techniques/API.md)
+- #### [2.4 Choix backend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Back-end-framework.md)
+- #### [2.5 Choix frontend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Front-end-frameworks.md)
+- #### [2.6 Choix de l'ORM](./doc/Spécifications-techniques/Choix-stack-techniques/ORM.md)
+
+  ### Sécurisation et dictionnaire de données
+
+- #### [2.7 Dictionnaire de données](./doc/Spécifications-techniques/Dictionnaire-de-données.md)
+- #### [2.8 Stratégie de sécurisation](./doc/Spécifications-techniques/Stratégie-sécurisation.md)
+
+  ### Modélisation Merise
+
+- #### [2.9 MCD (Modèle Conceptuel des Données)](./doc/Spécifications-techniques/Merise/MCD.md)
+
+- #### [2.10 MLD (Modèle Logique des Données)](./doc/Spécifications-techniques/Merise/MLD.md)
+
+- #### [2.11 MPD - Script SQL](./doc/Spécifications-techniques/Merise/Script-BDD.md)
+
+  ### Modélisation UML
+
+- #### [2.12 Diagramme cas d'utilisation (Use Case)](./doc/Spécifications-techniques/UML/Diagramme-cas-utilisation/Diagramme-cas-utilisation.md)
+
+- #### [2.13 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/Diagramme-activité1.md)
+
+- #### [2.14 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/Diagramme-séquence.md)
+
+- #### [2.15 Diagramme de classe](./doc/Spécifications-techniques/UML/Diagramme-classe/Diagramme-classe.md)
+
+### 3. Conclusion
+
+#### [3.1 Conclusion](./doc/Conclusion.md)
+
 <details>
-<summary><h2>Checklist</h2></summary>
+<summary>Checklist</summary>
 
 - [x] **Choix de la méthodologie (Agile)**
 - [x] **Créer un repo Github**
@@ -48,36 +100,40 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [x] .dockerignore
 
 - [x] **Mise en place du Readme**
-- [ ] **Cadrage de la demande client**
-  - [x] Contexte / Enjeux / Problèmatique
-  - [ ] Questions entretiens
+
+- [ ] **Spécifications fonctionnelles**
+
+  - [x] Contexte / Problèmatique
   - [x] Persona
   - [ ] Présentation (PowerPoint)
-  - [ ] Mail de suivie / Proposition stratégique
-- [ ] **Analyse de la concurence**
-  - [ ] Concurrence
-- [ ] **Analyse des technologies**
-  - [x] Back-end frameworks
-  - [x] Front-end frameworks
-  - [x] Questions globales
-  - [x] ORM
-  - [x] Outils
-- [ ] **Spécifications fonctionnelles**
   - [x] Règle de gestion
+  - [x] Méthodologie du projet
+  - [x] RBAC
+
+- [ ] **Spécifications techniques**
+
+  - Choix des stack
+
+    - [x] API
+    - [x] Back-end frameworks
+    - [x] Front-end frameworks
+    - [x] Questions globales
+    - [x] ORM
+    - [x] Outils
+    - [ ] ReadMe
+
+  - [x] Stratégie de sécurisation
+  - [ ] Dictionnaire de données
+  - [ ] Merise
+    - [ ] MCD
+    - [ ] MLD
+    - [ ] MPD
   - [ ] UML
     - [ ] Diagramme d'activité
     - [ ] Use case
     - [ ] Diagramme de séquence
     - [ ] Diagramme de classe
-  - [ ] Merise
-    - [ ] MCD
-    - [ ] MLD
-    - [ ] MPD
-- [x] **Spécifications techniques** 
-  - [x] API
-  - [x] Méthodologie
-  - [x] RBAC
-  - [x] Stratégie de sécurisation
+
 - [x] **Epic**
   - [x] User Story
   - [x] Product backlog (Tâches)
@@ -85,7 +141,6 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 - [x] **Rituels agiles**
 
   - [x] Réunion de planification de sprint
-  - [x] Réunion 'debout'
   - [x] Réunion 'rétrospective'
   - [x] Revue de sprint
 

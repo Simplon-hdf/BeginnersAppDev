@@ -1,4 +1,4 @@
-<img src="../doc/Assets/Images/API.png" alt="API" width="600">
+<img src="../../../doc/Assets/Images/API.png" alt="API" width="600">
 
 # Comparaison des types d'API
 
