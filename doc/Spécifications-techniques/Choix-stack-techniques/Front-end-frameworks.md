@@ -4,54 +4,33 @@
 
 Dans le processus de conception et de développement de notre application, le choix des technologies et des outils est une étape cruciale qui impactera directement la qualité, la performance et la maintenabilité de notre produit final.  
 Pour prendre des décisions éclairées et rationaliser nos choix technologiques, nous avons établi le tableau suivant qui évalue différents aspects clés des différents frameworks potentielles.  
-Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une faible adéquation et 3 une adéquation maximale. Une fois que chaque technologie aura été évaluée selon ces critères, nous serons en mesure de comparer les résultats et de sélectionner le framework le mieux adapté à nos besoins spécifiques.
-| Catégorie | Vue.js | 🥉 Angular | 🥈 React | 🥇 Next.js |
-| --- | --- | --- | --- | --- |
-| Big ou small | 3 | 2 | 3 | 3 |
-| _ Custo | 3 | 1 | 3 | 3 |
-| _ Rapidité | 2 | 1 | 3 | 3 |
-| Popularité | 2 | 1 | 3 | 3 |
-| Maturité | 1 | 3 | 3 | 3 |
-| Releases | 3 | 1 | 2 | 3 |
-| Best Practices | 1 | 3 | 2 | 3 |
-| Equipe Core | 1 | 3 | 3 | 3 |
-| GitHub Stars\* | 3 | 1 | 3 | 3 |
-| Licence Open Source | MIT | MIT | MIT | MIT |
-| _ Distribution | Simple | Complexe | Moderée | Simple |
-| _ Commercial | Forte | Forte | Forte | Forte |
-| _ Modification | Facile | Modérée | Facile | Facile |
-| _ Restriction | Aucune | Aucune | Aucune | Aucune |
-| Commu GitHub | 2 | 2 | 3 | 3 |
-| _ Contributeurs | Nombreux | Moins | Très nombreux | Très nombreux |
-| _ Used | Fréquemment | Moins fréquemment | Très fréquemment | Fréquemment |
-| _ Issu | Modérés | Nombreux | Modérés | Modérés |
-| _ Pull Request | Actives | Moins actives | Très actives | Actives |
-| _ Process contribution | Clair | Complexe | Clair | Clair |
-| Dernier commit | 3 | 3 | 3 | 3 |
-| Sponso | Variable | Forte | Forte | Forte |
-| Stackoverflow | 1 | 3 | 3 | 3 |
-| _ Tag | Populaire | Moins populaire | Très populaire | Populaire |
-| _ Nombre de question | Nombreux | Moins | Très nombreux | Nombreux |
-| _ Dernière question | Récemment | Moins récemment | Récemment | Récemment |
-| \_ Réponse valider | Haute | Modérée | Très haute | Haute |
-| Documentation | 1 | 3 | 3 | 3 |
-| Bibliothèque | 2 | 3 | 2 | 3 |
-| Magique | 1 | 3 | 1 | 2 |
-| Mariage librairies | 3 | 1 | 3 | 3 |
-| Payant | Gratuit | Gratuit | Gratuit | Gratuit |
-| TOTAL | 32 | 34 | 43 | 54 |
+
+
+| |Catégorie |🥉 Vue.js |  Angular | 🥈React |🥇 Next.js |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Scalabilité | ⭐️⭐️⭐️ | ⭐️⭐️ | ⭐️⭐️  | ⭐️⭐️⭐️⭐️ |
+| 2 | Payant | Gratuit | Gratuit | Gratuit | Gratuit |
+| 3 | Rapidité | ⭐️⭐️ | ⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️ |
+| 4 | Popularité |⭐️⭐️ | ⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️ |
+| 5 | Maturité | ⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️⭐️  |
+| 6 | Licence Open Source | MIT | MIT | MIT | MIT |
+| 7 | Communauté GitHub | ⭐️⭐️ | ⭐️⭐️| ⭐️⭐️⭐️  | ⭐️⭐️⭐️ |
+| 8 | Contributeurs | Peu | Nombreux | Nombreux | Très nombreux |
+| 9 | Documentation | ⭐️⭐️⭐️ | ⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️ |
+| 10 | Dépendances/librairies | ⭐️⭐️⭐️ | ⭐️⭐️⭐️ | ⭐️⭐️⭐️⭐️ | ⭐️⭐️⭐️ |
+| <strong>TOTAL</strong> | |<strong>16</strong> | <strong>15</strong> | <strong>20</strong> | <strong>21</strong> |
 
 <details>
 <summary>Comparatif détaillé Frontend Vue.js Vs Angular Vs React Vs Next</summary>
 
-### **Big ou Small (Scalabilité)**
+### **Scalabilité**
 
 - **Vue.js** : Adaptable à la fois pour les petits et les grands projets grâce à sa simplicité et modularité. L'utilisation de TypeScript ajoute une couche de robustesse en termes de maintenance et évolutivité du code.
 - **Angular** : Conçu pour des applications d'entreprise de grande envergure avec une architecture robuste, Angular utilise TypeScript nativement, ce qui renforce sa capacité à gérer des applications complexes.
 - **React** : Extrêmement flexible, convient pour des projets variés, des applications simples aux systèmes complexes. L'intégration de TypeScript améliore la gestion de gros projets en apportant une vérification de type statique.
 - **Next.js** : Idéal pour les projets de toutes tailles, avec une excellente prise en charge du SSR et du SSG. L'intégration de TypeScript rend le code plus prévisible et sûr, renforçant la scalabilité.
 
-### **Coût (Custo)**
+### **Coût**
 
 - **Vue.js**, **Angular**, **React** : Tous open-source et gratuits. Les coûts de développement peuvent varier en fonction de la disponibilité des développeurs et de leur expertise avec chaque framework, y compris leur maîtrise de TypeScript.
 - **Next.js** : Également open-source et gratuit. Les coûts principaux sont liés au développement et à l'infrastructure, notamment pour le SSR, mais ces coûts peuvent être optimisés grâce à une bonne planification et l'utilisation de plateformes d'hébergement adaptées. L'utilisation de TypeScript peut augmenter les coûts initiaux mais réduit les erreurs potentielles.
@@ -91,12 +70,12 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 - **React** : Maintenu par Facebook avec l'aide d'une large communauté de développeurs. L'équipe core est reconnue pour son innovation continue.
 - **Next.js** : Développé par Vercel avec une équipe qui se concentre sur la simplification du développement web et l'amélioration des performances des applications web.
 
-### **GitHub Stars**
+### **GitHub Stars** (au 24 Juin 2024)
 
-- **Vue.js** : Environ 200k étoiles, indiquant une large adoption et une communauté active.
-- **Angular** : Environ 80k étoiles, reflétant sa position solide dans les environnements d'entreprise.
-- **React** : Plus de 190k étoiles, témoignant de son immense popularité et de son influence dans le développement web moderne.
-- **Next.js** : Environ 90k étoiles, montrant une croissance rapide et un intérêt croissant pour les fonctionnalités de rendu côté serveur et de génération statique.
+- **Vue.js** : Environ 207k étoiles, indiquant une large adoption et une communauté active.
+- **Angular** : Environ 95k étoiles, reflétant sa position solide dans les environnements d'entreprise.
+- **React** : Plus de 225k étoiles, témoignant de son immense popularité et de son influence dans le développement web moderne.
+- **Next.js** : Environ 122k étoiles, montrant une croissance rapide et un intérêt croissant pour les fonctionnalités de rendu côté serveur et de génération statique.
 
 ### **Dernier commit**
 
@@ -113,19 +92,12 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 - **React** : Dispose d'une documentation complète et bien organisée, avec une large gamme de ressources communautaires.
 - **Next.js** : Documentation très complète, avec un accent particulier sur les exemples de code et les meilleures pratiques pour le SSR et le SSG.
 
-### **Magique**
-
-- **Vue.js** : Minimise la "magie" en favorisant une approche explicite et déclarative, bien que des fonctionnalités comme la réactivité soient abstraites.
-- **Angular** : Utilise une certaine quantité de "magie", notamment dans la gestion automatique des dépendances et des mises à jour du DOM.
-- **React** : Reste peu "magique", préférant une transparence où les développeurs doivent gérer explicitement l'état et le cycle de vie des composants.
-- **Next.js** : Introduit une "magie" modérée, principalement dans la gestion simplifiée des routes et du rendu pré-rendu.
-
-### **Mariage librairies**
+### **Librairies/Dépendances**
 
 - **Vue.js** : Très flexible, permettant l'intégration facile avec diverses bibliothèques grâce à son système de plugins.
 - **Angular** : Bien intégré dans son propre écosystème, mais peut présenter des défis lors de l'utilisation avec des bibliothèques qui ne sont pas spécifiquement conçues pour Angular.
 - **React** : Extrêmement adaptable avec d'autres bibliothèques, grâce à sa nature composant-basée et son écosystème ouvert.
-- **Next.js** : Excellente intégration avec l'écosystème React et les autres bibliothèques JavaScript, optimisant ainsi le développement de solutions complètes.
+- **Next.js** : Excellente intégration avec l'écosystème React et les autres bibliothèques JavaScript, optimisant ainsi le développement de solutions complètes. Il inclut des fonctionnalités supplémentaires comme la création simplifiée de routes API et un rendu SSR
 </details>
 <br>
 

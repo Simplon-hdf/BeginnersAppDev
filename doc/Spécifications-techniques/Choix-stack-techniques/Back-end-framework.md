@@ -86,13 +86,6 @@ Cette notation permettra notamment de comparer les stacks et donner une meilleur
 
 - Tous ont une forte présence avec des milliers de questions, témoignant de leur utilisation active.
 
-### **Magique**
-
-- **NestJS** : Utilise une "magie" modérée avec des décorateurs et l'injection de dépendances pour simplifier le développement.
-- **Express** : Minimise la "magie", offrant plus de contrôle au développeur.
-- **Spring Boot** : Niveau élevé de "magie" avec beaucoup d'auto-configurations pour simplifier le démarrage et la maintenance des applications.
-- **Next.js** : Modérément "magique" en automatisant certaines configurations pour le rendu côté serveur et la génération de pages statiques, facilitant ainsi le développement rapide.
-
 ### **Librairies/Dépendances**
 
 - **NestJS** : Excellente intégration avec d'autres bibliothèques JavaScript/TypeScript.
