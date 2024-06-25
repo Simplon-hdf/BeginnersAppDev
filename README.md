@@ -125,11 +125,11 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [ ] ReadMe
 
   - [x] Stratégie de sécurisation
-  - [ ] Dictionnaire de données
-  - [ ] Merise
-    - [ ] MCD
-    - [ ] MLD
-    - [ ] MPD
+  - [x] Dictionnaire de données
+  - [x] Merise
+    - [x] MCD
+    - [x] MLD
+    - [x] MPD
   - [ ] UML
     - [ ] Diagramme d'activité
     - [ ] Use case
