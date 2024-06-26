@@ -44,33 +44,34 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 
 - #### [2.1 Questions globales](./doc/Spécifications-techniques/Choix-stack-techniques/Questions-globales.md)
 - #### [2.2 Les outils du projet](./doc/Spécifications-techniques/Choix-stack-techniques/Outils-.md)
-- #### [2.3 API](./doc/Spécifications-techniques/Choix-stack-techniques/API.md)
-- #### [2.4 Choix backend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Back-end-framework.md)
-- #### [2.5 Choix frontend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Front-end-frameworks.md)
-- #### [2.6 Choix de l'ORM](./doc/Spécifications-techniques/Choix-stack-techniques/ORM.md)
+- #### [2.3 L'architecture N-tiers](./doc/Spécifications-techniques/architecture_N-tiers.md)
+- #### [2.4 API](./doc/Spécifications-techniques/Choix-stack-techniques/API.md)
+- #### [2.5 Choix backend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Back-end-framework.md)
+- #### [2.6 Choix frontend framework](./doc/Spécifications-techniques/Choix-stack-techniques/Front-end-frameworks.md)
+- #### [2.7 Choix de l'ORM](./doc/Spécifications-techniques/Choix-stack-techniques/ORM.md)
 
   ### Sécurisation et dictionnaire de données
 
-- #### [2.7 Dictionnaire de données](./doc/Spécifications-techniques/Dictionnaire-de-données.md)
-- #### [2.8 Stratégie de sécurisation](./doc/Spécifications-techniques/Stratégie-sécurisation.md)
+- #### [2.8 Dictionnaire de données](./doc/Spécifications-techniques/Dictionnaire-de-données.md)
+- #### [2.9 Stratégie de sécurisation](./doc/Spécifications-techniques/Stratégie-sécurisation.md)
 
   ### Modélisation Merise
 
-- #### [2.9 MCD (Modèle Conceptuel des Données)](./doc/Spécifications-techniques/Merise/MCD.md)
+- #### [2.10 MCD (Modèle Conceptuel des Données)](./doc/Spécifications-techniques/Merise/MCD.md)
 
-- #### [2.10 MLD (Modèle Logique des Données)](./doc/Spécifications-techniques/Merise/MLD.md)
+- #### [2.11 MLD (Modèle Logique des Données)](./doc/Spécifications-techniques/Merise/MLD.md)
 
-- #### [2.11 MPD - Script SQL](./doc/Spécifications-techniques/Merise/Script-BDD.md)
+- #### [2.12 MPD - Script SQL](./doc/Spécifications-techniques/Merise/Script-BDD.md)
 
   ### Modélisation UML
 
-- #### [2.12 Diagramme cas d'utilisation (Use Case)](./doc/Spécifications-techniques/UML/Diagramme-cas-utilisation/Diagramme-cas-utilisation.md)
+- #### [2.13 Diagramme cas d'utilisation (Use Case)](./doc/Spécifications-techniques/UML/Diagramme-cas-utilisation/Diagramme-cas-utilisation.md)
 
-- #### [2.13 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/Diagramme-activité1.md)
+- #### [2.14 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/Diagramme-activité1.md)
 
-- #### [2.14 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/Diagramme-séquence.md)
+- #### [2.15 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/Diagramme-séquence.md)
 
-- #### [2.15 Diagramme de classe](./doc/Spécifications-techniques/UML/Diagramme-classe/Diagramme-classe.md)
+- #### [2.16 Diagramme de classe](./doc/Spécifications-techniques/UML/Diagramme-classe/Diagramme-classe.md)
 
 ### 3. Conclusion
 
@@ -125,11 +126,11 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
     - [ ] ReadMe
 
   - [x] Stratégie de sécurisation
-  - [ ] Dictionnaire de données
-  - [ ] Merise
-    - [ ] MCD
-    - [ ] MLD
-    - [ ] MPD
+  - [x] Dictionnaire de données
+  - [x] Merise
+    - [x] MCD
+    - [x] MLD
+    - [x] MPD
   - [ ] UML
     - [ ] Diagramme d'activité
     - [ ] Use case
