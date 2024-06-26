@@ -128,7 +128,7 @@ Limitez les tentatives de connexion infructueuses pour prévenir les attaques pa
 
 ([cf. Politique des mots de passes](#politique-des-mots-de-passe))
 
-**2] Couche API Back-end**
+## 2. Couche API Back-end
 
 ### Authentification et Gestion des Sessions avec OAuth 2.0 et JWT
 
@@ -139,17 +139,17 @@ Sécurisez les APIs en utilisant **OAuth 2.0** pour l’authentification et les 
 
 - **Tokens et JWT** : Nous utilisons ces méthodes pour assurer des sessions sécurisées avec des identifiants uniques et des données codées, permettant une gestion stateless qui augmente la scalabilité et la performance.
 
-**### Validation et Sanitization des Requêtes API**:
+**Validation et Sanitization des Requêtes API**:
 
 Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**.
 Assurez-vous que chaque requête API soit scrutée pour valider et assainir son contenu, ciblant efficacement les tentatives d’injections **SQL** et **XSS**.
 
-**###Chiffrement des communications**:
+**Chiffrement des communications**:
 
 Nous renforcerons la sécurité des données en transit entre le serveur et le client en mettant en place des tunnels sécurisés. Le protocole HTTPS, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS.  
 Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
 
-**###Limitation du Taux de Requêtes (Rate Limiting)**:
+**Limitation du Taux de Requêtes (Rate Limiting)**:
 
 Mettez en place des contrôles stricts sur le nombre de requêtes acceptées pour prévenir les attaques par déni de service (DoS).
 

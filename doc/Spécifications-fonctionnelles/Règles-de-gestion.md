@@ -23,7 +23,6 @@
 - Un membre peut supprimer sa note à une ressource (notation en étoile sur /5 )
 - Un membre peut télécharger une ressource
 - Un membre peut visualiser une vidéo (tutoriel, conférence…)
-- Un membre a un dashboard où il visualise son historique de navigation
 - Un membre a un dashboard où il visualise ses commentaires
 - Un membre a un dashboard où il visualise ses favoris (ressources)
 - Un membre a un dashboard où il visualise les statistiques de ses publications (nombre de vues, commentaires, partages, etc.)
@@ -33,16 +32,14 @@
 - Un membre peut filtrer les tags des contenus les plus visités
 - Un membre peut recevoir des notifications pour les nouveaux contenus correspondant à ses intérêts
 - Un membre peut signaler du contenu inapproprié aux modérateurs
-- Un membre peut suivre d’autres utilisateurs pour voir leurs activités et publications
+- Un membre peut suivre d’autres utilisateurs
 - Un membre peut proposer et participer à des discussions de groupe ou forums
 - Un membre peut configurer des alertes sur ses tags préférés
-- Un membre peut proposer une session d’échange
-- Un membre peut voir une session d’échange proposée par un autre membre
+- Un membre peut voir les sessions d’échange proposées par les autres membres
 
 ### Modérateur
 - Un modérateur a tous les droits d’un membre
-- Un modérateur peut supprimer un commentaire en cas de contenu haineux, discriminant ou inapproprié
-- Un modérateur doit envoyer une notification à l’expéditeur du commentaire en cas de contenu haineux, discriminant ou inapproprié.
+- Un modérateur peut anonymisé un commentaire en cas de contenu haineux, discriminant ou inapproprié, déclenchant une notification automatique à l'encontre de l'auteur du commentaire
 - Un modérateur peut envoyer une notification à un membre
 - Un modérateur peut désactiver un membre (avec notification automatique)
 - Un modérateur vérifie les ressources avant publication
