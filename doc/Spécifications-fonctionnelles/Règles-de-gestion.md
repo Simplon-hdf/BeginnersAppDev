@@ -109,6 +109,12 @@
 ### Ressources : Un Tutoriel
 - Un tutoriel peut contenir une vidéo
 
+## Les sessions d'échanges 
+- Une session d'échange possède un titre
+- Une session d'échange possède une description
+- Une session d'échange possède une date de début et une heure de début
+- Une session d'échange possède une date de fin et une heure de fin
+
 ## Un commentaire
 - Un commentaire doit être relié à un seul contenu (ressource)
 - Un commentaire peut être la réponse à un commentaire
