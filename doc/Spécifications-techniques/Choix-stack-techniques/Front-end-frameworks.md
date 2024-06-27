@@ -111,3 +111,5 @@ Pour prendre des décisions éclairées et rationaliser nos choix technologiques
 >
 > - L'utilisation de TypeScript avec Next.js enrichit notre projet en améliorant la sécurité du type et en réduisant les erreurs potentielles lors du développement, ce qui est crucial pour notre application nécessitant une interaction utilisateur dynamique et des fonctionnalités avancées comme les flux RSS et les commentaires.
 > - La combinaison de Next.js et TypeScript offre une base solide pour une maintenance aisée et une évolutivité efficace, tout en profitant d'une forte communauté, d'une documentation complète, et d'une maintenance active pour rester à la pointe de la technologie.
+
+[🔙 Retour à la Table des matières](../Choix-stack-techniques/README.md)

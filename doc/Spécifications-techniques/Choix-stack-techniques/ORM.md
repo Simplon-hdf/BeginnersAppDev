@@ -125,3 +125,5 @@ Chaque aspect est évalué sur une échelle de 1 à 3, où 1 représente une fai
 >
 > - Sa flexibilité permet une personnalisation approfondie adaptée aux besoins spécifiques de notre projet, soutenue par une communauté active et une documentation riche.
 > - TypeORM offre également un contrôle accru et une transparence dans la gestion des opérations de base de données.
+
+[🔙 Retour à la Table des matières](../Choix-stack-techniques/README.md)
