@@ -155,5 +155,6 @@ CREATE TABLE IF NOT EXISTS follow (
 ```
 
 > 📌 Dans le contexte de notre application, nous n'avons pas fait le choix de préfixer le nom de nos tables.
-Mais dans un cas concret nous aurions choisi cette option afin d'améliorer encore la sécurité et l'intégrité des données. 
+> Mais dans un cas concret nous aurions choisi cette option afin d'améliorer encore la sécurité et l'intégrité des données.
 
+[🔙 Retour à la Table des matières](../../Spécifications-techniques/Merise/README.md)

@@ -17,3 +17,5 @@ Ce tableau résume nos choix technologiques et les caractéristiques clés de no
 | BDD              | PostgreSQL                         | PostgreSQL est choisi pour sa robustesse et sa compatibilité avec TypeORM.                                                                                                            |
 | ORM              | TypeORM                            | TypeORM est utilisé pour l'intégration avec la base de données PostgreSQL grâce à sa compatibilité avec TypeScript.                                                                   |
 | Front            | Next.js                            | Next.js est utilisé pour le développement frontend pour ses capacités de SSR, SSG, et CSR avec TypeScript.                                                                            |
+
+[🔙 Retour à la Table des matières](../Choix-stack-techniques/README.md)

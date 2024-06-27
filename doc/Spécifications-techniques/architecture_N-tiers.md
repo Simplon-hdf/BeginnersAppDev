@@ -55,4 +55,4 @@ La version mobile est optimisée pour les smartphones et les tablettes. Elle off
 
 En adoptant cette architecture N-tiers, nous assurons que notre application est robuste, évolutive et maintenable, capable de répondre aux besoins actuels et futurs de nos utilisateurs.
 
-[🔙 Retour à la Table des matières](../../README.md)
+[🔙 Retour à la Table des matières principale](../../README.md)

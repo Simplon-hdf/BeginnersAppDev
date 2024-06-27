@@ -1,18 +1,21 @@
 ## Application
 
 ### Accessibilité
+
 - L'application doit être conforme aux normes d'accessibilité WCAG pour garantir l'accessibilité à tous les utilisateurs.
 
 ## Utilisateurs
 
 ### Visiteur
+
 - Un visiteur peut s’enregistrer pour devenir membre avec un pseudonyme, un email et un mot de passe et un état actif par défaut
 - Un visiteur peut télécharger une ressource
 - Un visiteur peut lire les ressources présentes sur la plateforme
-- Un  visiteur peut parcourir les différentes catégories de contenu
+- Un visiteur peut parcourir les différentes catégories de contenu
 - Un visiteur peut utiliser la fonction de recherche pour trouver des ressources
 
 ### Membres
+
 - Un membre peut soumettre à publication une ressource
 - Un membre peut soumettre à publication un lien d’une ressource
 - Un membre peut déposer un ou des commentaires à une publication
@@ -38,6 +41,7 @@
 - Un membre peut voir les sessions d’échange proposées par les autres membres
 
 ### Modérateur
+
 - Un modérateur a tous les droits d’un membre
 - Un modérateur peut anonymisé un commentaire en cas de contenu haineux, discriminant ou inapproprié, déclenchant une notification automatique à l'encontre de l'auteur du commentaire
 - Un modérateur peut envoyer une notification à un membre
@@ -57,6 +61,7 @@
 - Un modérateur peut bloquer temporairement un membre
 
 ### Administrateur
+
 - Un administrateur a les droits d’un modérateur
 - Un administrateur peut créer, modifier et désactiver des comptes utilisateurs, y compris ceux des modérateurs
 - Un administrateur peut configurer les permissions et rôles des membres
@@ -73,10 +78,12 @@
 - Un administrateur peut voir le nombre de membres
 
 ### Super-administrateur
+
 - Un super administrateur peut créer, modifier et désactiver des comptes administrateurs
 - Un super administrateur peut s’authentifier et interagir qu’en ligne de commande
 
 ### Droit commun à tous les utilisateurs sauf visiteur
+
 - Un utilisateur est informé de ses droits RGPD, incluant le droit à la consultation (accès à ses données), droit de rectification (correction de ses données), droit à l’oublie (suppression de ses données) et la possibilité de retirer son consentement à tout moment.
 - Un utilisateur a obligatoirement un et un seul statut de membre, modérateur, administrateur
 - Un utilisateur peut se connecter avec son email et son mot de passe
@@ -87,7 +94,8 @@
 
 - Un tag contient un intitule unique (exemple : C#, PHP, IA)
 
-## Commun à toutes les Ressources 
+## Commun à toutes les Ressources
+
 - Un ressource est composé d'un titre unique
 - Un ressource est composé d'une description
 - Un ressource a une date de publication
@@ -104,18 +112,22 @@
 - Un article peut contenir une image
 
 ### Ressources : Un CheatSheet
+
 - Un CheatSheet est un document PDF
 
 ### Ressources : Un Tutoriel
+
 - Un tutoriel peut contenir une vidéo
 
-## Les sessions d'échanges 
+## Les sessions d'échanges
+
 - Une session d'échange possède un titre
 - Une session d'échange possède une description
 - Une session d'échange possède une date de début et une heure de début
 - Une session d'échange possède une date de fin et une heure de fin
 
 ## Un commentaire
+
 - Un commentaire doit être relié à un seul contenu (ressource)
 - Un commentaire peut être la réponse à un commentaire
 - Un commentaire ayant une réponse ne peut plus être modifié
@@ -124,3 +136,5 @@
 - Un commentaire a une date de modification
 - Un commentaire ne doit pas contenir d’adresse mail
 - Un commentaire a le pseudo de son auteur
+
+[🔙 Retour à la Table des matières principale](../../README.md)

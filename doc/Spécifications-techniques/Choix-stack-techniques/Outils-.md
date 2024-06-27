@@ -65,3 +65,5 @@ Dans la conception d'une plateforme web, la sélection des outils de projet et d
 
 - **PostgreSQL**:
   - Un système de gestion de base de données (SGBD) relationnelles pour stocker et gérer les données.
+
+[🔙 Retour à la Table des matières](../Choix-stack-techniques/README.md)
