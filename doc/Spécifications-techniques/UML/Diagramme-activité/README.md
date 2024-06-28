@@ -1,6 +1,6 @@
 # Diagrammes d'activité
 
-- [Login](../Diagramme-activité/login-register.md)
+- [Login](../Diagramme-activité/login.md)
 - [Soumettre une ressource](../Diagramme-activité/Soumettre-ressource.md)
 - [Modérer une ressource](../Diagramme-activité/Modérer-ressource.md)
 
