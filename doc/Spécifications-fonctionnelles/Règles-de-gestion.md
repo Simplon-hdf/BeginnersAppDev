@@ -8,7 +8,7 @@
 
 ### Visiteur
 
-- Un visiteur peut s’enregistrer pour devenir membre avec un pseudonyme, un email et un mot de passe et un état actif par défaut
+- Un visiteur peut s’enregistrer pour devenir membre avec un pseudonyme unique, un email unique et un mot de passe et a un état actif par défaut
 - Un visiteur peut télécharger une ressource
 - Un visiteur peut lire les ressources présentes sur la plateforme
 - Un visiteur peut parcourir les différentes catégories de contenu
