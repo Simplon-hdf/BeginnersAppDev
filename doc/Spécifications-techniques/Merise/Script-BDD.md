@@ -10,8 +10,8 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TABLE IF NOT EXISTS tags (
    tag_uuid VARCHAR (36) NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
    tag_title VARCHAR(100) NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY(tag_uuid UUID),
    UNIQUE(tag_title)
 );
@@ -19,8 +19,8 @@ CREATE TABLE IF NOT EXISTS tags (
 CREATE TABLE IF NOT EXISTS roles (
    role_uuid VARCHAR (36) NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
    role_name VARCHAR(100) NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY(role_uuid),
    UNIQUE(role_name)
 );
@@ -28,8 +28,8 @@ CREATE TABLE IF NOT EXISTS roles (
 CREATE TABLE IF NOT EXISTS ressources_types (
    ressource_type_uuid VARCHAR (36) NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
    type_name VARCHAR(50) NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY(ressource_type_uuid),
    UNIQUE(type_name)
 );
@@ -37,8 +37,8 @@ CREATE TABLE IF NOT EXISTS ressources_types (
 CREATE TABLE IF NOT EXISTS ressources_status (
    ressource_status_uuid VARCHAR (36) NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
    name VARCHAR(100) NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY(ressource_status_uuid),
    UNIQUE(name)
 );
@@ -48,9 +48,9 @@ CREATE TABLE IF NOT EXISTS users (
    username VARCHAR(100) NOT NULL,
    email VARCHAR(100) NOT NULL,
    password VARCHAR(255) NOT NULL,
-   is_active BOOLEAN NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   is_active BOOLEAN NOT NULL DEFAULT TRUE,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    role_uuid VARCHAR (36) NOT NULL,
    PRIMARY KEY(user_uuid),
    UNIQUE(username),
@@ -64,13 +64,13 @@ CREATE TABLE IF NOT EXISTS ressources (
    content TEXT,
    summary VARCHAR(255),
    is_reported BOOLEAN NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    user_uuid VARCHAR (36) NOT NULL,
    ressource_type_uuid VARCHAR (36) NOT NULL,
    ressource_status_uuid VARCHAR (36) NOT NULL,
    user_uuid_1 VARCHAR (36) NOT NULL,
-   PRIMARY KEY(ressource_id),
+   PRIMARY KEY(ressource_uuid),
    UNIQUE(title),
    FOREIGN KEY(user_uuid) REFERENCES users(user_uuid),
    FOREIGN KEY(ressource_type_uuid) REFERENCES ressources_types(ressource_type_uuid),
@@ -84,8 +84,8 @@ CREATE TABLE IF NOT EXISTS sharing_sessions (
    description TEXT,
    event_start_datetime DATETIME NOT NULL,
    event_end_datetime DATETIME NOT NULL,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    user_uuid VARCHAR (36) NOT NULL,
    PRIMARY KEY(sharing_session_uuid),
    UNIQUE(title),
@@ -96,8 +96,8 @@ CREATE TABLE IF NOT EXISTS comments (
    comment_uuid VARCHAR (36) NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
    content VARCHAR(255),
    is_reported BOOLEAN,
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    comment_uuid_1 VARCHAR (36) NOT NULL,
    user_uuid VARCHAR (36) NOT NULL,
    ressource_uuid VARCHAR (36) NOT NULL,
@@ -113,8 +113,8 @@ CREATE TABLE IF NOT EXISTS ressources_status_history (
    status_changed_at DATETIME NOT NULL,
    preview_state VARCHAR(50),
    new_state VARCHAR(50),
-   created_at DATETIME NOT NULL,
-   updated_at DATETIME NOT NULL,
+   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
    ressource_uuid VARCHAR (36) NOT NULL,
    PRIMARY KEY(ressource_status_history_uuid),
    FOREIGN KEY(ressource_uuid) REFERENCES ressources(ressource_uuid)
