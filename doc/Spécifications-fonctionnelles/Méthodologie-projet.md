@@ -41,3 +41,5 @@ Concernant les étapes **6-Sprint Review Meeting et 7-Sprint Retrospective,** el
 Nous organisons régulièrement des réunions dont les détails sont consignés dans l'outil **Jira** sous la forme de pages de l’outil **Confluence**. Cela permet de centraliser toutes les informations relatives aux projets et aux sprints en un seul et même endroit.
 
 **Jira** et **Confluence** nous aident à rester organisés et à passer efficacement de la planification à l'exécution sans problème.
+
+[🔙 Retour à la Table des matières principale](../../README.md)

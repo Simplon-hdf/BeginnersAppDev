@@ -92,3 +92,5 @@ Ces personas vont nous guider lors de l'élaboration des user stories en mettant
 > - **Défis** :
 >   > Garantir une gestion sécurisée et précise des comptes administrateurs. Cela requiert une attention méticuleuse et des contrôles d’accès rigoureux pour prévenir les intrusions.
 >   > Maîtriser pleinement l’utilisation des interfaces de ligne de commande, qui sont essentielles pour toutes ces opérations.
+
+[🔙 Retour à la Table des matières principale](../../../README.md)

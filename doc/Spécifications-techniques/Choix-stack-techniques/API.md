@@ -75,3 +75,5 @@ Pour notre projet, nous recommandons l'utilisation d'une API RESTful stateless. 
 - Moins de complexité : Les API RESTful stateless sont généralement moins complexes à mettre en œuvre et à maintenir que les API RESTful stateful.
 
 En conclusion, une API RESTful stateless répondra le mieux à nos besoins en matière de simplicité, de performance et de facilité de mise en œuvre pour notre projet.
+
+[🔙 Retour à la Table des matières principale](../Choix-stack-techniques/README.md)

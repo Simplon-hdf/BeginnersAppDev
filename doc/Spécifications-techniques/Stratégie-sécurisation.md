@@ -258,3 +258,5 @@ Utilisez des méthodes de hachage robustes, comme Bcrypt, pour le stockage des m
 ([cf. Politique des mots de passes](#politique-des-mots-de-passe))
 
 En adoptant une approche proactive en matière de sécurité et en mettant en œuvre des mesures appropriées, notre apllication s'efforcera de fournir à ses utilisateurs un environnement sûr et fiable pour leur veille technologique.
+
+[🔙 Retour à la Table des matières principale](../../README.md)

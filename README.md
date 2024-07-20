@@ -28,9 +28,7 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 
 ### 1. Spécifications fonctionnelles
 
-
 - #### [1.1 Besoins du client](./doc/Spécifications-fonctionnelles/Besoins-client/)
-
 
   - #### [1.1.1 Contexte et cadrage client](./doc/Spécifications-fonctionnelles/Besoins-client/Contexte.md)
 
@@ -67,9 +65,9 @@ Ce projet est une plateforme collaborative de gestion de veille techno, orienté
 
 - #### [2.13 Diagramme cas d'utilisation (Use Case)](./doc/Spécifications-techniques/UML/Diagramme-cas-utilisation/Diagramme-cas-utilisation.md)
 
-- #### [2.14 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/Diagramme-activité1.md)
+- #### [2.14 Diagramme d'activité](./doc/Spécifications-techniques/UML/Diagramme-activité/README.md)
 
-- #### [2.15 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/Diagramme-séquence.md)
+- #### [2.15 Diagramme de séquence](./doc/Spécifications-techniques/UML/Diagramme-séquence/README.md)
 
 - #### [2.16 Diagramme de classe](./doc/Spécifications-techniques/UML/Diagramme-classe/Diagramme-classe.md)
 
