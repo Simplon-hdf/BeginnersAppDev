@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Dans le cadre de notre projet utilisant NestJS avec TypeScript et TypeORM pour interagir avec une base de données PostgreSQL, nous devons choisir le type d'API qui convient le mieux à nos besoins. Dans ce document, nous allons comparer les trois principaux types d'API : RESTful API, GraphQL API et gRPC API, en tenant compte des distinctions entre les API stateless et stateful, et justifier notre choix final.
+Dans le cadre de notre projet utilisant NextJS avec TypeScript et TypeORM pour interagir avec une base de données PostgreSQL, nous devons choisir le type d'API qui convient le mieux à nos besoins. Dans ce document, nous allons comparer les trois principaux types d'API : RESTful API, GraphQL API et gRPC API, en tenant compte des distinctions entre les API stateless et stateful, et justifier notre choix final.
 
 ## Types d'API
 

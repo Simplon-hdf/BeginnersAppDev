@@ -40,7 +40,7 @@ Dans la conception d'une plateforme web, la sélection des outils de projet et d
   - **Tailwind**:
     - Un framework CSS pour la création de mises en page réactives et d'interfaces utilisateur attrayantes.
 - **Backend** :
-  - **Nest.js**
+  - **Next.js**
     - Une plateforme JavaScript côté serveur, permettant un développement rapide et basé sur des événements.
 - **ORM** :
   - **TypeORM**
