@@ -94,10 +94,10 @@ Cette notation permettra notamment de comparer les stacks et donner une meilleur
 </details>
 <br>
 
-**❓ Pourquoi choisir la médaille d'argent :**
+**❓ Pourquoi choisir la médaille de bronze :**
 
-✅ Nest.js est un framework moderne, open-source, gratuit et intégré avec TypeScript. Il est optimisé pour les performances entrées/sorties dans un environnement JavaScript, NestJS est une option plus adaptée que Spring Boot pour notre projet.
+✅ Next.js est un framework moderne, open-source, gratuit et intégré avec TypeScript. Il est optimisé pour les performances entrées/sorties dans un environnement JavaScript.
 
-> **En conclusion** Nest.js est choisi pour notre projet non seulement pour ses avantages en termes de coût et de performance mais aussi pour sa flexibilité et son adéquation avec les technologies actuelles et les pratiques de développement modernes. Ces facteurs, combinés à sa capacité à évoluer efficacement selon les besoins du projet, en font une solution plus appropriée pour notre application par rapport à Spring Boot, notamment dans un contexte où la rapidité de développement et l'adaptabilité sont prioritaires.
+> **En conclusion** Next.js est choisi pour notre projet non seulement pour ses avantages en termes de coût et de performance mais aussi pour sa flexibilité et son adéquation avec les technologies actuelles et les pratiques de développement modernes. Ces facteurs, combinés à sa capacité à évoluer efficacement selon les besoins du projet, en font une solution plus appropriée pour notre application, notamment dans un contexte où la rapidité de développement et l'adaptabilité sont prioritaires.
 
 [🔙 Retour à la Table des matières](../Choix-stack-techniques/README.md)
