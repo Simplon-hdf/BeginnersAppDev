@@ -2,7 +2,7 @@
 
 # Questions / Réponses
 
-Ce tableau résume nos choix technologiques et les caractéristiques clés de notre projet, mettant en évidence l'efficacité de l'utilisation de Next.js, Next.js, et TypeORM ensemble pour créer une application robuste, bien architecturée et optimisée pour le SEO.
+Ce tableau résume nos choix technologiques et les caractéristiques clés de notre projet, mettant en évidence l'efficacité de l'utilisation de Next.js et TypeORM ensemble pour créer une application robuste, bien architecturée et optimisée pour le SEO.
 
 | Questions        | Réponses                           | Remarques supplémentaires                                                                                                                                                             |
 | ---------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

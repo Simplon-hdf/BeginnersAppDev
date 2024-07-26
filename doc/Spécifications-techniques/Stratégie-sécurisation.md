@@ -96,12 +96,6 @@ Nous accorderons uniquement les permissions nécessaires à chaque utilisateur o
 Nous renforcerons la sécurité des données en transit entre le client et le serveur en mettant en place des tunnels sécurisés. Le protocole **HTTPS**, associé aux standards de sécurité **TLS** (Transport Layer Security) et **HSTS** (HTTP Strict Transport Security), garantira que toutes les communications dont la première entre l'application et nos serveurs seront chiffrées forçant l’utilisation de HTTPS.  
 Cela protégera les données des utilisateurs contre les interceptions malveillantes et assurera la confidentialité des informations échangées, même sur des réseaux moins sécurisés.
 
-### Protection des Entêtes avec Helmet
-
-Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.  
-Grâce à **Nextjs**, la mise en œuvre de ces mesures de sécurité sera simplifiée, nous permettant de garantir une base solide pour la protection de l’environnement numérique de nos utilisateurs.
-
-
 ### Nettoyage des Formulaires et Sanétization
 
 Nous appliquerons des méthodes de nettoyage et de sanitization sur les données saisies par les utilisateurs pour prévenir les injections **SQL** et **XSS**. Toutes les entrées utilisateur seront validées et échappées pour garantir l'intégrité des données et la sécurité de l'application.
@@ -152,9 +146,14 @@ Cela protégera les données des utilisateurs contre les interceptions malveilla
 
 Mettez en place des contrôles stricts sur le nombre de requêtes acceptées pour prévenir les attaques par déni de service (DoS).
 
+### Protection des Entêtes avec Helmet
+
+Nous protégerons nos applications Express.js en utilisant **Helmet**, un ensemble de middleware pour sécuriser les applications Express en définissant divers en-têtes HTTP. Cela inclura la protection contre les attaques **XSS** (Cross-Site Scripting), le contrôle de la politique de contenu, la prévention de l'ouverture de fenêtres contextuelles indésirables (**CSP** (Content Security Policy) ), entre autres.  
+Grâce à **Nextjs**, la mise en œuvre de ces mesures de sécurité sera simplifiée, nous permettant de garantir une base solide pour la protection de l’environnement numérique de nos utilisateurs.
+
 ### Gestion des Identités Utilisateurs avec les UUID
 
-Nous utiliserons des **UUID** (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé.
+Nous utiliserons des **UUID** (Universally Unique IDentifiers) pour renforcer la sécurité et la confidentialité des données des utilisateurs. Les UUID, générés de manière aléatoire, rendront difficile la prédiction des identifiants et contribueront à la protection contre les tentatives d'accès non autorisé. L'itération sur les entrées des tables sera très difficile, voire impossible pour un attaquant comparé à la méthode standard d'utiliser des identifiants qui s'incrémentent. 
 
 ### Transmission Sécurisée des Mots de Passe
 
@@ -191,6 +190,10 @@ Système qui assigne des permissions aux utilisateurs en fonction des rôles qu'
 **Sécurité** : Des mesures robustes seront implémentées pour protéger les données contre les accès non autorisés et les pertes.  
 **Politique de Confidentialité** : Une politique claire et accessible décrira la gestion des données personnelles et les droits des utilisateurs.
 
+### ORM contre les Injections SQL
+
+Employez un ORM pour accéder à la base de données, ce qui aide à prévenir les injections SQL en fournissant une couche d’abstraction qui sépare le code SQL de la logique métier.
+
 ## 3. Couche bdd
 
 ### Politique des Mots de Passe
@@ -223,19 +226,26 @@ Nous limiterons les tentatives de connexion infructueuses à 5 essais, puis déc
 
 • **Méthode de Conservation des Mots de Passe**
 
-Les mots de passe sont stockés de manière sécurisée, utilisant un hachage **Bcrypt** avec salage, assurant que chaque mot de passe est unique et protégé contre les attaques.
+Les mots de passe sont stockés de manière sécurisée, utilisant la fonction **Bcrypt** qui combine hachage et salage, assurant que chaque mot de passe soit indéchiffrable en cas de récupération par un attaquant.
 
 • **Méthode de Recouvrement d’Accès**
 
 En cas de perte ou de vol des mots de passe, nous fournissons un lien de réinitialisation à usage unique (validité de 24h), assurant une récupération sécurisée.
 
-### ORM contre les Injections SQL
-
-Employez un ORM pour accéder à la base de données, ce qui aide à prévenir les injections SQL en fournissant une couche d’abstraction qui sépare le code SQL de la logique métier.
 
 ### **Stratégie de Sauvegarde**
 
-Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les données de l'application contre les incidents tels que les pannes, les erreurs ou les attaques. Des sauvegardes régulières des données seront effectuées pour garantir la disponibilité et l'intégrité des informations des utilisateurs en cas de problème. Automatisation régulière des sauvegardes de la bdd grâce à pg_cron afin de lutter contre les ransomwares
+Nous mettrons en place une stratégie de sauvegarde robuste pour protéger les données de l'application contre les incidents tels que les pannes, les erreurs ou les attaques. Des sauvegardes journalières des données seront effectuées pour garantir la disponibilité et l'intégrité des informations des utilisateurs en cas de problème. 
+
+-Une sauvegarde automatique journalière déclenchée à minuit et isoler de la bdd grâce à pg_cron permettra de réduire l'impact d'une attaque de type ransomware. 
+
+- Emplacement: 3 sauvegardes à différents lieux : 1 dans le cloud, 1 sur le serveur (automatique) et 1 en local
+
+- Stratégie de rétention : nous sauvegarderons un maximum de 15 sauvegardes complètes sur chaque emplacement (cloud/serveur/local) pendant une durée de 15 jours et 12 sauvegardes incrémentielles mensuelles pendant 1 an. 
+
+- Stratégie de purge : nous purgerons les sauvegardes en fonction du nombre de sauvegardes stockées, leur ancienneté et la taille des fichiers dans l'espace de stockage alloué aux sauvegardes. 
+
+Cette stratégie sera revue en fonction de la performance du système de stockage et du cadre légale de rétention des données. 
 
 ### RGPD (Règlement général sur la protection des données)
 
