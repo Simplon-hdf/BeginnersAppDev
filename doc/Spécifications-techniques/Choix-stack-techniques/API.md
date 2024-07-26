@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Dans le cadre de notre projet utilisant NextJS avec TypeScript et TypeORM pour interagir avec une base de données PostgreSQL, nous devons choisir le type d’API qui convient le mieux à nos besoins. Dans ce document, nous allons comparer les trois principaux types d’API : API Rest, GraphQL et SOAP, en tenant compte des distinctions entre les API stateless et stateful, et justifier notre choix final.
+Dans le cadre de notre projet utilisant NextJS avec TypeScript et TypeORM pour interagir avec une base de données PostgreSQL, nous devons choisir le type d’API qui convient le mieux à nos besoins. Dans ce document, nous allons comparer les trois principaux types d’API : API Rest, GraphQL et SOAP, et justifier notre choix final.
 
 ## Types d'API
 
@@ -16,12 +16,13 @@ Une API Rest est basée sur le modèle architectural REST (Representational Stat
 
 #### Distinction stateless :
 
-Les API Rest stateless ne stockent pas l'état de la session côté serveur entre les requêtes. Chaque requête client contient toutes les informations nécessaires pour être traitée de manière autonome par le serveur, sans dépendre de requêtes précédentes.
+Les API Rest stateless, ne stockent pas l'état de la session côté serveur entre les requêtes. Chaque requête client contient toutes les informations nécessaires pour être traitée de manière autonome par le serveur, sans dépendre de requêtes précédentes.
 
-#### Avantages des API Rest Stateless :
+#### Avantages des API Rest Stateless (par défault) :
 
 - Facilité de mise en cache, évolutivité simplifiée, robustesse et tolérance aux pannes.
 - Moins de complexité pour gérer l'état côté serveur.
+- (optionnel) On peut exploiter des composants statefull ou mécanismes côté clients pour gérer les informations d'état.
 
 ### 2. GraphQL API
 
@@ -84,7 +85,7 @@ Pour notre projet, nous recommandons l'utilisation d'une API Rest stateless. Cet
 - Facilité d'utilisation : Les API Rest sont largement connues et utilisées, ce qui rend leur adoption et leur compréhension faciles pour les développeurs.
 - Performance : Les API Rest offrent des performances élevées et sont bien adaptées aux opérations CRUD sur des ressources.
 - Évolutivité : Les API Rest stateless sont particulièrement évolutives grâce à leur nature sans état, ce qui les rend faciles à mettre en cache et à scaler horizontalement.
-- Moins de complexité : Les API Rest stateless sont généralement moins complexes à mettre en œuvre et à maintenir que les API Rest stateful.
+- Moins de complexité : Les API Rest stateless sont généralement moins complexes.
 
 En conclusion, une API Rest stateless répondra le mieux à nos besoins en matière de simplicité, de performance et de facilité de mise en œuvre pour notre projet.
 
