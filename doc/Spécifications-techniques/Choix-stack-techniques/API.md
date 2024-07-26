@@ -18,18 +18,10 @@ Une API Rest est basée sur le modèle architectural REST (Representational Stat
 
 Les API Rest stateless ne stockent pas l'état de la session côté serveur entre les requêtes. Chaque requête client contient toutes les informations nécessaires pour être traitée de manière autonome par le serveur, sans dépendre de requêtes précédentes.
 
-#### Distinction stateful :
-
-Les API Rest stateful stockent l'état de la session côté serveur entre les requêtes. Cela signifie que le serveur garde une trace de l'état de chaque session client et peut répondre en fonction de cet état.
-
 #### Avantages des API Rest Stateless :
 
 - Facilité de mise en cache, évolutivité simplifiée, robustesse et tolérance aux pannes.
 - Moins de complexité pour gérer l'état côté serveur.
-
-#### Avantages des API Rest Stateful :
-
-- Peut simplifier certaines interactions client-serveur en maintenant un contexte d'état cohérent entre les requêtes.
 
 ### 2. GraphQL API
 
